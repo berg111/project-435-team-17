@@ -3,7 +3,7 @@
 ## 1. Group members:
 1. Jake Bergin
 2. Jace Thomas
-3. Third
+3. Cameron Hoholik-Carlson
 4. Fourth
 
 ---
