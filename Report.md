@@ -27,7 +27,7 @@ For example:
   Merge sort is a comparison-based algorithm that uses a divide-and-conquer approach for sorting arrays.
   
   Psuedocode (source: https://en.wikipedia.org/wiki/Merge_sort):
-
+  ```
   function merge_sort(list m) is
     // Base case. A list of zero or one elements is sorted, by definition.
     if length of m ≤ 1 then
@@ -71,5 +71,6 @@ For example:
         append first(right) to result
         right := rest(right)
     return result
+  ```
 
 - NEXT ALGO HERE
