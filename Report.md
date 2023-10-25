@@ -2,7 +2,7 @@
 
 ## 1. Group members:
 1. Jake Bergin
-2. Second
+2. Jace Thomas
 3. Third
 4. Fourth
 
