@@ -4,7 +4,7 @@
 1. Jake Bergin
 2. Jace Thomas
 3. Cameron Hoholik-Carlson
-4. Fourth
+4. Ethan McKinney
 
 ---
 
@@ -99,4 +99,45 @@ For example:
   end procedure
   ```
 
-- FOURTH ALGO HERE
+- Quick Sort (MPI)
+
+  Quick Sort is a sorting algorithm that that operates in a "divide and conquer" method.
+  It takes in the array of data and chooses a starting element, then sorts the array into two sides, elements that are smaller than the starting element and elements that are larger than the starting element.
+  Once done, it will take the first half of thenewly ordered set of data and will choose a new starting element, then repeats the step of sorting them to the left and right of the new starting element absed on if the piece of data is smaller or larger.
+  This continues until the algorithm is down to 2 elements and then works its way back up the partitioned sets of data.
+
+  Pseudocode (source: https://en.wikipedia.org/wiki/Quicksort):
+  ```
+  // Sorts a (portion of an) array, divides it into partitions, then sorts those
+  algorithm quicksort(A, lo, hi) is 
+  // Ensure indices are in correct order
+  if lo >= hi || lo < 0 then 
+    return
+    
+  // Partition array and get the pivot index
+  p := partition(A, lo, hi) 
+      
+  // Sort the two partitions
+  quicksort(A, lo, p - 1) // Left side of pivot
+  quicksort(A, p + 1, hi) // Right side of pivot
+
+// Divides array into two partitions
+algorithm partition(A, lo, hi) is 
+  pivot := A[hi] // Choose the last element as the pivot
+
+  // Temporary pivot index
+  i := lo - 1
+
+  for j := lo to hi - 1 do 
+    // If the current element is less than or equal to the pivot
+    if A[j] <= pivot then 
+      // Move the temporary pivot index forward
+      i := i + 1
+      // Swap the current element with the element at the temporary pivot index
+      swap A[i] with A[j]
+
+  // Move the pivot element to the correct pivot position (between the smaller and larger elements)
+  i := i + 1
+  swap A[i] with A[hi]
+  return i // the pivot index
+  ```
