@@ -73,4 +73,30 @@ For example:
     return result
   ```
 
-- NEXT ALGO HERE
+- SECOND ALGO HERE
+
+- Bubble Sort (MPI)
+
+  Bubble Sort is a sorting algorithm that repeatedly compares adjacent elements in an array, moving forward in the array window until it reaches the end of the array.
+  If two elements that are being compared have the second element as larger than the first, then those elements are swapped.
+  In its most basic and non- optimized form, it repeats this n - 1 times where n is the size of the array. This sorting algorithm is also known as sinking sort.
+
+  Pseudocode (source: https://en.wikipedia.org/wiki/Bubble_sort)
+  ```
+  procedure bubbleSort(A : list of sortable items)
+    n := length(A)
+    repeat
+        swapped := false
+        for i := 1 to n-1 inclusive do
+            { if this pair is out of order }
+            if A[i-1] > A[i] then
+                { swap them and remember something changed }
+                swap(A[i-1], A[i])
+                swapped := true
+            end if
+        end for
+    until not swapped
+  end procedure
+  ```
+
+- FOURTH ALGO HERE
