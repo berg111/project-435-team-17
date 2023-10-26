@@ -121,8 +121,8 @@ For example:
   quicksort(A, lo, p - 1) // Left side of pivot
   quicksort(A, p + 1, hi) // Right side of pivot
 
-// Divides array into two partitions
-algorithm partition(A, lo, hi) is 
+  // Divides array into two partitions
+  algorithm partition(A, lo, hi) is 
   pivot := A[hi] // Choose the last element as the pivot
 
   // Temporary pivot index
