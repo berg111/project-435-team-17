@@ -16,12 +16,6 @@ Sorting.
 
 ## 2. _due 10/25_ Brief project description (what algorithms will you be comparing and on what architectures)
 
-For example:
-- Algorithm 1a (MPI + CUDA)
-- Algorithm 1b (MPI on each core)
-- Algorithm 2a (MPI + CUDA)
-- Algorithm 2b (MPI on each core)
-
 - Merge Sort (MPI)
 
   Merge sort is a comparison-based algorithm that uses a divide-and-conquer approach for sorting arrays.
@@ -73,8 +67,34 @@ For example:
     return result
   ```
 
-- SECOND ALGO HERE
+- Odd-Even Transposition Sort (MPI)
 
+  Odd-Even SOrt is a compare and exchange algorithm, that compares odd and even pairs, and after n phases all of the elements will be sorted, and is availabe in parallelism.
+
+  Pseudocode (source: CSCE 435 Slide Deck "07_CSCE_435_algorithms.pdf slide 52"
+
+  procedure ODD-EVEN_PAR (n) 
+  ```
+  begin 
+     id := process's label 
+  	
+     for i := 1 to n do 
+     begin 
+  	
+        if i is odd and id is odd then 
+           compare-exchange_min(id + 1); 
+        else 
+           compare-exchange_max(id - 1);
+  			
+        if i is even and id is even then 
+           compare-exchange_min(id + 1); 
+        else 
+           compare-exchange_max(id - 1);
+  			
+     end for
+  	
+  end ODD-EVEN_PAR
+  ```
 - Bubble Sort (MPI)
 
   Bubble Sort is a sorting algorithm that repeatedly compares adjacent elements in an array, moving forward in the array window until it reaches the end of the array.
