@@ -9,45 +9,51 @@
 // #include <caliper/cali.h>
 // #include <adiak.hpp>
 
-void oddEvenSort(std::vector<int> &array){
+void oddEvenSort(std::vector<int> &array, int threads){
     int size = array.size();
-    bool sorted = false;
+    int i = 0;
+    int phase = 0;
+    #pragma omp parallel num_threads(threads) default(none) shared(array,size) private(i,phase)
+    for (size_t phase = 0; phase < size; phase++){
 
-    while (sorted == false){
-        sorted = true;
 
-        //#pragma omp parallel for shared(array, sorted)
+        
         //Even phase
-        for(int i = 1; i < size - 1; i += 2){
-            if (array[i] > array[i + 1]){
-                std::swap(array[i], array[i + 1]);
-                sorted = false;
+        if(phase % 2 == 0){
+            #pragma omp for
+            for(int i = 1; i < size - 1; i += 2){
+                if (array[i] > array[i + 1]){
+                    std::swap(array[i], array[i + 1]);
+
+                }
             }
         }
 
-        //#pragma omp parallel for shared(array, sorted)
+        
         //Odd phase
-        for(int i = 0; i < size - 1; i += 2){
-            if (array[i] > array[i + 1]){
-                std::swap(array[i], array[i + 1]);
-                sorted = false;
+        else{
+            #pragma omp for
+            for(int i = 0; i < size - 1; i += 2){
+                if (array[i] > array[i + 1]){
+                    std::swap(array[i], array[i + 1]);
+
+                }
             }
         }
-
-
-
     }
 }
 
-int main() {
+int main(int argc, char** argv) {
 
-    std::vector<int> array = {10, 9, 8, 12, 5, 7};
+    std::vector<int> array = {10, 9, 73, 8, 12, 5};
 
-    oddEvenSort(array);
+    int threads = atoi(argv[1]);
+
+    oddEvenSort(array, threads);
 
     std::cout << "Sorted Array: ";
-    for (int num : array) {
-        std::cout << num << " ";
+    for (int i = 0; i < array.size(); ++i) {
+        std::cout << array[i] << " ";
     }
     std::cout << std::endl;
 
