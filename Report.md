@@ -67,7 +67,7 @@ Sorting.
     return result
   ```
 
-- Odd-Even Transposition Sort (MPI)
+- Odd-Even Transposition Sort (openMP)
 
   Odd-Even SOrt is a compare and exchange algorithm, that compares odd and even pairs, and after n phases all of the elements will be sorted, and is availabe in parallelism.
 
