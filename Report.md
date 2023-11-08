@@ -67,14 +67,14 @@ Sorting.
     return result
   ```
 
-- Odd-Even Transposition Sort (openMP)
+- Odd-Even Transposition Sort (openMP + CUDA)
 
-  Odd-Even SOrt is a compare and exchange algorithm, that compares odd and even pairs, and after n phases all of the elements will be sorted, and is availabe in parallelism.
+  Odd-Even Sort is a compare and exchange algorithm, that compares odd and even pairs, and after n phases all of the elements will be sorted, and is availabe in parallelism.
 
   Pseudocode (source: CSCE 435 Slide Deck "07_CSCE_435_algorithms.pdf slide 52"
-
-  procedure ODD-EVEN_PAR (n) 
   ```
+  procedure ODD-EVEN_PAR (n) 
+  
   begin 
      id := process's label 
   	
@@ -95,6 +95,35 @@ Sorting.
   	
   end ODD-EVEN_PAR
   ```
+
+- Odd Even Sort (MPI)
+
+  Pseudocode source: https://www.dcc.fc.up.pt/~ricroc/aulas/1516/cp/apontamentos/slides_sorting.pdf
+
+  ```
+  rank = process_id();
+  A = initial_value();
+  for (i = 0; i < N; i++) {
+    if (i % 2 == 0) { // even phase
+      if (rank % 2 == 0) { // even process
+        recv(B, rank + 1); send(A, rank + 1);
+        A = min(A,B);
+    } else { // odd process
+      send(A, rank - 1); recv(B, rank - 1);
+      A = max(A,B);
+  }
+  } else if (rank > 0 && rank < N - 1) { // odd phase
+      if (rank % 2 == 0) { // even process
+        recv(B, rank - 1); send(A, rank - 1);
+        A = max(A,B);
+    } else { // odd process
+        send(A, rank + 1); recv(B, rank + 1);
+        A = min(A,B);
+    }
+}
+
+  ```
+  
 - Bucket Sort (MPI)
 
   Bucket Sort is a sorting algorithm that splits each element into different "buckets" based on the number of elements being sorted.
