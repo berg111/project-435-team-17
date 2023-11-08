@@ -16,9 +16,9 @@ Sorting.
 
 ## 2. _due 10/25_ Brief project description (what algorithms will you be comparing and on what architectures)
 
-- Merge Sort (MPI)
+- Merge Sort (MPI + CUDA)
 
-  Merge sort is a comparison-based algorithm that uses a divide-and-conquer approach for sorting arrays.
+  Merge sort is a comparison-based algorithm that uses a divide-and-conquer approach for sorting arrays. To make parallel, we use the sequential algorithm but scatter the array equally across multiple processes.
   
   Psuedocode (source: https://en.wikipedia.org/wiki/Merge_sort):
   ```
