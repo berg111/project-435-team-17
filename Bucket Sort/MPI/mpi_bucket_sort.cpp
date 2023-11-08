@@ -87,9 +87,7 @@ int main (int argc, char *argv[])
 	    source,                /* task id of message source */
 	    dest,                  /* task id of message destination */
 	    mtype,                 /* message type */
-	    rows,                  /* rows of matrix A sent to each worker */
-	    averow, extra, offset, /* used to determine rows sent to each worker */
-	    i, j, k, rc;           /* misc */
+	    i, j, rc;           /* misc */
 
     float array[SIZE];
 
@@ -160,7 +158,7 @@ int main (int argc, char *argv[])
         vector<float> buckets[SIZE];
 
         // Pushes array elements into buckets
-        for (int i = 0; i < SIZE; i++) {
+        for (i = 0; i < SIZE; i++) {
             buckets[(int)(SIZE * (*array)[i])].push_back((*array)[i]);
         }
             
@@ -313,12 +311,14 @@ int main (int argc, char *argv[])
         printf("Main Time: %f \n", main_time);
         printf("Data Initialization Time: %f \n", data_init_time);
         printf("Master Send and Receive Time: %f \n", master_send_receive_time);
+        printf("Master Correctness Check Time: %f \n", correctness_check_time)
         printf("\n******************************************************\n");
 
         // Add values to Adiak
         adiak::value("MPI_Reduce-main_time", main_time);
         adiak::value("MPI_Reduce-data_init_time", data_init_time);
         adiak::value("MPI_Reduce-master_send_receive_time", master_send_receive_time);
+        adiak::value("MPI_Reduce-correctness_check_time", correctness_check_time);
 
         // Must move values to master for adiak
         mtype = FROM_WORKER;
