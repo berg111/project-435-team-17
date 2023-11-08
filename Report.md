@@ -204,3 +204,11 @@ Sorting.
   swap A[i] with A[hi]
   return i // the pivot index
   ```
+
+### 2c. Evaluation plan - what and how will you measure and compare
+- Varying array sizes of integers (100, 1000, 10000, 100000, 500000). (Floats for bucket sort impl).
+- Strong scaling (same problem size, increase number of processors/nodes)
+- Weak scaling (increase problem size, increase number of processors)
+- Number of threads in a block on the GPU
+
+Comparisons will be done between different implementations and performance for varying parameters will be examined for each.
