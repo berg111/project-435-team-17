@@ -9,9 +9,6 @@ int NUM_VALUES;
 
 __global__ void oddEvenSortStep(int* array, int size, int phase){
 
-
-    for (size_t phase = 0; phase < size; phase++){
-
         //Even phase
         if(phase % 2 == 0){
 
@@ -33,7 +30,6 @@ __global__ void oddEvenSortStep(int* array, int size, int phase){
                 }
             }
         }
-    }
 }
 
 //Helper function to create array of random values
@@ -76,7 +72,9 @@ int main(int argc, char** argv){
 
     start = clock();
 
-    oddEvenSortKernel<<1, threads>>(gpu_array, arraySize);
+    for(int i = 0; i < array.size()){
+        oddEvenSortKernel<<1, threads>>(gpu_array, arraySize, i);
+    }
 
     stop = clock();
 
