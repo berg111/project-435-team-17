@@ -65,6 +65,12 @@ Sorting.
         append first(right) to result
         right := rest(right)
     return result
+
+  MPI_Scatter(arr, range, MPI_INT, arr_copy, range, MPI_INT, 0, MPI_COMM_WORLD);
+
+	merge_sort(arr_copy, 0, range - 1);
+
+	MPI_Gather(arr_copy, range, MPI_INT, arr, range, MPI_INT, 0, MPI_COMM_WORLD);
   ```
 
 - Odd-Even Transposition Sort (openMP + CUDA)
