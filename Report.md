@@ -130,7 +130,7 @@ Sorting.
 
   ```
   
-- Bucket Sort (MPI)
+- Bucket Sort (MPI + CUDA)
 
   Bucket Sort is a sorting algorithm that splits each element into different "buckets" based on the number of elements being sorted.
   Each bucket is then sorted using insertion sort.
