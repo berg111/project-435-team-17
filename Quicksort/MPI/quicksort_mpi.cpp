@@ -87,12 +87,11 @@ int main(int argc, char** argv) {
 
     numworkers = numtasks-1;
 
-    MPI_Comm new_comm;
-    if(taskid > 0){
-        MPI_Comm_split(MPI_COMM_WORLD, 1, taskid, &new_comm);
-    }
-    else if(taskid == 0){
-        MPI_Comm_split(MPI_COMM_WORLD, MPI_UNDEFINED, taskid, &new_comm);
+    MPI_Comm communicator;
+    if (taskid == 0) {
+        MPI_Comm_split(MPI_COMM_WORLD, MPI_UNDEFINED, taskid, &communicator);
+    } else if (taskid > 0) {
+        MPI_Comm_split(MPI_COMM_WORLD, 1, taskid, &communicator);
     }
 
     CALI_MARK_BEGIN(whole_computation);
@@ -133,7 +132,7 @@ int main(int argc, char** argv) {
         CALI_MARK_BEGIN(worker_recieve);
 
         mtype = FROM_MASTER;
-        MPI_Recv(&array, 1, MPI_INT, MASTER, mtype, new_comm, &status);
+        MPI_Recv(&array, 1, MPI_INT, MASTER, mtype, communicator, &status);
 
         CALI_MARK_END(worker_recieve);
 
@@ -146,7 +145,7 @@ int main(int argc, char** argv) {
         CALI_MARK_BEGIN(worker_send);
 
         mtype = FROM_WORKER;
-        MPI_Send(&array, 1, MPI_INT, source, mtype, new_comm, &status);
+        MPI_Send(&array, 1, MPI_INT, source, mtype, communicator, &status);
 
         CALI_MARK_END(worker_send);
 
@@ -155,16 +154,16 @@ int main(int argc, char** argv) {
 
     CALI_MARK_END(whole_computation);
 
-       adiak::init(NULL);
-   adiak::user();
-   adiak::launchdate();
-   adiak::libraries();
-   adiak::cmdline();
-   adiak::clustername();
-   adiak::value("num_procs", numtasks);
-   adiak::value("matrix_size", sizeOfMatrix);
-   adiak::value("program_name", "master_worker_matrix_multiplication");
-   adiak::value("matrix_datatype_size", sizeof(double));
+    adiak::init(NULL);
+    adiak::user();
+    adiak::launchdate();
+    adiak::libraries();
+    adiak::cmdline();
+    adiak::clustername();
+    adiak::value("num_procs", numtasks);
+    adiak::value("matrix_size", sizeOfMatrix);
+    adiak::value("program_name", "master_worker_matrix_multiplication");
+    adiak::value("matrix_datatype_size", sizeof(double));
 
    double worker_receive_time_max,
       worker_receive_time_min,
@@ -181,19 +180,19 @@ int main(int argc, char** argv) {
 
    /* USE MPI_Reduce here to calculate the minimum, maximum and the average times for the worker processes.
    MPI_Reduce (&sendbuf,&recvbuf,count,datatype,op,root,comm). https://hpc-tutorials.llnl.gov/mpi/collective_communication_routines/ */
-   if(new_comm != MPI_COMM_NULL){
+   if(communicator != MPI_COMM_NULL){
 
-      MPI_Reduce(&send_total_time, &worker_send_time_min, 1, MPI_DOUBLE, MPI_MIN, 0, new_comm);
-      MPI_Reduce(&send_total_time, &worker_send_time_max, 1, MPI_DOUBLE, MPI_MAX, 0, new_comm);
-      MPI_Reduce(&send_total_time, &worker_send_time_sum, 1, MPI_DOUBLE, MPI_SUM, 0, new_comm);
+      MPI_Reduce(&send_total_time, &worker_send_time_min, 1, MPI_DOUBLE, MPI_MIN, 0, communicator);
+      MPI_Reduce(&send_total_time, &worker_send_time_max, 1, MPI_DOUBLE, MPI_MAX, 0, communicator);
+      MPI_Reduce(&send_total_time, &worker_send_time_sum, 1, MPI_DOUBLE, MPI_SUM, 0, communicator);
       worker_send_time_average = worker_send_time_sum / numworkers;
-      MPI_Reduce(&recv_total_time, &worker_receive_time_min, 1, MPI_DOUBLE, MPI_MIN, 0, new_comm);
-      MPI_Reduce(&recv_total_time, &worker_receive_time_max, 1, MPI_DOUBLE, MPI_MAX, 0, new_comm);
-      MPI_Reduce(&recv_total_time, &worker_receive_time_sum, 1, MPI_DOUBLE, MPI_SUM, 0, new_comm);
+      MPI_Reduce(&recv_total_time, &worker_receive_time_min, 1, MPI_DOUBLE, MPI_MIN, 0, communicator);
+      MPI_Reduce(&recv_total_time, &worker_receive_time_max, 1, MPI_DOUBLE, MPI_MAX, 0, communicator);
+      MPI_Reduce(&recv_total_time, &worker_receive_time_sum, 1, MPI_DOUBLE, MPI_SUM, 0, communicator);
       worker_recieve_time_average = worker_send_time_sum / numworkers;
-      MPI_Reduce(&calc_total_time, &worker_calculation_time_min, 1, MPI_DOUBLE, MPI_MIN, 0, new_comm);
-      MPI_Reduce(&calc_total_time, &worker_calculation_time_max, 1, MPI_DOUBLE, MPI_MAX, 0, new_comm);
-      MPI_Reduce(&calc_total_time, &worker_calculation_time_sum, 1, MPI_DOUBLE, MPI_SUM, 0, new_comm);
+      MPI_Reduce(&calc_total_time, &worker_calculation_time_min, 1, MPI_DOUBLE, MPI_MIN, 0, communicator);
+      MPI_Reduce(&calc_total_time, &worker_calculation_time_max, 1, MPI_DOUBLE, MPI_MAX, 0, communicator);
+      MPI_Reduce(&calc_total_time, &worker_calculation_time_sum, 1, MPI_DOUBLE, MPI_SUM, 0, communicator);
       worker_calculation_time_average = worker_calculation_time_sum / numworkers;
    }
       
