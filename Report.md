@@ -218,10 +218,10 @@ Sorting.
 
 			swap array.at(index + 1) with array.at(right)
 			partition = index + 1
-  			//recursively sort left side of partition
-  			Quicksort(array, left, partition - 1)              //for CUDA Quicksort<<1, 1>>(array, left partition - 1)
-  			//recursively sort right side of partition
-  			Quicksort(array, partition + 1, right)
+  		//recursively sort left side of partition
+  		Quicksort(array, left, partition - 1)              //for CUDA Quicksort<<1, 1>>(array, left partition - 1)
+  		//recursively sort right side of partition
+  		Quicksort(array, partition + 1, right)
   ```
 
 ### 2c. Evaluation plan - what and how will you measure and compare
