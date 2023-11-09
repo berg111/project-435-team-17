@@ -51,13 +51,6 @@ int main(int argc, char** argv) {
     std::vector<int> array;
     generate_array(array, array_size);
 
-    if (rank == 0) {
-        std::srand(static_cast<unsigned int>(std::time(nullptr)));
-        for (int i = 0; i < n; i++) {
-            array[i] = std::rand() % 100;
-        }
-    }
-
     MPI_Bcast(array.data(), n, MPI_INT, 0, MPI_COMM_WORLD);
 
     int local_size = n / size;
