@@ -93,6 +93,9 @@ int main(int argc, char** argv){
 
     CALI_MARK_BEGIN(whole_computation);
 
+    cali::ConfigManager mgr;
+    mgr.start();
+
     if(taskid == MASTER){
 
         CALI_MARK_BEGIN(master_initialization);
@@ -267,8 +270,4 @@ int main(int argc, char** argv){
    mgr.flush();
 
    MPI_Finalize();
-
-    MPI_Finalize();
-
-
 }

@@ -5,6 +5,10 @@
 #include <time.h>
 #include <vector>
 
+#include <caliper/cali.h>
+#include <caliper/cali-manager.h>
+#include <adiak.hpp>
+
 int NUM_VALUES;
 
 __global__ void oddEvenSortStep(int* array, int size, int phase){
@@ -58,6 +62,9 @@ int main(int argc, char** argv){
     int threads = atoi(argv[0]);
     int arraySize = atoi(argv[1]);
 
+    cali::ConfigManager mgr;
+    mgr.start();
+
     clock_t start, stop;
 
     std::vector<int> array;
@@ -78,10 +85,27 @@ int main(int argc, char** argv){
 
     stop = clock();
 
+    double elapsed = (double)(stop - start) / CLOCKS_PER_SEC;
+
+
+
+
     cudaMemcpy(array.data(), gpu_array, size, cudaMemcpyDeviceToHost);
 
     cudaFree(gpu_array);
 
+    adiak::init(NULL);
+    adiak::user();
+    adiak::launchdate();
+    adiak::libraries();
+    adiak::cmdline();
+    adiak::clustername();
+    adiak::value("num_threads", threads);
+    adiak::value("num_vals", arraySize);
+    adiak::value("Sort_time", elapsed);
+
+    mgr.stop();
+    mgr.flush();
 
 
 }
