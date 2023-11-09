@@ -193,7 +193,7 @@ Sorting.
     	MPI_Reduce()
 
     	// Calculate times
- end procedure
+ 	end procedure
 ```
 
 ```
@@ -255,7 +255,7 @@ begin procedure bucketSortCUDA()
   	correctnessCheck(A, n)
   			
 
- end procedure
+	end procedure
 ```
 
 
