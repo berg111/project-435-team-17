@@ -16,9 +16,9 @@ Sorting.
 
 ## 2. _due 10/25_ Brief project description (what algorithms will you be comparing and on what architectures)
 
-- Merge Sort (MPI)
+- Merge Sort (MPI + CUDA)
 
-  Merge sort is a comparison-based algorithm that uses a divide-and-conquer approach for sorting arrays.
+  Merge sort is a comparison-based algorithm that uses a divide-and-conquer approach for sorting arrays. To make parallel, we use the sequential algorithm but scatter the array equally across multiple processes.
   
   Psuedocode (source: https://en.wikipedia.org/wiki/Merge_sort):
   ```
@@ -67,14 +67,14 @@ Sorting.
     return result
   ```
 
-- Odd-Even Transposition Sort (openMP)
+- Odd-Even Transposition Sort (openMP + CUDA)
 
-  Odd-Even SOrt is a compare and exchange algorithm, that compares odd and even pairs, and after n phases all of the elements will be sorted, and is availabe in parallelism.
+  Odd-Even Sort is a compare and exchange algorithm, that compares odd and even pairs, and after n phases all of the elements will be sorted, and is availabe in parallelism.
 
   Pseudocode (source: CSCE 435 Slide Deck "07_CSCE_435_algorithms.pdf slide 52"
-
-  procedure ODD-EVEN_PAR (n) 
   ```
+  procedure ODD-EVEN_PAR (n) 
+  
   begin 
      id := process's label 
   	
@@ -95,27 +95,99 @@ Sorting.
   	
   end ODD-EVEN_PAR
   ```
-- Bubble Sort (MPI)
 
-  Bubble Sort is a sorting algorithm that repeatedly compares adjacent elements in an array, moving forward in the array window until it reaches the end of the array.
-  If two elements that are being compared have the second element as larger than the first, then those elements are swapped.
-  In its most basic and non- optimized form, it repeats this n - 1 times where n is the size of the array. This sorting algorithm is also known as sinking sort.
+- Odd Even Sort (MPI)
 
-  Pseudocode (source: https://en.wikipedia.org/wiki/Bubble_sort):
+  Pseudocode source: https://www.dcc.fc.up.pt/~ricroc/aulas/1516/cp/apontamentos/slides_sorting.pdf
+
   ```
-  procedure bubbleSort(A : list of sortable items)
+  rank = process_id();
+  A = initial_value();
+  for (i = 0; i < N; i++) {
+    if (i % 2 == 0) { // even phase
+      if (rank % 2 == 0) { // even process
+        recv(B, rank + 1); send(A, rank + 1);
+        A = min(A,B);
+    } else { // odd process
+      send(A, rank - 1); recv(B, rank - 1);
+      A = max(A,B);
+  }
+  } else if (rank > 0 && rank < N - 1) { // odd phase
+      if (rank % 2 == 0) { // even process
+        recv(B, rank - 1); send(A, rank - 1);
+        A = max(A,B);
+    } else { // odd process
+        send(A, rank + 1); recv(B, rank + 1);
+        A = min(A,B);
+    }
+}
+
+  ```
+  
+- Bucket Sort (MPI)
+
+  Bucket Sort is a sorting algorithm that splits each element into different "buckets" based on the number of elements being sorted.
+  Each bucket is then sorted using insertion sort.
+  After each bucket is sorted, the buckets are stitched back together into one sorted array.
+  This algorithm has a time complexity of O(n^2).
+
+  Pseudocode (source: ~):
+  ```
+  procedure bucketSortMPI()
+    A : list of sortable items
     n := length(A)
-    repeat
-        swapped := false
-        for i := 1 to n-1 inclusive do
-            { if this pair is out of order }
-            if A[i-1] > A[i] then
-                { swap them and remember something changed }
-                swap(A[i-1], A[i])
-                swapped := true
-            end if
+    buckets : vector of n float arrays
+    
+    MPI_Init()
+    MPI_Comm_rank(taskid)
+    MPI_Comm_size(numTasks)
+
+    if master then
+        // initialize data
+        initializeData(A);
+    
+        // put elements into buckets
+        for i := 0 to n-1 inclusive do
+            buckets[n*A[i]] = A[i]
         end for
-    until not swapped
+    
+        // send buckets to worker tasks
+        for i := 0 to numTasks-1 inclusive do
+            MPI_Send(buckets[i])
+        end for
+  
+        // receive sorted buckets from tasks
+        for i := 0 to numTasks-1 inclusive do
+          MPI_Recv(buckets[i])
+        end for
+    
+        // stitch buckets into one sorted array
+        index := 0
+        for i := 0 to n-1 inclusive do
+            for j := 0 to buckets[i].size()-1 inclusive do
+                A[i] = buckets[i][j]
+                index++
+            end for
+        end for
+  
+        // check for correctness
+        correctnessCheck()
+  
+    if worker then
+        // receive bucket from master task
+        MPI_Recv(bucket)
+        
+        // run insertion sort on bucket
+        insertionSort(bucket)
+  
+        // send bucket back to master task
+        MPI_Send(bucket)
+
+    // Calculate min, max, and average times
+    MPI_Reduce()
+    ...
+
+    // Calculate times
   end procedure
   ```
 
@@ -161,3 +233,11 @@ Sorting.
   swap A[i] with A[hi]
   return i // the pivot index
   ```
+
+### 2c. Evaluation plan - what and how will you measure and compare
+- Varying array sizes of integers (100, 1000, 10000, 100000, 500000). (Floats for bucket sort impl).
+- Strong scaling (same problem size, increase number of processors/nodes)
+- Weak scaling (increase problem size, increase number of processors)
+- Number of threads in a block on the GPU
+
+Comparisons will be done between different implementations and performance for varying parameters will be examined for each.
