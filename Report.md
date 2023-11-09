@@ -139,62 +139,124 @@ Sorting.
 
   MPI Pseudocode (source: ~):
   ```
-  procedure bucketSortMPI()
-    A : list of sortable items
-    n := length(A)
-    buckets : vector of n float arrays
+  begin procedure bucketSortMPI()
+  	A : list of sortable items
+  	n := length(A)
+  	buckets : vector of n float arrays
     
-    MPI_Init()
-    MPI_Comm_rank(taskid)
-    MPI_Comm_size(numTasks)
+  	MPI_Init()
+  	MPI_Comm_rank(taskid)
+    	MPI_Comm_size(numTasks)
 
-    if master then
-        // initialize data
-        initializeData(A);
+    	if master then
+	        // initialize data
+	        initializeData(A);
+	    
+	        // put elements into buckets
+	        for i := 0 to n-1 inclusive do
+	            	buckets[n*A[i]] = A[i]
+	        end for
+	    
+	        // send buckets to worker tasks
+	        for i := 0 to numTasks-1 inclusive do
+	            	MPI_Send(buckets[i])
+	        end for
+	  
+	        // receive sorted buckets from tasks
+	        for i := 0 to numTasks-1 inclusive do
+	 		MPI_Recv(buckets[i])
+	        end for
     
-        // put elements into buckets
-        for i := 0 to n-1 inclusive do
-            buckets[n*A[i]] = A[i]
-        end for
-    
-        // send buckets to worker tasks
-        for i := 0 to numTasks-1 inclusive do
-            MPI_Send(buckets[i])
-        end for
+	        // stitch buckets into one sorted array
+	        index := 0
+	        for i := 0 to n-1 inclusive do
+	 		for j := 0 to buckets[i].size()-1 inclusive do
+	                	A[i] = buckets[i][j]
+	                	index++
+	            	end for
+	        end for
+	  
+	        // check for correctness
+	        correctnessCheck()
   
-        // receive sorted buckets from tasks
-        for i := 0 to numTasks-1 inclusive do
-          MPI_Recv(buckets[i])
-        end for
-    
-        // stitch buckets into one sorted array
-        index := 0
-        for i := 0 to n-1 inclusive do
-            for j := 0 to buckets[i].size()-1 inclusive do
-                A[i] = buckets[i][j]
-                index++
-            end for
-        end for
-  
-        // check for correctness
-        correctnessCheck()
-  
-    if worker then
-        // receive bucket from master task
-        MPI_Recv(bucket)
-        
-        // run insertion sort on bucket
-        insertionSort(bucket)
-  
-        // send bucket back to master task
-        MPI_Send(bucket)
+  	if worker then
+	        // receive bucket from master task
+	        MPI_Recv(bucket)
+	        
+	        // run insertion sort on bucket
+	        insertionSort(bucket)
+	  
+	        // send bucket back to master task
+	        MPI_Send(bucket)
 
-    // Calculate min, max, and average times
-    MPI_Reduce()
+    	// Calculate min, max, and average times
+    	MPI_Reduce()
 
-    // Calculate times
-    end procedure
-    ```
+    	// Calculate times
+end procedure
+```
+
+```
+begin procedure bucketSortCUDA()
+	BLOCKS : number of blocks used for program
+ 	THREADS : number of threads used for program
+ 	
+	// Initialize Array
+ 	A : list of sortable items
+  	n := length(A)
+
+	// Initialize Data
+ 	initializeData(A)
+
+  	// Initialize Buckets
+   	Buckets : 2D list of sortable items
+
+     	// n = m
+      	m := length(Buckets)
+    	n := length(Buckets[])
+
+      	// Fill buckets with null values
+       	for i := 0 to n-1 inclusive do
+		for j := 0 to m-1 inclusive do
+  			buckets[i][j] = -1.0;
+     		end for
+       	end for
+
+ 	// Fill buckets with array values
+  	for i := 0 to n-1 inclusive do
+		for j := 0 to m-1 inclusive do
+  			if buckets[n * A[i]] == -1 then
+     				buckets[n * A[i]] = A[i]
+	 			break;
+     			end if
+     		end for
+       	end for
+
+ 	// Sort each bucket with insertion sort
+  	insertionSort<<<BLOCKS, THREADS>>>(buckets, n)
+
+   	// Sync with threads
+    	cudaDeviceSynchronize()
+
+      	// Stitch buckets back together
+       	index : count starting at 0
+       	for i := 0 to n-1 inclusive do
+		for j := 0 to m-1 inclusive do
+  			if buckets[i][j] == -1 then
+	 			break;
+     			end if
+
+   			A[index] = buckets[i][j]
+      			index++
+     		end for
+       	end for
+
+ 	// Check for correctness
+  	correctnessCheck(A, n)
+  			
+
+end procedure
+```
 
 
 Quick Sort (MPI & CUDA)
