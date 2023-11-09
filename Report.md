@@ -185,7 +185,7 @@ Sorting.
 
     // Calculate min, max, and average times
     MPI_Reduce()
-    ...
+
 
     // Calculate times
   end procedure
