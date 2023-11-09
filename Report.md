@@ -194,7 +194,7 @@ Sorting.
 
     // Calculate times
     end procedure
-```
+    ```
 
 
 Quick Sort (MPI & CUDA)
