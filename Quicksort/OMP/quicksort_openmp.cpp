@@ -38,10 +38,10 @@ void quicksort(std::vector<int> &array, int l, int r) {
         {
             quicksort(array, part + 1, r);
         }
-        for (int i = 0; i < 5; i++) {
-            std::cout << array[i] << " ";
-        }
-        std::cout << std::endl;
+        // for (int i = 0; i < 5; i++) {
+        //     std::cout << array[i] << " ";
+        // }
+        // std::cout << std::endl;
     }
 }
 
