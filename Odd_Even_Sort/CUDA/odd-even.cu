@@ -80,7 +80,7 @@ int main(int argc, char** argv){
     start = clock();
 
     for(int i = 0; i < array.size()){
-        oddEvenSortKernel<<1, threads>>(gpu_array, arraySize, i);
+        oddEvenSortStep<<1, threads>>(gpu_array, arraySize, i);
     }
 
     stop = clock();
