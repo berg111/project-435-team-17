@@ -196,7 +196,6 @@ Sorting.
  	end procedure
 ```
 
-```
 begin procedure bucketSortCUDA()
 	BLOCKS : number of blocks used for program
  	THREADS : number of threads used for program
