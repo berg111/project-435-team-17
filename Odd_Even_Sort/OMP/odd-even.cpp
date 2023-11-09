@@ -7,8 +7,8 @@
 #include <stdlib.h>
 #include <vector>
 #include <chrono>
-// #include <caliper/cali.h>
-// #include <adiak.hpp>
+#include <caliper/cali.h>
+#include <adiak.hpp>
 using namespace std::chrono;
 void oddEvenSort(std::vector<int> &array, int threads){
     // CALI_CXX_MARK_FUNCTION;
@@ -63,7 +63,7 @@ bool isSorted(std::vector<int>& array){
 
 int main(int argc, char** argv) {
 
-    // CALI_CXX_MARK_FUNCTION;
+    CALI_CXX_MARK_FUNCTION;
     //initialize threads and array size
     int threads = atoi(argv[1]);
     int arraySize = atoi(argv[2]);
@@ -95,7 +95,7 @@ int main(int argc, char** argv) {
     std::cout << "Time taken by function: "
          << duration.count() / 1000.0 << " seconds" << std::endl;
 
-    // aidak::value("threads", threads);
-    // aidak::value("time_taken", duration/1000.0);
+    aidak::value("threads", threads);
+    aidak::value("time_taken", duration/1000.0);
 
 }
