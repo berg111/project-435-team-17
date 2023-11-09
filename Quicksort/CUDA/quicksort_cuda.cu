@@ -22,7 +22,6 @@ __global__ void quicksort(std::vector<int>& array, int l, int r){
         int pivot = array[r];
         int index = l - 1;
 
-        #pragma omp for
         for (int i = l; i < r; i++) {
             if (array[i] <= pivot) {
                 index++;
