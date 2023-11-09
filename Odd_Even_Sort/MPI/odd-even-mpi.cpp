@@ -151,16 +151,15 @@ int main(int argc, char** argv){
 
     CALI_MARK_END(whole_computation);
 
-       adiak::init(NULL);
+    adiak::init(NULL);
    adiak::user();
    adiak::launchdate();
    adiak::libraries();
    adiak::cmdline();
    adiak::clustername();
    adiak::value("num_procs", numtasks);
-   adiak::value("matrix_size", sizeOfMatrix);
-   adiak::value("program_name", "master_worker_matrix_multiplication");
-   adiak::value("matrix_datatype_size", sizeof(double));
+   adiak::value("array_size", size);
+
 
    double worker_receive_time_max,
       worker_receive_time_min,
