@@ -115,18 +115,18 @@ Sorting.
         recv(B, rank + 1); send(A, rank + 1);
         A = min(A,B);
     } else { // odd process
-      send(A, rank - 1); recv(B, rank - 1);
-      A = max(A,B);
-  }
+  	send(A, rank - 1); recv(B, rank - 1);
+      	A = max(A,B);
+    }
   } else if (rank > 0 && rank < N - 1) { // odd phase
       if (rank % 2 == 0) { // even process
-        recv(B, rank - 1); send(A, rank - 1);
-        A = max(A,B);
-    } else { // odd process
-        send(A, rank + 1); recv(B, rank + 1);
-        A = min(A,B);
-    }
-}
+	recv(B, rank - 1); send(A, rank - 1);
+	A = max(A,B);
+      } else { // odd process
+	send(A, rank + 1); recv(B, rank + 1);
+	A = min(A,B);
+      }
+  }
 
   ```
   
