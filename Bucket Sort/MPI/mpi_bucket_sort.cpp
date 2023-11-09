@@ -102,12 +102,21 @@ int main (int argc, char *argv[])
         master_send_receive_time = 0; /* Buffer for master send and receive time */
 
     double correctness_check_time = 0;
+    double comm_time, comm_small_time, comm_large_time = 0;
+    double comp_time, comp_small_time, comp_large_time = 0;
 
     bool sortedTest = false;
         
     /* Define Caliper region names */
     const char* main = "main";
     const char* data_init = "data_init";
+    const char* comm = "comm";
+    const char* comm_small = "comm_small";
+    const char* comm_large = "comm_large";
+    const char* comp = "comp";
+    const char* comp_small = "comp_small";
+    const char* comp_large = "comp_large";
+
     const char* master_send_receive = "master_send_receive";
     const char* worker_receive = "worker_receive";
     const char* worker_calculation = "worker_calculation";
@@ -170,6 +179,12 @@ int main (int argc, char *argv[])
         CALI_MARK_BEGIN(master_send_receive);
         master_send_receive_time = MPI_Wtime();
 
+        // Comm and Comm_large CALI regions start here
+        CALI_MARK_BEGIN(comm);
+        comm_time = MPI_Wtime() - comm_time;
+        CALI_MARK_BEGIN(comm_large);
+        comm_large_time = MPI_Wtime() - comm_large_time;
+
         /* Send matrix data to the worker tasks */
         mtype = FROM_MASTER;
         for (dest=1; dest<=numworkers; dest++) {
@@ -185,9 +200,21 @@ int main (int argc, char *argv[])
             printf("Received results from task %d\n",source);
         }
         
+        // Comm and Comm_large CALI regions end here
+        CALI_MARK_END(comm_large);
+        comm_large_time = MPI_Wtime() - comm_large_time;
+        CALI_MARK_END(comm);
+        comm_time = MPI_Wtime() - comm_time;
+
         //SEND-RECEIVE PART FOR THE MASTER PROCESS ENDS HERE
         CALI_MARK_END(master_send_receive);
         master_send_receive_time = MPI_Wtime() - master_send_receive_time;
+
+        // Comp and Comp_large CALI regions start here
+        CALI_MARK_BEGIN(comp);
+        comp_time = MPI_Wtime() - comp_time;
+        CALI_MARK_BEGIN(comp_large);
+        comp_large_time = MPI_Wtime() - comp_large_time;
 
         // Stitches each bucket back together
         for (i = 0; i < SIZE; i++) {
@@ -196,6 +223,12 @@ int main (int argc, char *argv[])
                 index++;
             }
         }
+
+
+        CALI_MARK_END(comp_large);
+        comp_large_time = MPI_Wtime() - comp_large_time;
+        CALI_MARK_END(comp);
+        comp_time = MPI_Wtime() - comp_time;
 
         CALI_MARK_BEGIN(correctness_check);
         correctness_check_time = MPI_Wtime();
@@ -210,6 +243,13 @@ int main (int argc, char *argv[])
         } else {
             printf("Array was sorted incorrectly.");
         }
+
+        printf("Array after being sorted:\n");
+        for (int i = 0; i < SIZE; i++) {
+            printf("array[%d] = %f", i, array[i]);
+        }
+
+
     }
 
 
@@ -223,9 +263,20 @@ int main (int argc, char *argv[])
         CALI_MARK_BEGIN(worker_receive);
         worker_receive_time = MPI_Wtime();
 
+        CALI_MARK_BEGIN(comm);
+        comm_time = MPI_Wtime() - comm_time;
+        CALI_MARK_BEGIN(comm_small);
+        comm_small_time = MPI_Wtime() - comm_small_time;
+
+        // Worker receives work from the master process
         mtype = FROM_MASTER;
         MPI_Recv(&(bucket[0]), 1, MPI_INT, MASTER, mtype, MPI_COMM_WORLD, &status);
         
+        CALI_MARK_END(comm_small);
+        comm_small_time = MPI_Wtime() - comm_small_time;
+        CALI_MARK_END(comm);
+        comm_time = MPI_Wtime() - comm_time;
+
         //RECEIVING PART FOR WORKER PROCESS ENDS HERE
         CALI_MARK_END(worker_receive);
         worker_receive_time = MPI_Wtime() - worker_receive_time;
@@ -244,9 +295,19 @@ int main (int argc, char *argv[])
         CALI_MARK_BEGIN(worker_send);
         worker_send_time = MPI_Wtime();
 
+        CALI_MARK_BEGIN(comm);
+        comm_time = MPI_Wtime() - comm_time;
+        CALI_MARK_BEGIN(comm_small);
+        comm_small_time = MPI_Wtime() - comm_small_time;
 
+        // Worker sends sorted data back to the master process
         mtype = FROM_WORKER;
         MPI_Send(&(bucket[0]), 1, MPI_INT, MASTER, mtype, MPI_COMM_WORLD)
+
+        CALI_MARK_END(comm_small);
+        comm_small_time = MPI_Wtime() - comm_small_time;
+        CALI_MARK_END(comm);
+        comm_time = MPI_Wtime() - comm_time;
 
         //SENDING PART FOR WORKER PROCESS ENDS HERE
         CALI_MARK_END(worker_send);
@@ -263,10 +324,21 @@ int main (int argc, char *argv[])
     adiak::libraries();
     adiak::cmdline();
     adiak::clustername();
+    adiak::value("Algorithm", "BucketSort");
+    adiak::value("ProgrammingModel", "MPI"); 
+    adiak::value("Datatype", "float"); 
+    adiak::value("SizeOfDatatype", sizeof(float)); 
+    adiak::value("InputSize", SIZE); 
+    adiak::value("InputType", "Random"); 
     adiak::value("num_procs", numtasks);
     adiak::value("num_decimals", numDecimals);
     adiak::value("program_name", "master_worker_bucket_sort");
-    adiak::value("array_datatype_size", sizeof(float));
+    // adiak::value("array_datatype_size", sizeof(float));
+    adiak::value("group_num", 17);
+    adiak::value("implementation_source", "Handwritten + Lab")
+
+
+    
 
     double worker_receive_time_max,
         worker_receive_time_min,
@@ -280,6 +352,32 @@ int main (int argc, char *argv[])
         worker_send_time_min,
         worker_send_time_sum,
         worker_send_time_average = 0; // Worker statistic values.
+
+    double comm_time_max,
+        comm_time_min,
+        comm_time_sum,
+        comm_time_average,
+        comm_small_time_max,
+        comm_small_time_min,
+        comm_small_time_sum,
+        comm_small_time_average,
+        comm_large_time_max,
+        comm_large_time_min,
+        comm_large_time_sum,
+        comm_large_time_average,
+        comp_time_max,
+        comp_time_min,
+        comp_time_sum,
+        comp_time_average,
+        comp_small_time_max,
+        comp_small_time_min,
+        comp_small_time_sum,
+        comp_small_time_average,
+        comp_large_time_max,
+        comp_large_time_min,
+        comp_large_time_sum,
+        comp_large_time_average = 0;
+        
 
     /* USE MPI_Reduce here to calculate the minimum, maximum and the average times for the worker processes.
     MPI_Reduce (&sendbuf,&recvbuf,count,datatype,op,root,comm). https://hpc-tutorials.llnl.gov/mpi/collective_communication_routines/ */
@@ -301,6 +399,24 @@ int main (int argc, char *argv[])
     MPI_Reduce(&worker_send_time, &worker_send_time_min, 1, MPI_DOUBLE, MPI_MIN, 0, newcomm);
     MPI_Reduce(&worker_send_time, &worker_send_time_max, 1, MPI_DOUBLE, MPI_MAX, 0, newcomm);
     MPI_Reduce(&worker_send_time, &worker_send_time_sum, 1, MPI_DOUBLE, MPI_SUM, 0, newcomm);
+
+    MPI_Reduce(&comm_time, &comm_time_min, 1, MPI_DOUBLE, MPI_MIN, 0, newcomm);
+    MPI_Reduce(&comm_time, &comm_time_max, 1, MPI_DOUBLE, MPI_MAX, 0, newcomm);
+    MPI_Reduce(&comm_time, &comm_time_sum, 1, MPI_DOUBLE, MPI_SUM, 0, newcomm);
+
+    MPI_Reduce(&comm_small_time, &comm_small_time_min, 1, MPI_DOUBLE, MPI_MIN, 0, newcomm);
+    MPI_Reduce(&comm_small_time, &comm_small_time_max, 1, MPI_DOUBLE, MPI_MAX, 0, newcomm);
+    MPI_Reduce(&comm_small_time, &comm_small_time_sum, 1, MPI_DOUBLE, MPI_SUM, 0, newcomm);
+
+    MPI_Reduce(&comp_time, &comp_time_min, 1, MPI_DOUBLE, MPI_MIN, 0, newcomm);
+    MPI_Reduce(&comp_time, &comp_time_max, 1, MPI_DOUBLE, MPI_MAX, 0, newcomm);
+    MPI_Reduce(&comp_time, &comp_time_sum, 1, MPI_DOUBLE, MPI_SUM, 0, newcomm);
+
+    MPI_Reduce(&comp_small_time, &comp_small_time_min, 1, MPI_DOUBLE, MPI_MIN, 0, newcomm);
+    MPI_Reduce(&comp_small_time, &comp_small_time_max, 1, MPI_DOUBLE, MPI_MAX, 0, newcomm);
+    MPI_Reduce(&comp_small_time, &comp_small_time_sum, 1, MPI_DOUBLE, MPI_SUM, 0, newcomm);
+
+
     
     
     if (taskid == 0)
@@ -331,6 +447,18 @@ int main (int argc, char *argv[])
         MPI_Recv(&worker_send_time_max, 1, MPI_DOUBLE, 1, mtype, MPI_COMM_WORLD, &status);
         MPI_Recv(&worker_send_time_min, 1, MPI_DOUBLE, 1, mtype, MPI_COMM_WORLD, &status);
         MPI_Recv(&worker_send_time_average, 1, MPI_DOUBLE, 1, mtype, MPI_COMM_WORLD, &status);
+        MPI_Recv(&comm_time_max, 1, MPI_DOUBLE, 1, mtype, MPI_COMM_WORLD, &status);
+        MPI_Recv(&comm_time_min, 1, MPI_DOUBLE, 1, mtype, MPI_COMM_WORLD, &status);
+        MPI_Recv(&comm_time_average, 1, MPI_DOUBLE, 1, mtype, MPI_COMM_WORLD, &status);
+        MPI_Recv(&comm_small_time_max, 1, MPI_DOUBLE, 1, mtype, MPI_COMM_WORLD, &status);
+        MPI_Recv(&comm_small_time_min, 1, MPI_DOUBLE, 1, mtype, MPI_COMM_WORLD, &status);
+        MPI_Recv(&comm_small_time_average, 1, MPI_DOUBLE, 1, mtype, MPI_COMM_WORLD, &status);
+        MPI_Recv(&comp_time_max, 1, MPI_DOUBLE, 1, mtype, MPI_COMM_WORLD, &status);
+        MPI_Recv(&comp_time_min, 1, MPI_DOUBLE, 1, mtype, MPI_COMM_WORLD, &status);
+        MPI_Recv(&comp_time_average, 1, MPI_DOUBLE, 1, mtype, MPI_COMM_WORLD, &status);
+        MPI_Recv(&comp_small_time_max, 1, MPI_DOUBLE, 1, mtype, MPI_COMM_WORLD, &status);
+        MPI_Recv(&comp_small_time_min, 1, MPI_DOUBLE, 1, mtype, MPI_COMM_WORLD, &status);
+        MPI_Recv(&comp_small_time_average, 1, MPI_DOUBLE, 1, mtype, MPI_COMM_WORLD, &status);
 
         adiak::value("MPI_Reduce-worker_receive_time_max", worker_receive_time_max);
         adiak::value("MPI_Reduce-worker_receive_time_min", worker_receive_time_min);
@@ -341,6 +469,19 @@ int main (int argc, char *argv[])
         adiak::value("MPI_Reduce-worker_send_time_max", worker_send_time_max);
         adiak::value("MPI_Reduce-worker_send_time_min", worker_send_time_min);
         adiak::value("MPI_Reduce-worker_send_time_average", worker_send_time_average);
+        adiak::value("MPI_Reduce-comm_time_max", comm_time_max);
+        adiak::value("MPI_Reduce-comm_time_min", comm_time_min);
+        adiak::value("MPI_Reduce-comm_time_average", comm_time_average);
+        adiak::value("MPI_Reduce-comm_small_time_max", comm_small_time_max);
+        adiak::value("MPI_Reduce-comm_small_time_min", comm_small_time_min);
+        adiak::value("MPI_Reduce-comm_small_time_average", comm_small_time_average);
+        adiak::value("MPI_Reduce-comp_time_max", comp_time_max);
+        adiak::value("MPI_Reduce-comp_time_min", comp_time_min);
+        adiak::value("MPI_Reduce-comp_time_average", comp_time_average);
+        adiak::value("MPI_Reduce-comp_small_time_max", comp_small_time_max);
+        adiak::value("MPI_Reduce-comp_small_time_min", comp_small_time_min);
+        adiak::value("MPI_Reduce-comp_small_time_average", comp_small_time_average);
+        
         adiak::value("sorted", sortedTest);
     }
     else if (taskid == 1)
@@ -351,6 +492,11 @@ int main (int argc, char *argv[])
         worker_receive_time_average = worker_receive_time_sum / (double)numworkers;
         worker_calculation_time_average = worker_calculation_time_sum / (double)numworkers;
         worker_send_time_average = worker_send_time_sum / (double)numworkers;
+
+        comm_time_average = comm_time_sum / (double)numworkers;
+        comm_small_time_average = comm_small_time_sum / (double)numworkers;
+        comp_time_average = comp_time_sum / (double)numworkers;
+        comp_small_time_average = comp_small_time_sum / (double)numworkers;
 
         printf("******************************************************\n");
         printf("Worker Times:\n");
@@ -363,6 +509,18 @@ int main (int argc, char *argv[])
         printf("Worker Send Time Max: %f \n", worker_send_time_max);
         printf("Worker Send Time Min: %f \n", worker_send_time_min);
         printf("Worker Send Time Average: %f \n", worker_send_time_average);
+        printf("Comm Time Max: %f \n", comm_time_max);
+        printf("Comm Time Min: %f \n", comm_time_min);
+        printf("Comm Time Average: %f \n", comm_time_average);
+        printf("Comm Small Time Max: %f \n", comm_small_time_max);
+        printf("Comm Small Time Min: %f \n", comm_small_time_min);
+        printf("Comm Small Time Average: %f \n", comm_small_time_average);
+        printf("Comp Time Max: %f \n", comp_time_max);
+        printf("Comp Time Min: %f \n", comp_time_min);
+        printf("Comp Time Average: %f \n", comp_time_average);
+        printf("Comp Small Time Max: %f \n", comp_small_time_max);
+        printf("Comp Small Time Min: %f \n", comp_small_time_min);
+        printf("Comp Small Time Average: %f \n", comp_small_time_average);        
         printf("\n******************************************************\n");
 
         mtype = FROM_WORKER;
@@ -375,6 +533,19 @@ int main (int argc, char *argv[])
         MPI_Send(&worker_send_time_max, 1, MPI_DOUBLE, MASTER, mtype, MPI_COMM_WORLD);
         MPI_Send(&worker_send_time_min, 1, MPI_DOUBLE, MASTER, mtype, MPI_COMM_WORLD);
         MPI_Send(&worker_send_time_average, 1, MPI_DOUBLE, MASTER, mtype, MPI_COMM_WORLD);
+        MPI_Send(&comm_time_max, 1, MPI_DOUBLE, MASTER, mtype, MPI_COMM_WORLD);
+        MPI_Send(&comm_time_min, 1, MPI_DOUBLE, MASTER, mtype, MPI_COMM_WORLD);
+        MPI_Send(&comm_time_average, 1, MPI_DOUBLE, MASTER, mtype, MPI_COMM_WORLD);
+        MPI_Send(&comm_small_time_max, 1, MPI_DOUBLE, MASTER, mtype, MPI_COMM_WORLD);
+        MPI_Send(&comm_small_time_min, 1, MPI_DOUBLE, MASTER, mtype, MPI_COMM_WORLD);
+        MPI_Send(&comm_small_time_average, 1, MPI_DOUBLE, MASTER, mtype, MPI_COMM_WORLD);
+        MPI_Send(&comp_time_max, 1, MPI_DOUBLE, MASTER, mtype, MPI_COMM_WORLD);
+        MPI_Send(&comp_time_min, 1, MPI_DOUBLE, MASTER, mtype, MPI_COMM_WORLD);
+        MPI_Send(&comp_time_average, 1, MPI_DOUBLE, MASTER, mtype, MPI_COMM_WORLD);
+        MPI_Send(&comp_small_time_max, 1, MPI_DOUBLE, MASTER, mtype, MPI_COMM_WORLD);
+        MPI_Send(&comp_small_time_min, 1, MPI_DOUBLE, MASTER, mtype, MPI_COMM_WORLD);
+        MPI_Send(&comp_small_time_average, 1, MPI_DOUBLE, MASTER, mtype, MPI_COMM_WORLD);
+        
     }
 
     // Flush Caliper output before finalizing MPI
