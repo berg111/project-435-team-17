@@ -137,7 +137,7 @@ Sorting.
   After each bucket is sorted, the buckets are stitched back together into one sorted array.
   This algorithm has a time complexity of O(n^2).
 
-  Pseudocode (source: ~):
+  MPI Pseudocode (source: ~):
   ```
   procedure bucketSortMPI()
     A : list of sortable items
@@ -192,9 +192,9 @@ Sorting.
     // Calculate min, max, and average times
     MPI_Reduce()
 
-    ```
     // Calculate times
-  end procedure
+end procedure
+```
 
 
 
