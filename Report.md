@@ -191,6 +191,7 @@ Sorting.
   end procedure
   ```
 
+
 - Quick Sort (MPI)
 
   Quick Sort is a sorting algorithm that that operates in a "divide and conquer" method.
