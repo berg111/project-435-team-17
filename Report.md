@@ -65,6 +65,12 @@ Sorting.
         append first(right) to result
         right := rest(right)
     return result
+
+  MPI_Scatter(arr, range, MPI_INT, arr_copy, range, MPI_INT, 0, MPI_COMM_WORLD);
+
+	merge_sort(arr_copy, 0, range - 1);
+
+	MPI_Gather(arr_copy, range, MPI_INT, arr, range, MPI_INT, 0, MPI_COMM_WORLD);
   ```
 
 - Odd-Even Transposition Sort (openMP + CUDA)
@@ -109,129 +115,173 @@ Sorting.
         recv(B, rank + 1); send(A, rank + 1);
         A = min(A,B);
     } else { // odd process
-      send(A, rank - 1); recv(B, rank - 1);
-      A = max(A,B);
-  }
+  	send(A, rank - 1); recv(B, rank - 1);
+      	A = max(A,B);
+    }
   } else if (rank > 0 && rank < N - 1) { // odd phase
       if (rank % 2 == 0) { // even process
-        recv(B, rank - 1); send(A, rank - 1);
-        A = max(A,B);
-    } else { // odd process
-        send(A, rank + 1); recv(B, rank + 1);
-        A = min(A,B);
-    }
-}
+	recv(B, rank - 1); send(A, rank - 1);
+	A = max(A,B);
+      } else { // odd process
+	send(A, rank + 1); recv(B, rank + 1);
+	A = min(A,B);
+      }
+  }
 
   ```
   
-- Bucket Sort (MPI)
+- Bucket Sort (MPI + CUDA)
 
   Bucket Sort is a sorting algorithm that splits each element into different "buckets" based on the number of elements being sorted.
   Each bucket is then sorted using insertion sort.
   After each bucket is sorted, the buckets are stitched back together into one sorted array.
   This algorithm has a time complexity of O(n^2).
 
-  Pseudocode (source: ~):
+  MPI Pseudocode (source: ~):
   ```
-  procedure bucketSortMPI()
-    A : list of sortable items
-    n := length(A)
-    buckets : vector of n float arrays
+  begin procedure bucketSortMPI()
+  	A : list of sortable items
+  	n := length(A)
+  	buckets : vector of n float arrays
     
-    MPI_Init()
-    MPI_Comm_rank(taskid)
-    MPI_Comm_size(numTasks)
+  	MPI_Init()
+  	MPI_Comm_rank(taskid)
+    	MPI_Comm_size(numTasks)
 
-    if master then
-        // initialize data
-        initializeData(A);
+    	if master then
+	        // initialize data
+	        initializeData(A);
+	    
+	        // put elements into buckets
+	        for i := 0 to n-1 inclusive do
+	            	buckets[n*A[i]] = A[i]
+	        end for
+	    
+	        // send buckets to worker tasks
+	        for i := 0 to numTasks-1 inclusive do
+	            	MPI_Send(buckets[i])
+	        end for
+	  
+	        // receive sorted buckets from tasks
+	        for i := 0 to numTasks-1 inclusive do
+	 		MPI_Recv(buckets[i])
+	        end for
     
-        // put elements into buckets
-        for i := 0 to n-1 inclusive do
-            buckets[n*A[i]] = A[i]
-        end for
-    
-        // send buckets to worker tasks
-        for i := 0 to numTasks-1 inclusive do
-            MPI_Send(buckets[i])
-        end for
+	        // stitch buckets into one sorted array
+	        index := 0
+	        for i := 0 to n-1 inclusive do
+	 		for j := 0 to buckets[i].size()-1 inclusive do
+	                	A[i] = buckets[i][j]
+	                	index++
+	            	end for
+	        end for
+	  
+	        // check for correctness
+	        correctnessCheck()
   
-        // receive sorted buckets from tasks
-        for i := 0 to numTasks-1 inclusive do
-          MPI_Recv(buckets[i])
-        end for
-    
-        // stitch buckets into one sorted array
-        index := 0
-        for i := 0 to n-1 inclusive do
-            for j := 0 to buckets[i].size()-1 inclusive do
-                A[i] = buckets[i][j]
-                index++
-            end for
-        end for
-  
-        // check for correctness
-        correctnessCheck()
-  
-    if worker then
-        // receive bucket from master task
-        MPI_Recv(bucket)
-        
-        // run insertion sort on bucket
-        insertionSort(bucket)
-  
-        // send bucket back to master task
-        MPI_Send(bucket)
+  	if worker then
+	        // receive bucket from master task
+	        MPI_Recv(bucket)
+	        
+	        // run insertion sort on bucket
+	        insertionSort(bucket)
+	  
+	        // send bucket back to master task
+	        MPI_Send(bucket)
 
-    // Calculate min, max, and average times
-    MPI_Reduce()
-    ...
+    	// Calculate min, max, and average times
+    	MPI_Reduce()
 
-    // Calculate times
-  end procedure
-  ```
+    	// Calculate times
+    end procedure
+```
 
-- Quick Sort (MPI)
+begin procedure bucketSortCUDA()
+	BLOCKS : number of blocks used for program
+ 	THREADS : number of threads used for program
+ 	
+	// Initialize Array
+ 	A : list of sortable items
+  	n := length(A)
+
+	// Initialize Data
+ 	initializeData(A)
+
+  	// Initialize Buckets
+   	Buckets : 2D list of sortable items
+
+     	// n = m
+      	m := length(Buckets)
+    	n := length(Buckets[])
+
+      	// Fill buckets with null values
+       	for i := 0 to n-1 inclusive do
+		for j := 0 to m-1 inclusive do
+  			buckets[i][j] = -1.0;
+     		end for
+       	end for
+
+ 	// Fill buckets with array values
+  	for i := 0 to n-1 inclusive do
+		for j := 0 to m-1 inclusive do
+  			if buckets[n * A[i]] == -1 then
+     				buckets[n * A[i]] = A[i]
+	 			break;
+     			end if
+     		end for
+       	end for
+
+ 	// Sort each bucket with insertion sort
+  	insertionSort<<<BLOCKS, THREADS>>>(buckets, n)
+
+   	// Sync with threads
+    	cudaDeviceSynchronize()
+
+      	// Stitch buckets back together
+       	index : count starting at 0
+       	for i := 0 to n-1 inclusive do
+		for j := 0 to m-1 inclusive do
+  			if buckets[i][j] == -1 then
+	 			break;
+     			end if
+
+   			A[index] = buckets[i][j]
+      			index++
+     		end for
+       	end for
+
+ 	// Check for correctness
+  	correctnessCheck(A, n)
+  			
+
+end procedure
+```
+
+
+Quick Sort (MPI & CUDA)
 
   Quick Sort is a sorting algorithm that that operates in a "divide and conquer" method.
   It takes in the array of data and chooses a starting element, then sorts the array into two sides, elements that are smaller than the starting element and elements that are larger than the starting element.
   Once done, it will take the first half of thenewly ordered set of data and will choose a new starting element, then repeats the step of sorting them to the left and right of the new starting element absed on if the piece of data is smaller or larger.
   This continues until the algorithm is down to 2 elements and then works its way back up the partitioned sets of data.
 
-  Pseudocode (source: https://en.wikipedia.org/wiki/Quicksort):
+  Pseudocode (source: ~):
   ```
-  // Sorts a (portion of an) array, divides it into partitions, then sorts those
-  algorithm quicksort(A, lo, hi) is 
-  // Ensure indices are in correct order
-  if lo >= hi || lo < 0 then 
-    return
-    
-  // Partition array and get the pivot index
-  p := partition(A, lo, hi) 
-      
-  // Sort the two partitions
-  quicksort(A, lo, p - 1) // Left side of pivot
-  quicksort(A, p + 1, hi) // Right side of pivot
+  Quicksort(array, left, right):
+  	if left < right:
+  		pivot = array.at(right)
+  		index = left - 1
+  		for i = 1, i < right:
+  			if array.at(i) <= pivot:
+  				//swap values to the correct side of the partition
+  				swap array.at(index) with array.at(i)
 
-  // Divides array into two partitions
-  algorithm partition(A, lo, hi) is 
-  pivot := A[hi] // Choose the last element as the pivot
-
-  // Temporary pivot index
-  i := lo - 1
-
-  for j := lo to hi - 1 do 
-    // If the current element is less than or equal to the pivot
-    if A[j] <= pivot then 
-      // Move the temporary pivot index forward
-      i := i + 1
-      // Swap the current element with the element at the temporary pivot index
-      swap A[i] with A[j]
-
-  // Move the pivot element to the correct pivot position (between the smaller and larger elements)
-  i := i + 1
-  swap A[i] with A[hi]
-  return i // the pivot index
+			swap array.at(index + 1) with array.at(right)
+			partition = index + 1
+  		//recursively sort left side of partition
+  		Quicksort(array, left, partition - 1)              //for CUDA Quicksort<<1, 1>>(array, left partition - 1)
+  		//recursively sort right side of partition
+  		Quicksort(array, partition + 1, right)
   ```
 
 ### 2c. Evaluation plan - what and how will you measure and compare

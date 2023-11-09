@@ -1,53 +1,57 @@
-#include "mpi.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <limits.h>
+#include <iostream>
+#include <vector>
+#include <cstdlib>
+#include <ctime>
+#include <mpi.h>
 
 #include <caliper/cali.h>
 #include <caliper/cali-manager.h>
 #include <adiak.hpp>
 
+void quicksort(std::vector<int>& array, int l, int r) {
+    if (l < r) {
+        int pivot = array[l];
+        int i = l, j = r;
 
-#define MASTER 0               /* taskid of first task */
-#define FROM_MASTER 1          /* setting a message type */
-#define FROM_WORKER 2         /* setting a message type */
+        while (i < j) {
+            while (i < j && array[j] >= pivot)
+                j--;
 
-//Helper function to create array of random values
-void generate_array(int *array[], int size){
-    for(int i = 0; i < size; i++){
-		*array[i] = rand() % 10000;
-    }
-}
+            if (i < j)
+                array[i++] = array[j];
 
-int oddEvenSort(int array[], int size){
+            while (i < j && array[i] <= pivot)
+                i++;
 
-    for (int phase = 0; phase < size; phase++) {
-        if (phase % 2 == 0) {
-            for (i = 1; i < size; i += 2) {
-                if (array[i] > array[i + 1]) {
-                    std::swap(array[i], array[i + 1]);
-            }
-        } else {
-            for (i = 1; i < size - 1; i += 2) {
-                if (array[i] > array[i + 1]) {
-                    std::swap(array[i], array[i + 1]);
-                }
-            }
+            if (i < j)
+                array[j--] = array[i];
         }
+
+        array[i] = pivot;
+        quicksort(array, l, i - 1);
+        quicksort(array, i + 1, r);
     }
 }
+
+void generate_array(std::vector<int>& array, int size)
+{
+    array.resize(size);
+
+	for(int i = 0; i < size; i++){
+		array[i] = rand() % 100000;
+    }
 }
 
-int main(int argc, char** argv){
-
+int main(int argc, char** argv) {
+    
     CALI_CXX_MARK_FUNCTION;
 
-    int  numtasks,           /* number of tasks in partition */
+    int  numtasks,          /* number of tasks in partition */
 	taskid,  
-    numworkers,              /* a task identifier */  
-	source,                /* task id of message source */
-	dest,                  /* task id of message destination */
-	mtype,/* message type */
+    numworkers,             /* a task identifier */  
+	source,                 /* task id of message source */
+	dest,                   /* task id of message destination */
+	mtype,                  /* message type */
     rank;
 
     int size = atoi(argv[1]);
@@ -57,11 +61,11 @@ int main(int argc, char** argv){
     MPI_Status status;
 
     double worker_receive_time,       /* Buffer for worker recieve times */
-   worker_calculation_time,      /* Buffer for worker calculation times */
-   worker_send_time = 0;         /* Buffer for worker send times */
+    worker_calculation_time,          /* Buffer for worker calculation times */
+    worker_send_time = 0;             /* Buffer for worker send times */
     double whole_computation_time,    /* Buffer for whole computation time */
-   master_initialization_time,   /* Buffer for master initialization time */
-   master_send_receive_time = 0; /* Buffer for master send and receive time */
+    master_initialization_time,       /* Buffer for master initialization time */
+    master_send_receive_time = 0;     /* Buffer for master send and receive time */
 
     /* Define Caliper region names */
     const char* whole_computation = "whole_computation";
@@ -83,12 +87,11 @@ int main(int argc, char** argv){
 
     numworkers = numtasks-1;
 
-    MPI_Comm new_comm;
-    if(taskid > 0){
-        MPI_Comm_split(MPI_COMM_WORLD, 1, taskid, &new_comm);
-    }
-    else if(taskid == 0){
-        MPI_Comm_split(MPI_COMM_WORLD, MPI_UNDEFINED, taskid, &new_comm);
+    MPI_Comm communicator;
+    if (taskid == 0) {
+        MPI_Comm_split(MPI_COMM_WORLD, MPI_UNDEFINED, taskid, &communicator);
+    } else if (taskid > 0) {
+        MPI_Comm_split(MPI_COMM_WORLD, 1, taskid, &communicator);
     }
 
     CALI_MARK_BEGIN(whole_computation);
@@ -129,20 +132,20 @@ int main(int argc, char** argv){
         CALI_MARK_BEGIN(worker_recieve);
 
         mtype = FROM_MASTER;
-        MPI_Recv(&array, 1, MPI_INT, MASTER, mtype, new_comm, &status);
+        MPI_Recv(&array, 1, MPI_INT, MASTER, mtype, communicator, &status);
 
         CALI_MARK_END(worker_recieve);
 
         CALI_MARK_BEGIN(worker_calculation);
 
-        oddEvenSort(array, size);
+        quicksort(array, 0, size - 1);
 
         CALI_MARK_END(worker_calculation);
 
         CALI_MARK_BEGIN(worker_send);
 
         mtype = FROM_WORKER;
-        MPI_Send(&array, 1, MPI_INT, source, mtype, new_comm, &status);
+        MPI_Send(&array, 1, MPI_INT, source, mtype, communicator, &status);
 
         CALI_MARK_END(worker_send);
 
@@ -152,14 +155,15 @@ int main(int argc, char** argv){
     CALI_MARK_END(whole_computation);
 
     adiak::init(NULL);
-   adiak::user();
-   adiak::launchdate();
-   adiak::libraries();
-   adiak::cmdline();
-   adiak::clustername();
-   adiak::value("num_procs", numtasks);
-   adiak::value("array_size", size);
-
+    adiak::user();
+    adiak::launchdate();
+    adiak::libraries();
+    adiak::cmdline();
+    adiak::clustername();
+    adiak::value("num_procs", numtasks);
+    adiak::value("matrix_size", sizeOfMatrix);
+    adiak::value("program_name", "master_worker_matrix_multiplication");
+    adiak::value("matrix_datatype_size", sizeof(double));
 
    double worker_receive_time_max,
       worker_receive_time_min,
@@ -176,19 +180,19 @@ int main(int argc, char** argv){
 
    /* USE MPI_Reduce here to calculate the minimum, maximum and the average times for the worker processes.
    MPI_Reduce (&sendbuf,&recvbuf,count,datatype,op,root,comm). https://hpc-tutorials.llnl.gov/mpi/collective_communication_routines/ */
-   if(new_comm != MPI_COMM_NULL){
+   if(communicator != MPI_COMM_NULL){
 
-      MPI_Reduce(&send_total_time, &worker_send_time_min, 1, MPI_DOUBLE, MPI_MIN, 0, new_comm);
-      MPI_Reduce(&send_total_time, &worker_send_time_max, 1, MPI_DOUBLE, MPI_MAX, 0, new_comm);
-      MPI_Reduce(&send_total_time, &worker_send_time_sum, 1, MPI_DOUBLE, MPI_SUM, 0, new_comm);
+      MPI_Reduce(&send_total_time, &worker_send_time_min, 1, MPI_DOUBLE, MPI_MIN, 0, communicator);
+      MPI_Reduce(&send_total_time, &worker_send_time_max, 1, MPI_DOUBLE, MPI_MAX, 0, communicator);
+      MPI_Reduce(&send_total_time, &worker_send_time_sum, 1, MPI_DOUBLE, MPI_SUM, 0, communicator);
       worker_send_time_average = worker_send_time_sum / numworkers;
-      MPI_Reduce(&recv_total_time, &worker_receive_time_min, 1, MPI_DOUBLE, MPI_MIN, 0, new_comm);
-      MPI_Reduce(&recv_total_time, &worker_receive_time_max, 1, MPI_DOUBLE, MPI_MAX, 0, new_comm);
-      MPI_Reduce(&recv_total_time, &worker_receive_time_sum, 1, MPI_DOUBLE, MPI_SUM, 0, new_comm);
+      MPI_Reduce(&recv_total_time, &worker_receive_time_min, 1, MPI_DOUBLE, MPI_MIN, 0, communicator);
+      MPI_Reduce(&recv_total_time, &worker_receive_time_max, 1, MPI_DOUBLE, MPI_MAX, 0, communicator);
+      MPI_Reduce(&recv_total_time, &worker_receive_time_sum, 1, MPI_DOUBLE, MPI_SUM, 0, communicator);
       worker_recieve_time_average = worker_send_time_sum / numworkers;
-      MPI_Reduce(&calc_total_time, &worker_calculation_time_min, 1, MPI_DOUBLE, MPI_MIN, 0, new_comm);
-      MPI_Reduce(&calc_total_time, &worker_calculation_time_max, 1, MPI_DOUBLE, MPI_MAX, 0, new_comm);
-      MPI_Reduce(&calc_total_time, &worker_calculation_time_sum, 1, MPI_DOUBLE, MPI_SUM, 0, new_comm);
+      MPI_Reduce(&calc_total_time, &worker_calculation_time_min, 1, MPI_DOUBLE, MPI_MIN, 0, communicator);
+      MPI_Reduce(&calc_total_time, &worker_calculation_time_max, 1, MPI_DOUBLE, MPI_MAX, 0, communicator);
+      MPI_Reduce(&calc_total_time, &worker_calculation_time_sum, 1, MPI_DOUBLE, MPI_SUM, 0, communicator);
       worker_calculation_time_average = worker_calculation_time_sum / numworkers;
    }
       
