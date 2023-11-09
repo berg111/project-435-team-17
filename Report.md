@@ -197,8 +197,7 @@ Sorting.
 ```
 
 
-
-- Quick Sort (MPI & CUDA)
+Quick Sort (MPI & CUDA)
 
   Quick Sort is a sorting algorithm that that operates in a "divide and conquer" method.
   It takes in the array of data and chooses a starting element, then sorts the array into two sides, elements that are smaller than the starting element and elements that are larger than the starting element.
