@@ -19,11 +19,12 @@
 #
 array_size=$1
 processes=$2
+input_type=$3
 
 module load intel/2020b       # load Intel software stack
 module load CMake/3.12.1
 
-CALI_CONFIG="spot(output=${array_size}-${processes}.cali)" \
-mpirun -np $processes ./mergesort_mpi $array_size
+CALI_CONFIG="spot(output=${array_size}-${input_type}-${processes}-mergesort-mpi.cali)" \
+mpirun -np $processes ./mergesort_mpi $array_size $input_type
 
 squeue -j $SLURM_JOBID

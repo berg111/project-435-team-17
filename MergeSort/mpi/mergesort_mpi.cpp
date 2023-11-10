@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <string>
 #include <mpi.h>
 
 void merge(int *, int *, int, int, int);
@@ -8,22 +9,51 @@ void mergeSort(int *, int *, int, int);
 
 int main(int argc, char** argv) {
 	int n = atoi(argv[1]);
+	std::string input_type = argv[2];
     int *arr = new int[n];
 
-    int i;
     srand(time(NULL));
-    printf("Unsorted array: ");
-    for (i = 0; i < n; i++) {
-        arr[i] = rand() % n;
-        printf("%d ", arr[i]);
-    }
-    printf("\n");
+
+	// Create the input
+	if (input_type == "sorted") {
+		for (int i = 0; i < n; i++) {
+			arr[i] = i;
+		}
+	} else if (input_type == "random") {
+		for (int i = 0; i < n; i++) {
+			arr[i] = rand() % n;
+		}
+	} else if (input_type == "reverse") {
+		for (int i = 0; i < n; i++) {
+			arr[i] = n - i;
+		}
+	} else if (input_type == "perturbed") {
+		for (int i = 0; i < n; i++) {
+			arr[i] = i;
+		}
+		int num_perturbations = n / 100;
+		for (int i = 0; i < num_perturbations; i++) {
+			int rand_index1 = rand() % n;
+			int rand_index2 = rand() % n;
+			int temp = arr[rand_index1];
+			arr[rand_index1] = arr[rand_index2];
+			arr[rand_index2] = temp;
+		}
+	}
 
     int rank;
     int size;
     MPI_Init(&argc, &argv);
     MPI_Comm_rank(MPI_COMM_WORLD, &rank);
     MPI_Comm_size(MPI_COMM_WORLD, &size);
+
+	if (rank == 0) {
+		printf("Original array: ");
+		for (int i = 0; i < n; i++) {
+			printf("%d ", arr[i]);
+		}
+		printf("\n");
+	}
 
     int subarray_size = n / size;
 
@@ -49,7 +79,7 @@ int main(int argc, char** argv) {
         mergeSort(s_arr, finalArray, 0, (n - 1));
 
         printf("Sorted array: ");
-        for (i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) {
             printf("%d ", finalArray[i]);
         }
         printf("\n");
