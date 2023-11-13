@@ -17,13 +17,13 @@
 #
 ##First Executable Line 
 #
-matrix_size=$1
+size=$1
 processes=$2
 
 module load intel/2020b       # load Intel software stack
 module load CMake/3.12.1
 
-CALI_CONFIG="spot(output=${matrix_size}-${processes}.cali)" \
-mpirun -np $processes ./mpi_bucket_sort $matrix_size
+CALI_CONFIG="spot(output=${size}-${processes}.cali)" \
+mpirun -np $processes ./mpi_bucket_sort $size
 
 squeue -j $SLURM_JOBID

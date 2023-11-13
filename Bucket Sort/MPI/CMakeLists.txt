@@ -13,5 +13,5 @@ include_directories(SYSTEM ${MPI_INCLUDE_PATH})
 include_directories(${caliper_INCLUDE_DIR})
 include_directories(${adiak_INCLUDE_DIRS})
 
-target_link_libraries(mpi_mm PRIVATE MPI::MPI_CXX)
-target_link_libraries(mpi_mm PRIVATE caliper)
+target_link_libraries(mpi_bucket_sort PRIVATE MPI::MPI_CXX)
+target_link_libraries(mpi_bucket_sort PRIVATE caliper)
