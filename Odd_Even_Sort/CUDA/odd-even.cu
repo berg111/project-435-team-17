@@ -75,7 +75,7 @@ int main(int argc, char** argv){
 
     generate_array(array, arraySize);
     std::cout << arraySize << std::endl;
-    std::cout << "UNSorted Array: ";
+    // std::cout << "UNSorted Array: ";
     // for (int i = 0; i < array.size(); ++i) {
     //     std::cout << array[i] << " ";
     // }
@@ -98,8 +98,6 @@ int main(int argc, char** argv){
     double elapsed = (double)(stop - start) / CLOCKS_PER_SEC;
 
 
-
-
     cudaMemcpy(array.data(), gpu_array, size, cudaMemcpyDeviceToHost);
 
     cudaFree(gpu_array);
@@ -108,19 +106,21 @@ int main(int argc, char** argv){
 
 
     if (isSorted(array)) {
-        std::cout << "Sorted Array: ";
-        for (int i = 0; i < array.size(); ++i) {
-            std::cout << array[i] << " ";
-        }
+        // std::cout << "Sorted Array: ";
+        // for (int i = 0; i < array.size(); ++i) {
+        //     std::cout << array[i] << " ";
+        // }
         std::cout << "Array is sorted." << std::endl;
     } else {
         std::cout << "Array is not sorted." << std::endl;
-        std::cout << "Sorted Array: ";
-        for (int i = 0; i < array.size(); ++i) {
-            std::cout << array[i] << " ";
-        }
-        std::cout << std::endl;
+        // std::cout << "Sorted Array: ";
+        // for (int i = 0; i < array.size(); ++i) {
+        //     std::cout << array[i] << " ";
+        // }
+        // std::cout << std::endl;
     }
+
+     std::cout << "Time elapsed: " << elapsed << std::endl;
 
     // adiak::init(NULL);
     // adiak::user();
