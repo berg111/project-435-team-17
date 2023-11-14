@@ -1,17 +1,19 @@
 #include <iostream>
 #include <cuda_runtime.h>
+#include <cuda.h>
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
 #include <vector>
 
-// #include <caliper/cali.h>
-// #include <caliper/cali-manager.h>
-// #include <adiak.hpp>
+#include <caliper/cali.h>
+#include <caliper/cali-manager.h>
+#include <adiak.hpp>
 
 
 
 int NUM_VALUES;
+float timeA, timeB, timeC, bandwidth = 0.0;
 
 __global__ void oddEvenSortStep(int* array, int size, int phase){
 
@@ -60,11 +62,15 @@ bool isSorted(std::vector<int>& array){
 
 int main(int argc, char** argv){
 
+    CALI_CXX_MARK_FUNCTION;
+
+    cudaEvent_t h_t_d_start, h_t_d_end, sort_step_start, sort_step_end, d_t_h_start, d_t_h_end;
+
     int threads = atoi(argv[1]);
     int arraySize = atoi(argv[2]);
 
-    // cali::ConfigManager mgr;
-    // mgr.start();
+    cali::ConfigManager mgr;
+    mgr.start();
 
     dim3 blocks((arraySize + threads - 1) / threads, 1, 1);
     dim3 threadsPerBlock(threads, 1, 1);
@@ -86,24 +92,27 @@ int main(int argc, char** argv){
 
     cudaMemcpy(gpu_array, array.data(), size, cudaMemcpyHostToDevice);
 
-    start = clock();
+    CALI_MARK_BEGIN("comp");
+    cudaEventCreate(&sort_step_start);
+    cudaEventCreate(&sort_step_end);
+    cudaEventRecord(sort_step_start);
 
     for(int i = 0; i < array.size(); ++i){
         oddEvenSortStep<<<blocks, threadsPerBlock>>>(gpu_array, arraySize, i );
         cudaDeviceSynchronize();
     }
 
-    stop = clock();
+    cudaEventRecord(sort_step_end);
+    cudaEventSynchronize(sort_step_end);
+    cudaEventElapsedTime(&timeB, sort_step_start, sort_step_end);
 
-    double elapsed = (double)(stop - start) / CLOCKS_PER_SEC;
-
+    CALI_MARK_END("comp");
 
     cudaMemcpy(array.data(), gpu_array, size, cudaMemcpyDeviceToHost);
 
     cudaFree(gpu_array);
 
-
-
+    printf("Time elapsed: %f ", timeB);
 
     if (isSorted(array)) {
         // std::cout << "Sorted Array: ";
@@ -114,26 +123,24 @@ int main(int argc, char** argv){
     } else {
         std::cout << "Array is not sorted." << std::endl;
         // std::cout << "Sorted Array: ";
-        // for (int i = 0; i < array.size(); ++i) {
-        //     std::cout << array[i] << " ";
-        // }
-        // std::cout << std::endl;
+        for (int i = 0; i < array.size(); ++i) {
+            std::cout << array[i] << " ";
+        }
+        std::cout << std::endl;
     }
 
-     std::cout << "Time elapsed: " << elapsed << std::endl;
+    adiak::init(NULL);
+    adiak::user();
+    adiak::launchdate();
+    adiak::libraries();
+    adiak::cmdline();
+    adiak::clustername();
+    adiak::value("num_threads", threads);
+    adiak::value("num_vals", arraySize);
+    adiak::value("Sort_time", timeB);
 
-    // adiak::init(NULL);
-    // adiak::user();
-    // adiak::launchdate();
-    // adiak::libraries();
-    // adiak::cmdline();
-    // adiak::clustername();
-    // adiak::value("num_threads", threads);
-    // adiak::value("num_vals", arraySize);
-    // adiak::value("Sort_time", elapsed);
-
-    // mgr.stop();
-    // mgr.flush();
+    mgr.stop();
+    mgr.flush();
 
 
 }

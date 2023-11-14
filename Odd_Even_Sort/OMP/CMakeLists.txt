@@ -7,7 +7,7 @@ find_package(OpenMP REQUIRED)
 set (CMAKE_CXX_FLAGS "-O -fopenmp")
 
 add_executable(odd-even odd-even.cpp)
-target_link_libraries(quicksort PRIVATE caliper)
+target_link_libraries(odd-even PRIVATE caliper)
 
 message(STATUS "Caliper includes : ${caliper_INCLUDE_DIR}")
 message(STATUS "Adiak includes : ${adiak_INCLUDE_DIRS}")

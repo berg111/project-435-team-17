@@ -24,4 +24,4 @@ CALI_CONFIG="spot(output=t${threads}-m${arraySize}.cali, \
     time.variance, \
     openmp.threads, \
     openmp.times)" \
-./odd_even_sort $threads $arraySize
+./odd-even $threads $arraySize
