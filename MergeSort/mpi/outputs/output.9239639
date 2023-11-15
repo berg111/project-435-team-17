@@ -1,0 +1,730 @@
+slurmstepd: error: poll(): Bad address
+[1699987304.732417] [c496:30695:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b4281c00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987304.734634] [c496:30695:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+slurmstepd: error: poll(): Bad address
+[1699987304.737340] [c496:30685:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b70b7600000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987304.624386] [c496:30731:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2aeffe301000, length=544768, access=0xf) failed: Cannot allocate memory
+[1699987304.738060] [c496:30731:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987304.741270] [c496:30735:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2af870e00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987304.742258] [c496:30685:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987304.743774] [c496:30702:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2abe48a00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987304.743921] [c496:30686:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b48fc200000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987304.744054] [c496:30707:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2af131a00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987304.744146] [c496:30742:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b2acb600000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987304.745622] [c496:30735:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987304.747548] [c496:30686:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987304.749927] [c496:30707:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987304.751303] [c496:30742:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987304.752456] [c496:30698:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b18fc800000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987304.752558] [c496:30703:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2ac5e1800000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987304.753518] [c496:30702:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987304.754682] [c496:30725:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b2d02800000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987304.754937] [c496:30745:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2ae4cc800000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987304.755039] [c496:30693:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b99e6a00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987304.755897] [c496:30703:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987304.756188] [c496:30736:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b4295200000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987304.756806] [c496:30698:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987304.757859] [c496:30683:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b3fe5200000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987304.758881] [c496:30725:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987304.760814] [c496:30745:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987304.762710] [c496:30693:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987304.764519] [c496:30683:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987304.767338] [c496:30736:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987304.768401] [c496:30744:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2ba80d800000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987304.768483] [c496:30722:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b7778000000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987304.769588] [c496:30744:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987304.771678] [c496:30722:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987304.773047] [c496:30732:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b7d11800000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987304.774097] [c496:30732:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987304.775154] [c496:30699:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b89a6400000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987304.776096] [c496:30699:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987304.777949] [c496:30737:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2ad25fc00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987304.778045] [c496:30733:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2ade92e00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987304.779143] [c496:30737:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987304.781355] [c496:30733:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987304.782400] [c496:30717:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2ab971000000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987304.783432] [c496:30717:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987304.786694] [c496:30719:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2ad5a7000000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987304.787958] [c496:30719:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987304.751080] [c468:150330:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b736fc79000, length=544768, access=0xf) failed: Cannot allocate memory
+[1699987304.914350] [c468:150330:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987304.984740] [c494:214615:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2abd15800000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987304.989188] [c494:214615:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987304.944778] [c495:30940:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2af964347000, length=544768, access=0xf) failed: Cannot allocate memory
+[1699987304.945058] [c495:30940:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987304.789114] [c496:30688:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b919dc00000, length=39845888, access=0xf) failed: Cannot allocate memory
+slurmstepd: error: poll(): Bad address
+slurmstepd: error: poll(): Bad address
+slurmstepd: error: poll(): Bad address
+slurmstepd: error: poll(): Bad address
+[1699987304.922141] [c468:150343:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b6829e00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987304.986677] [c494:214569:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b72b7800000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987304.987208] [c494:214569:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987304.947690] [c495:30962:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2ae203c00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987304.789380] [c496:30730:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b58b2200000, length=39845888, access=0xf) failed: Cannot allocate memory
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 7 PID 30682 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 15 PID 30683 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 23 PID 30684 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 31 PID 30685 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 39 PID 30686 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 47 PID 30687 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 55 PID 30688 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 63 PID 30689 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 71 PID 30690 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 79 PID 30691 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 87 PID 30692 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 95 PID 30693 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 103 PID 30694 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 111 PID 30695 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 119 PID 30696 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 127 PID 30697 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 135 PID 30698 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 143 PID 30699 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 151 PID 30700 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 159 PID 30701 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 167 PID 30702 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 175 PID 30703 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 183 PID 30704 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 191 PID 30705 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 199 PID 30706 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 207 PID 30707 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 215 PID 30708 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 223 PID 30709 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 231 PID 30710 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 239 PID 30711 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 247 PID 30712 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 255 PID 30713 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 263 PID 30714 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 271 PID 30715 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 279 PID 30716 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 287 PID 30717 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 295 PID 30718 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 303 PID 30719 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 311 PID 30720 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 319 PID 30721 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 327 PID 30722 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 335 PID 30723 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 343 PID 30724 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 351 PID 30725 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 359 PID 30726 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 367 PID 30727 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 375 PID 30728 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 383 PID 30729 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 391 PID 30730 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 399 PID 30731 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 407 PID 30732 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 415 PID 30733 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 423 PID 30734 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 431 PID 30735 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 439 PID 30736 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+======[1699987304.923930] [c468:150343:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987304.992313] [c494:214603:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b3595200000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987304.946850] [c495:30970:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2acb27600000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987304.790574] [c496:30688:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+=============================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 447 PID 30737 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 455 PID 30738 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 463 PID 30739 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 471 PID 30740 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 479 PID 30741 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 487 PID 30742 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 495 PID 30743 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 503 PID 30744 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 511 PID 30745 RUNNING AT c496
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 1 PID 92709 RUNNING AT c456
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 9 PID 92710 RUNNING AT c456
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 17 PID 92711 RUNNING AT c456
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 25 PID 92712 RUNNING AT c456
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 33 PID 92713 RUNNING AT c456
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 41 PID 92714 RUNNING AT c456
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 49 PID 92715 RUNNING AT c456
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 57 PID 92716 RUNNING AT c456
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 65 PID 92717 RUNNING AT c456
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 73 PID 92718 RUNNING AT c456
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 81 PID 92719 RUNNING AT c456
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 89 PID 92720 RUNNING AT c456
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 97 PID 92721 RUNNING AT c456
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 105 PID 92722 RUNNING AT c456
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 113 PID 92723 RUNNING AT c456
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 121 PID 92724 RUNNING AT c456
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 129 PID 92725 RUNNING AT c456
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 137 PID 92726 RUNNING AT c456
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 145 PID 92727 RUNNING AT c456
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 153 PID 92728 RUNNING AT c456
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 161 PID 92729 RUNNING AT c456
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 169 PID 92730 RUNNING AT c456
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 177 PID 92731 RUNNING AT c456
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 185 PID 92732 RUNNING AT c456
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 193 PID 92733 RUNNING AT c456
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 201 PID 92734 RUNNING AT c456
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 209 PID 92736 RUNNING AT c456
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 217 PID 92737 RUNNING AT c456
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 225 PID 92738 RUNNING AT c456
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 233 PID 92739 RUNNING AT c456
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 241 PID 92740 RUNNING AT c456
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 249 PID 92741 RUNNING AT c456
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 257 PID 92742 RUNNING AT c456
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 265 PID 92743 RUNNING AT c456
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 273 PID 92744 RUNNING AT c456
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 281 PID 92745 RUNNING AT c456
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 289 PID 92746 RUNNING AT c456
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 297 PID 92747 RUNNING AT c456
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 305 PID 92748 RUNNING AT c456
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 313 PID 92749 RUNNING AT c456
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 321 PID 92750 RUNNING AT c456
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 329 PID 92751 RUNNING AT c456
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 337 PID 92752 RUNNING AT c456
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 345 PID 92753 RUNNING AT c456
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 353 PID 92754 RUNNING AT c456
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 361 PID 92758 RUNNING AT c456
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===============[1699987304.925187] [c468:150313:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b3faba00000, length=39845888, access=0xf) failed: Cannot allocate memory

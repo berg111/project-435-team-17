@@ -1,0 +1,616 @@
+slurmstepd: error: poll(): Bad address
+[1699987309.691753] [c468:151079:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b851a507000, length=544768, access=0xf) failed: Cannot allocate memory
+[1699987309.691931] [c468:151079:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987309.703319] [c468:151066:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b6dd5df3000, length=544768, access=0xf) failed: Cannot allocate memory
+[1699987309.703516] [c468:151066:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987309.713902] [c468:151056:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b819c59d000, length=544768, access=0xf) failed: Cannot allocate memory
+[1699987309.714129] [c468:151056:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987309.693238] [c468:151048:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b0e91e2c000, length=544768, access=0xf) failed: Cannot allocate memory
+[1699987309.714939] [c468:151048:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987309.702013] [c468:151104:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2baa9d4e0000, length=544768, access=0xf) failed: Cannot allocate memory
+[1699987309.715634] [c468:151104:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987309.693112] [c468:151101:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b7b703e9000, length=544768, access=0xf) failed: Cannot allocate memory
+[1699987309.716884] [c468:151101:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987309.748177] [c468:151079:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b851a600000, length=20971520, access=0xf) failed: Cannot allocate memory
+slurmstepd: error: poll(): Bad address
+[1699987309.748356] [c468:151079:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987310.226002] [c496:31322:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b9295e00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987310.142065] [c445:124742:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b77af400000, length=39845888, access=0xf) failed: Cannot allocate memory
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 2 PID 151041 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 10 PID 151042 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 18 PID 151043 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 26 PID 151044 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 34 PID 151045 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 42 PID 151046 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 50 PID 151047 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 58 PID 151048 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 66 PID 151049 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 74 PID 151050 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 82 PID 151051 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 90 PID 151052 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 98 PID 151053 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 106 PID 151054 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 114 PID 151055 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 122 PID 151056 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 130 PID 151057 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 138 PID 151058 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 146 PID 151059 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 154 PID 151060 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 162 PID 151061 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 170 PID 151062 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 178 PID 151063 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 186 PID 151064 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 194 PID 151065 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 202 PID 151066 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 210 PID 151067 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 218 PID 151068 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 226 PID 151069 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 234 PID 151070 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 242 PID 151071 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 250 PID 151072 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 258 PID 151073 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 266 PID 151074 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 274 PID 151075 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 282 PID 151076 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 290 PID 151077 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 298 PID 151078 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 306 PID 151079 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 314 PID 151080 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 322 PID 151081 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+slurmstepd: error: poll(): Bad address
+slurmstepd: error: poll(): Bad address
+srun: error: poll: Bad address
+[1699987309.749588] [c468:151076:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2ba2a48a7000, length=544768, access=0xf) failed: Cannot allocate memory
+[1699987310.374668] [c496:31322:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987310.552201] [c445:124742:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987309.749718] [c468:151076:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987310.377916] [c496:31283:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2ad2d94d8000, length=544768, access=0xf) failed: Cannot allocate memory
+[1699987310.161029] [c445:124806:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b2fa9fab000, length=544768, access=0xf) failed: Cannot allocate memory
+[1699987309.762598] [c468:151101:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b7b70400000, length=20971520, access=0xf) failed: Cannot allocate memory
+[1699987310.378067] [c496:31283:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987310.553696] [c445:124806:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987309.762757] [c468:151101:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987310.386790] [c496:31303:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2af7393c1000, length=544768, access=0xf) failed: Cannot allocate memory
+[1699987310.145450] [c445:124749:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b6dd3000000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987309.764450] [c468:151104:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2baa9d600000, length=20971520, access=0xf) failed: Cannot allocate memory
+[1699987310.386920] [c496:31303:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987310.561198] [c445:124749:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987309.764552] [c468:151104:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987310.389929] [c496:31321:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2ac4a2600000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987310.143149] [c445:124760:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2af8b6e00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987309.778637] [c468:151066:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b6dd5e00000, length=20971520, access=0xf) failed: Cannot allocate memory
+[1699987310.390373] [c496:31312:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b24fdc00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987310.562910] [c445:124760:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987309.778784] [c468:151066:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987310.390809] [c496:31284:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2aef04c00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987310.594325] [c445:124750:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b820a000000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987309.781543] [c468:151048:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b0e92000000, length=20971520, access=0xf) failed: Cannot allocate memory
+[1699987310.392729] [c496:31321:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987310.594458] [c445:124784:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b442be00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987309.781670] [c468:151048:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987310.394084] [c496:31272:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b581cc00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987310.595562] [c445:124784:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987309.782825] [c468:151056:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b819c600000, length=20971520, access=0xf) failed: Cannot allocate memory
+[1699987310.395179] [c496:31312:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987310.597676] [c445:124750:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987309.782918] [c468:151056:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987310.396670] [c496:31301:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b739ea00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987309.790106] [c468:151079:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b851a600000, length=20971520, access=0xf) failed: Cannot allocate memory
+[1699987310.397577] [c496:31284:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987309.790211] [c468:151079:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987310.398715] [c496:31289:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b16ea000000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987309.791725] [c468:151050:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b2a59664000, length=544768, access=0xf) failed: Cannot allocate memory
+[1699987310.399146] [c496:31310:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b319e000000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987309.791869] [c468:151050:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987310.399282] [c496:31311:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2ba0cbe00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987309.801283] [c468:151104:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2baa9d600000, length=20971520, access=0xf) failed: Cannot allocate memory
+[1699987310.400167] [c496:31272:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987309.801389] [c468:151104:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987310.401216] [c496:31305:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b17aa800000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987309.803161] [c468:151101:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b7b70400000, length=20971520, access=0xf) failed: Cannot allocate memory
+[1699987310.401355] [c496:31273:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b4760000000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987309.803258] [c468:151101:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987310.401452] [c496:31275:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2ac149800000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987309.816691] [c468:151056:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b819c600000, length=20971520, access=0xf) failed: Cannot allocate memory
+[1699987310.402103] [c496:31301:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987309.816797] [c468:151056:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987310.403970] [c496:31289:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987309.822627] [c468:151048:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b0e92000000, length=20971520, access=0xf) failed: Cannot allocate memory
+[1699987310.408267] [c496:31311:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987309.822727] [c468:151048:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987310.409422] [c496:31269:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2afc09a00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987309.822895] [c468:151066:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b6dd5e00000, length=20971520, access=0xf) failed: Cannot allocate memory
+[1699987310.410559] [c496:31310:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987309.822971] [c468:151066:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987310.412109] [c496:31273:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987309.829953] [c468:151076:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2ba2a4a00000, length=20971520, access=0xf) failed: Cannot allocate memory
+[1699987310.413703] [c496:31305:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987309.830060] [c468:151076:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987310.415525] [c496:31275:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987309.830721] [c468:151079:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b851a600000, length=20971520, access=0xf) failed: Cannot allocate memory
+[1699987310.416307] [c496:31295:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2ac71de00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987309.830800] [c468:151079:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987310.416525] [c496:31329:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b3a9e000000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987309.837106] [c468:151104:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2baa9d600000, length=20971520, access=0xf) failed: Cannot allocate memory
+[1699987310.417362] [c496:31317:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b3266400000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987309.837203] [c468:151104:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987310.417523] [c496:31306:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2aeaeca00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987309.840316] [c468:151101:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b7b70400000, length=20971520, access=0xf) failed: Cannot allocate memory
+[1699987310.418198] [c496:31269:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987309.840403] [c468:151101:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987310.419642] [c496:31329:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987309.846382] [c468:151062:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2ac08f207000, length=544768, access=0xf) failed: Cannot allocate memory
+[1699987310.421492] [c496:31295:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987309.846508] [c468:151062:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987310.422985] [c496:31294:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2ba419200000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987309.855957] [c468:151066:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b6dd5e00000, length=20971520, access=0xf) failed: Cannot allocate memory
+[1699987310.423141] [c496:31280:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b8425a00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987309.856066] [c468:151066:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987310.424324] [c496:31317:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987309.859381] [c468:151048:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b0e92000000, length=20971520, access=0xf) failed: Cannot allocate memory
+[1699987310.425959] [c496:31306:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987309.859472] [c468:151048:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987310.428102] [c496:31294:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987309.886956] [c468:151079:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b851a600000, length=20971520, access=0xf) failed: Cannot allocate memory
+[1699987310.429127] [c496:31307:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2af880a00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987309.887106] [c468:151079:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987310.429216] [c496:31286:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b140a400000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987309.887581] [c468:151050:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b2a59800000, length=20971520, access=0xf) failed: Cannot allocate memory
+[1699987310.429289] [c496:31282:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2abcd6c00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987309.887671] [c468:151050:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987310.430217] [c496:31280:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987309.894929] [c468:151104:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2baa9d600000, length=20971520, access=0xf) failed: Cannot allocate memory
+[1699987310.432875] [c496:31282:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987309.895049] [c468:151104:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987310.433914] [c496:31290:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2aca10a00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987309.896696] [c468:151076:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2ba2a4a00000, length=20971520, access=0xf) failed: Cannot allocate memory
+[1699987310.434647] [c496:31286:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987309.896792] [c468:151076:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987310.436594] [c496:31299:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b5bebc00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987309.903069] [c468:151101:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b7b70400000, length=20971520, access=0xf) failed: Cannot allocate memory
+[1699987310.432097] [c496:31319:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2ab580200000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987309.903169] [c468:151101:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987310.437551] [c496:31319:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987309.920908] [c468:151056:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b819c600000, length=20971520, access=0xf) failed: Cannot allocate memory
+[1699987310.439526] [c496:31290:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987309.921123] [c468:151056:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987310.441865] [c496:31299:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987309.930202] [c468:151050:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b2a59800000, length=20971520, access=0xf) failed: Cannot allocate memory
+[1699987310.442930] [c496:31323:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b2c8d800000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987309.930377] [c468:151050:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987310.444539] [c496:31323:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987309.937787] [c468:151079:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b851a600000, length=20971520, access=0xf) failed: Cannot allocate memory
+[1699987310.445729] [c496:31288:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b0707800000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987309.937938] [c468:151079:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987310.446731] [c496:31288:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987309.938773] [c468:151104:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2baa9d600000, length=20971520, access=0xf) failed: Cannot allocate memory
+[1699987310.448731] [c496:31328:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2afc11e00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987309.938858] [c468:151104:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987310.449985] [c496:31328:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987309.943202] [c468:151076:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2ba2a4a00000, length=20971520, access=0xf) failed: Cannot allocate memory
+[1699987310.456743] [c496:31307:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987309.943316] [c468:151076:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987310.462433] [c496:31298:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b7ee3000000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987309.947381] [c468:151062:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2ac08f400000, length=20971520, access=0xf) failed: Cannot allocate memory
+[1699987310.463484] [c496:31298:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987309.947482] [c468:151062:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987309.947846] [c468:151101:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b7b70400000, length=20971520, access=0xf) failed: Cannot allocate memory
+[1699987309.947924] [c468:151101:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987309.954868] [c468:151048:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b0e92000000, length=20971520, access=0xf) failed: Cannot allocate memory
+[1699987309.954971] [c468:151048:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987309.985443] [c468:151056:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b819c600000, length=20971520, access=0xf) failed: Cannot allocate memory
+[1699987309.985583] [c468:151056:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987309.987603] [c468:151104:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2baa9d600000, length=20971520, access=0xf) failed: Cannot allocate memory
+[1699987309.987696] [c468:151104:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987309.989879] [c468:151050:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b2a59800000, length=20971520, access=0xf) failed: Cannot allocate memory
+[1699987309.989969] [c468:151050:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987309.993229] [c468:151076:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2ba2a4a00000, length=20971520, access=0xf) failed: Cannot allocate memory
+[1699987309.993320] [c468:151076:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987309.995553] [c468:151066:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b6dd5e00000, length=20971520, access=0xf) failed: Cannot allocate memory
+[1699987309.995640] [c468:151066:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987309.996910] [c468:151101:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b7b70400000, length=20971520, access=0xf) failed: Cannot allocate memory
+[1699987309.997012] [c468:151101:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987309.998491] [c468:151062:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2ac08f400000, length=20971520, access=0xf) failed: Cannot allocate memory
+[1699987309.998574] [c468:151062:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987309.998876] [c468:151079:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b851a600000, length=20971520, access=0xf) failed: Cannot allocate memory
+[1699987309.998953] [c468:151079:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987310.032067] [c468:151104:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2baa9d600000, length=20971520, access=0xf) failed: Cannot allocate memory
+[1699987310.032221] [c468:151104:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987310.039379] [c468:151048:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b0e92000000, length=20971520, access=0xf) failed: Cannot allocate memory
+[1699987310.039490] [c468:151048:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987310.043085] [c468:151066:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b6dd5e00000, length=20971520, access=0xf) failed: Cannot allocate memory
+[1699987310.043191] [c468:151066:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987310.044477] [c468:151101:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b7b70400000, length=20971520, access=0xf) failed: Cannot allocate memory
+[1699987310.044561] [c468:151101:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987310.044879] [c468:151076:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2ba2a4a00000, length=20971520, access=0xf) failed: Cannot allocate memory
+[1699987310.044955] [c468:151076:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987310.046167] [c468:151062:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2ac08f400000, length=20971520, access=0xf) failed: Cannot allocate memory
+[1699987310.046248] [c468:151062:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987310.048237] [c468:151050:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b2a59800000, length=20971520, access=0xf) failed: Cannot allocate memory
+[1699987310.048330] [c468:151050:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+[1699987310.603365] [c445:124788:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2ba62de00000, length=39845888, access=0xf) failed: Bad address
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 330 PID 151082 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 338 PID 151083 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 346 PID 151084 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 354 PID 151085 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 362 PID 151086 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 370 PID 151087 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 378 PID 151088 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 386 PID 151089 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 394 PID 151090 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 402 PID 151091 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 410 PID 151092 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 418 PID 151093 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 426 PID 151094 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 434 PID 151095 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 442 PID 151096 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 450 PID 151097 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 458 PID 151098 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 466 PID 151099 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 474 PID 151100 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 482 PID 151101 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 490 PID 151102 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 498 PID 151103 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 506 PID 151104 RUNNING AT c468
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+[1699987310.604554] [c445:124788:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[proxy:0:6@c495.cluster] HYDI_dmx_poll_wait_for_event (../../../../../src/pm/i_hydra/libhydra/demux/hydra_demux_poll.c:48): poll error (Bad address)
+slurmstepd: error: poll(): Bad address
+[proxy:0:6@c495.cluster] main (../../../../../src/pm/i_hydra/proxy/proxy.c:978): error waiting for event
+[proxy:0:5@c494.cluster] HYDI_dmx_poll_wait_for_event (../../../../../src/pm/i_hydra/libhydra/demux/hydra_demux_poll.c:48): poll error (Bad address)
+slurmstepd: error: poll(): Bad address
+[proxy:0:5@c494.cluster] main (../../../../../src/pm/i_hydra/proxy/proxy.c:978): error waiting for event
+slurmstepd: error: poll(): Bad address
+[proxy:0:1@c456.cluster] HYDI_dmx_poll_wait_for_event (../../../../../src/pm/i_hydra/libhydra/demux/hydra_demux_poll.c:48): slurmstepd: error: poll(): Bad address
+poll error (Bad address)
+[proxy:0:1@c456.cluster] main (../../../../../src/pm/i_hydra/proxy/proxy.c:978): error waiting for event
+[1699987309.889032] [c486:140954:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b460d2e4000, length=544768, access=0xf) failed: Cannot allocate memory
+[1699987310.731530] [c486:140954:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=ud_recv_skb) chunk: Input/output error
+slurmstepd: error: poll(): Bad address
+[1699987311.482162] [c488:124644:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2abd1bc00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987311.475738] [c488:124646:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2afe75600000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987311.483303] [c488:124648:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b5e55000000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987311.474962] [c488:124650:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2afd73600000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987311.483758] [c488:124653:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2abbac800000, length=39845888, access=0xf) failed: Bad address
+[1699987311.473306] [c488:124655:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2ae69e400000, length=39845888, access=0xf) failed: Bad address
+[1699987311.478793] [c488:124655:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987311.472728] [c488:124657:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b4f28800000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987311.480580] [c488:124657:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987311.475031] [c488:124659:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2af121000000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987311.475635] [c488:124663:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2ad959600000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987311.482516] [c488:124670:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2ab789e00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987311.483178] [c488:124673:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b7202000000, length=39845888, access=0xf) failed: Bad address
+[1699987311.482573] [c488:124674:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b011dc00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987311.473252] [c488:124676:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2adbc6600000, length=39845888, access=0xf) failed: Bad address
+[1699987311.477369] [c488:124676:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987311.483436] [c488:124682:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2ba3bee00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987311.481593] [c488:124684:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2ae280800000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987311.482102] [c488:124687:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b4070e00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987311.483354] [c488:124688:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b0de3e00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987311.475998] [c488:124694:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b5f13400000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987311.483678] [c488:124697:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b2491600000, length=39845888, access=0xf) failed: Bad address
+[1699987311.483609] [c488:124698:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2ab4ebc00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[mpiexec@c445.cluster] HYD_sock_write (../../../../../src/pm/i_hydra/libhydra/sock/hydra_sock_intel.c:360): write error (Bad file descriptor)
+[mpiexec@c445.cluster] HYD_sock_write (../../../../../src/pm/i_hydra/libhydra/sock/hydra_sock_intel.c:360): write error (Bad file descriptor)
+[mpiexec@c445.cluster] HYD_sock_write (../../../../../src/pm/i_hydra/libhydra/sock/hydra_sock_intel.c:360): write error (Bad file descriptor)
+[mpiexec@c445.cluster] HYD_sock_write (../../../../../src/pm/i_hydra/libhydra/sock/hydra_sock_intel.c:360): write error (Bad file descriptor)
+slurmstepd: error: *** JOB 9239647 ON c445 CANCELLED AT 2023-11-14T13:40:32 DUE TO TIME LIMIT ***

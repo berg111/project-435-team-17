@@ -1,0 +1,78 @@
+[1699987375.764238] [c380:270920:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b651be00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987375.764785] [c380:270893:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b8eb0600000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987375.765795] [c380:270899:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b54b2000000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987375.765899] [c380:270900:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b20cc000000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987375.766051] [c380:270902:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2ab539800000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987375.765671] [c380:270903:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b5b1a400000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987375.765196] [c380:270904:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2af3f6200000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987375.766194] [c380:270909:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2ba42a600000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987375.764655] [c380:270913:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b78a6c00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987375.766252] [c380:270915:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b8dfec00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987375.764891] [c380:270929:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2aeaaac00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987375.765969] [c380:270930:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2ac3dae00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987375.765494] [c380:270935:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b155f200000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987375.765626] [c380:270939:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b211e600000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987375.765032] [c380:270948:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2af8b4c00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987375.764356] [c380:270949:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b97bc200000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987375.767146] [c380:270949:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987375.766136] [c380:270951:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2abbeec00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987375.769675] [c380:270913:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987375.770815] [c380:270946:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b099b600000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987375.771547] [c380:270893:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987375.772655] [c380:270924:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b2231200000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987375.772758] [c380:270925:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2afe31e00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987375.773498] [c380:270920:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987375.774618] [c380:270933:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b1a2ee00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987375.775391] [c380:270948:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987375.776561] [c380:270941:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b739d000000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987375.777501] [c380:270929:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987375.778613] [c380:270910:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b6a88000000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987375.779427] [c380:270904:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987375.780572] [c380:270944:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2ba915800000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987375.780700] [c380:270950:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b68b4200000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987375.781655] [c380:270903:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987375.783723] [c380:270899:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987375.784840] [c380:270898:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2aacf4000000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987375.785474] [c380:270900:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987375.787515] [c380:270930:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987375.788659] [c380:270940:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b2e90a00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987375.789511] [c380:270909:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987375.790635] [c380:270938:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b29fa400000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987375.791698] [c380:270951:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987375.794780] [c380:270902:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987375.796614] [c380:270939:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987375.798486] [c380:270946:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987375.800345] [c380:270924:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987375.802141] [c380:270933:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987375.803384] [c380:270941:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987375.805289] [c380:270925:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987375.806401] [c380:270907:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b2b61e00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987375.807144] [c380:270910:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987375.808960] [c380:270944:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987375.810992] [c380:270915:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987375.813888] [c380:270940:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987375.815871] [c380:270938:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987375.817610] [c380:270935:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987375.819258] [c380:270898:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987375.821650] [c380:270907:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987375.822813] [c380:270912:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b102a000000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987375.824965] [c380:270912:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987375.829628] [c380:270950:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987375.852023] [c380:270926:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b19d8c00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987375.858801] [c380:270926:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987375.862570] [c380:270894:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b86e3a00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987375.862757] [c380:270943:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b0bafc00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987375.863725] [c380:270894:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987375.862874] [c380:270927:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b1924200000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987375.865554] [c380:270943:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987375.867310] [c380:270927:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987375.881808] [c380:270901:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b91f5a00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987375.885447] [c380:270901:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987375.887958] [c380:270897:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2ba5e8800000, length=39845888, access=0xf) failed: Bad address
+[1699987375.891813] [c380:270897:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987375.965365] [c380:270892:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b20b2400000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987375.967745] [c380:270892:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987376.013890] [c380:270953:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b53bd600000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987376.016029] [c380:270953:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1699987376.018193] [c380:270922:0]          ib_md.c:329  UCX  ERROR ibv_reg_mr(address=0x2b967a400000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1699987376.019348] [c380:270922:0]          mpool.c:191  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error

@@ -1,0 +1,9 @@
+[proxy:0:0@c532.cluster] HYDI_dmx_poll_wait_for_event (../../../../../src/pm/i_hydra/libhydra/demux/hydra_demux_poll.c:48): poll error (Bad address)
+[proxy:0:0@c532.cluster] main (../../../../../src/pm/i_hydra/proxy/proxy.c:978): error waiting for event
+slurmstepd: error: poll(): Bad address
+slurmstepd: error: poll(): Bad address
+slurmstepd: error: _cgroup_procs_check: failed on path /sys/fs/cgroup/freezer/slurm/uid_25922/job_9239567/step_batch/cgroup.procs: Bad address
+slurmstepd: error: unable to read '/sys/fs/cgroup/freezer/slurm/uid_25922/job_9239567/step_batch/cgroup.procs'
+srun: error: c532: task 0: Exited with exit code 3
+[mpiexec@c532.cluster] wait_proxies_to_terminate (../../../../../src/pm/i_hydra/mpiexec/intel/i_mpiexec.c:527): downstream from host c532 exited with status 3
+[mpiexec@c532.cluster] main (../../../../../src/pm/i_hydra/mpiexec/mpiexec.c:2096): assert (exitcodes != NULL) failed

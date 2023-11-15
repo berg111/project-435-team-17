@@ -1,0 +1,15 @@
+[1699987377.643675] [c334:220234:0]       ib_iface.c:914  UCX  ERROR iface=0xb8c020: failed to create UD QP TX wr:256 sge:2 inl:64 resp:0 RX wr:4096 sge:1 resp:0: Cannot allocate memory
+[1699987377.647366] [c334:220249:0]       ib_iface.c:914  UCX  ERROR iface=0x1306020: failed to create UD QP TX wr:256 sge:2 inl:64 resp:0 RX wr:4096 sge:1 resp:0: Cannot allocate memory
+[1699987377.652374] [c334:220258:0]       ib_iface.c:914  UCX  ERROR iface=0x19eb010: failed to create UD QP TX wr:256 sge:2 inl:64 resp:0 RX wr:4096 sge:1 resp:0: Cannot allocate memory
+[1699987377.652589] [c334:220229:0]       ib_iface.c:914  UCX  ERROR iface=0x17db020: failed to create UD QP TX wr:256 sge:2 inl:64 resp:0 RX wr:4096 sge:1 resp:0: Cannot allocate memory
+[1699987377.656117] [c334:220273:0]        dc_mlx5.c:330  UCX  ERROR mlx5dv_create_qp(mlx5_0:1, DCI): failed: Cannot allocate memory
+[1699987377.656338] [c334:220228:0]       ib_iface.c:914  UCX  ERROR iface=0x25ec010: failed to create UD QP TX wr:256 sge:2 inl:64 resp:0 RX wr:4096 sge:1 resp:0: Cannot allocate memory
+[1699987377.657658] [c334:220274:0]       ib_iface.c:914  UCX  ERROR iface=0xce6010: failed to create UD QP TX wr:256 sge:2 inl:64 resp:0 RX wr:4096 sge:1 resp:0: Cannot allocate memory
+[1699987377.665204] [c334:220236:0]       ib_iface.c:914  UCX  ERROR iface=0x13b4010: failed to create UD QP TX wr:256 sge:2 inl:64 resp:0 RX wr:4096 sge:1 resp:0: Cannot allocate memory
+[1699987377.667121] [c334:220232:0]       ib_iface.c:914  UCX  ERROR iface=0x1b9f010: failed to create UD QP TX wr:256 sge:2 inl:64 resp:0 RX wr:4096 sge:1 resp:0: Cannot allocate memory
+[1699987377.671196] [c334:220266:0]       ib_iface.c:914  UCX  ERROR iface=0x226c010: failed to create UD QP TX wr:256 sge:2 inl:64 resp:0 RX wr:4096 sge:1 resp:0: Cannot allocate memory
+Abort(1615503) on node 912 (rank 912 in comm 0): Fatal error in PMPI_Init: Other MPI error, error stack:
+MPIR_Init_thread(136)........: 
+MPID_Init(1149)..............: 
+MPIDI_OFI_mpi_init_hook(1555): 
+create_endpoint(2199)........: OFI endpoint open failed (ofi_init.c:2199:create_endpoint:Input/output error)

@@ -12,14 +12,14 @@ void mergeSort(int *, int *, int, int);
 
 int main(int argc, char** argv) {
     CALI_CXX_MARK_FUNCTION;
-    CALI_MARK_BEGIN("main");
 	int n = atoi(argv[1]);
 	std::string input_type = argv[2];
     int *arr = new int[n];
 
     srand(time(NULL));
 
-	// ************************ start data_init section ************************
+	// ************************ start data_init section **********************
+	CALI_MARK_BEGIN("data_init");
 	if (input_type == "sorted") {
 		for (int i = 0; i < n; i++) {
 			arr[i] = i;
@@ -45,6 +45,7 @@ int main(int argc, char** argv) {
 			arr[rand_index2] = temp;
 		}
 	}
+    CALI_MARK_END("data_init");
     // ************************ end data_init section ************************
 
     int rank;
@@ -143,7 +144,6 @@ int main(int argc, char** argv) {
     CALI_MARK_END("comm_barrier");
     CALI_MARK_END("comm");
 
-    CALI_MARK_END("main");
     MPI_Finalize();
 }
 

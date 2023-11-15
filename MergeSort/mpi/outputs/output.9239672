@@ -1,0 +1,17 @@
+[1699987377.629434] [c334:220119:0]        dc_mlx5.c:330  UCX  ERROR mlx5dv_create_qp(mlx5_0:1, DCI): failed: Cannot allocate memory
+[1699987377.630143] [c334:220088:0]        dc_mlx5.c:330  UCX  ERROR mlx5dv_create_qp(mlx5_0:1, DCI): failed: Cannot allocate memory
+[1699987377.630427] [c334:220093:0]        dc_mlx5.c:330  UCX  ERROR mlx5dv_create_qp(mlx5_0:1, DCI): failed: Cannot allocate memory
+[1699987377.631218] [c334:220115:0]        dc_mlx5.c:330  UCX  ERROR mlx5dv_create_qp(mlx5_0:1, DCI): failed: Cannot allocate memory
+[1699987377.631721] [c334:220209:0]        dc_mlx5.c:330  UCX  ERROR mlx5dv_create_qp(mlx5_0:1, DCI): failed: Cannot allocate memory
+[1699987377.631914] [c334:220135:0]        dc_mlx5.c:330  UCX  ERROR mlx5dv_create_qp(mlx5_0:1, DCI): failed: Cannot allocate memory
+[1699987377.632098] [c334:220103:0]        dc_mlx5.c:330  UCX  ERROR mlx5dv_create_qp(mlx5_0:1, DCI): failed: Cannot allocate memory
+[1699987377.632902] [c334:220099:0]        dc_mlx5.c:330  UCX  ERROR mlx5dv_create_qp(mlx5_0:1, DCI): failed: Cannot allocate memory
+[1699987377.633211] [c334:220123:0]        dc_mlx5.c:330  UCX  ERROR mlx5dv_create_qp(mlx5_0:1, DCI): failed: Cannot allocate memory
+[1699987377.634718] [c334:220211:0]       ib_iface.c:914  UCX  ERROR iface=0x1ebf010: failed to create UD QP TX wr:256 sge:2 inl:64 resp:0 RX wr:4096 sge:1 resp:0: Cannot allocate memory
+[1699987377.635841] [c334:220113:0]       ib_iface.c:914  UCX  ERROR iface=0x18fa010: failed to create UD QP TX wr:256 sge:2 inl:64 resp:0 RX wr:4096 sge:1 resp:0: Cannot allocate memory
+[1699987377.654832] [c334:220105:0]       ib_iface.c:914  UCX  ERROR iface=0x2513a00: failed to create RC QP TX wr:256 sge:3 inl:64 resp:64 RX wr:0 sge:1 resp:64: Cannot allocate memory
+Abort(1615503) on node 208 (rank 208 in comm 0): Fatal error in PMPI_Init: Other MPI error, error stack:
+MPIR_Init_thread(136)........: 
+MPID_Init(1149)..............: 
+MPIDI_OFI_mpi_init_hook(1555): 
+create_endpoint(2199)........: OFI endpoint open failed (ofi_init.c:2199:create_endpoint:Input/output error)

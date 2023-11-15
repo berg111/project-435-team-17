@@ -1,0 +1,6 @@
+[1699987382.116128] [c365:180198:0]        dc_mlx5.c:330  UCX  ERROR mlx5dv_create_qp(mlx5_0:1, DCI): failed: Cannot allocate memory
+Abort(1615503) on node 597 (rank 597 in comm 0): Fatal error in PMPI_Init: Other MPI error, error stack:
+MPIR_Init_thread(136)........: 
+MPID_Init(1149)..............: 
+MPIDI_OFI_mpi_init_hook(1555): 
+create_endpoint(2199)........: OFI endpoint open failed (ofi_init.c:2199:create_endpoint:Input/output error)
