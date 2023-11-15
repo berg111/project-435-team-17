@@ -305,6 +305,9 @@ it is not until array size 2^20 until performance increases can be visualized. H
 512 threads is reached.
 
 For specific values, no matter the thread count, every run time for 2^18 was under 1 second, and there were no improvements between thread counts.
+
+![cuda main 65536](./Odd_Even_Sort/CUDA_2^16.png)
+
 For 2^18, every run was under 3 seconds, again with no improvements or variability between array types.
 For 2^20, things began to change, there was a steep drop from 20 seconds to 14 seconds, and then to 10 seconds before leveling off. No changes between 
 array types.
