@@ -331,8 +331,12 @@ Odd Even Sort:
 	Overall, the general performance for OMP was worse compared to CUDA, however the efficiency for the threads was much greater for OMP, and visualizing
  	the data was much easier and provided greater insights.
      
-    	
-   
+
+MergeSort
+```
+As the input size increases, so does the overall runtime of the program. This is an intuitive result that isn’t all that surprising. What is interesting is the relationship between the number of processes and ‘main’ runtime for a fixed input size. For a fixed input size, as the number of processes increases, so does the runtime of the ‘main’ function. This is not what we had hoped to see because it demonstrates that our program does not scale well with the number of processes. After seeing the results, I believe that this is caused by the fact that in order for MergeSort to work, we must merge many sorted arrays. The number of processes is proportional to the number of mergers that must be done. In this particular program, as we increase the number of processes, we are able to split the original array into a larger number of  smaller arrays. As a result, we must spend more time merging arrays. Another interesting observation that can be made by looking at the output graphs is the rate at which the runtime increases as the number of processes increases. Not only does the runtime get worse as the number of processes increases, but the rate of increase seems to be higher for larger input sizes. This can be seen in the following plots.
+
+```
   	
 	
   
