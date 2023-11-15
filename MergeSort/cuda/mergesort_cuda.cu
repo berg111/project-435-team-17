@@ -44,6 +44,7 @@ int main(int argc, char** argv) {
     int num_threads = atoi(argv[3]);
 
     // ************************ start data_init section ************************
+    CALI_MARK_BEGIN("data_init");
     int *values = (int*)malloc(sizeof(int) * array_size);;
 
     if (input_type == "sorted") {
@@ -71,6 +72,7 @@ int main(int argc, char** argv) {
         values[rand_index2] = temp;
       }
     }
+    CALI_MARK_END("data_init");
     // ************************ end data_init section ************************
 
     int *c_values;
@@ -136,6 +138,6 @@ int main(int argc, char** argv) {
     adiak::value("num_threads", num_threads); // The number of CUDA or OpenMP threads
     adiak::value("num_blocks", num_blocks); // The number of CUDA blocks 
     adiak::value("group_num", 17); // The number of your group (integer, e.g., 1, 10)
-    adiak::value("implementation_source", "Handwritten"); // Where you got the source code of your algorithm; choices: ("Online", "AI", "Handwritten").
+    adiak::value("implementation_source", "Handwritten + Online"); // Where you got the source code of your algorithm; choices: ("Online", "AI", "Handwritten").
 
 }
