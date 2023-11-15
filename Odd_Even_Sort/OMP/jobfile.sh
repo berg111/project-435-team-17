@@ -18,10 +18,11 @@ module load Clang/9.0.1
 # Set variables from input
 threads=$1
 arraySize=$2
+input=$3
 
 CALI_USE_OMPT=1 \
-CALI_CONFIG="spot(output=t${threads}-m${arraySize}.cali, \
+CALI_CONFIG="spot(output=t${threads}-m${arraySize}-i${input}.cali, \
     time.variance, \
     openmp.threads, \
     openmp.times)" \
-./odd-even $threads $arraySize
+./odd-even $threads $arraySize $input

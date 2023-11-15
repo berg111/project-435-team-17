@@ -37,6 +37,15 @@ void generate_array(int array[], int size, int input) {
 
 }
 
+bool isSorted(int array[], int size){
+    for(int i = 0; i < size; ++i){
+        if(array[i] > array[i + 1]){
+            return false;
+        }
+    }
+    return true;
+}
+
 
 void oddEvenSort(int array[], int size) {
     int phase, i, temp;
@@ -103,37 +112,37 @@ int main(int argc, char** argv) {
     if (taskid == MASTER) {
 
         generate_array(array, size, arrayINput);
-                
-        printf("Unsorted Array: ");
-        for (int i = 0; i < size; i++) {
-            printf("%d ", array[i]);
-        }
+
+        // printf("Unsorted Array: ");
+        // for (int i = 0; i < size; i++) {
+        //     printf("%d ", array[i]);
+        // }
         mtype = FROM_MASTER;
         for (dest = 1; dest <= numworkers; dest++) {
             MPI_Send(&size, 1, MPI_INT, dest, mtype, MPI_COMM_WORLD);
             MPI_Send(array, size, MPI_INT, dest, mtype, MPI_COMM_WORLD);
-        }
+}
 
         CALI_MARK_BEGIN("comp");
         oddEvenSort(array, size);
-
-       
+                
+        
         mtype = FROM_WORKER;
         for (int i = 1; i <= numworkers; i++) {
-            source = i;
-            MPI_Recv(array, size, MPI_INT, source, mtype, MPI_COMM_WORLD, &status);
+        source = i;
+        MPI_Recv(array, size, MPI_INT, source, mtype, MPI_COMM_WORLD, &status);
         }
 
         CALI_MARK_END("comp");
 
         
-        printf("Sorted Array: ");
-        for (int i = 0; i < size; i++) {
-            printf("%d ", array[i]);
-        }
+        // printf("Sorted Array: ");
+        // for (int i = 0; i < size; i++) {
+        // printf("%d ", array[i]);
+        // }
         printf("\n");
     } if(taskid > MASTER) {
-        
+
         mtype = FROM_MASTER;
         MPI_Recv(&size, 1, MPI_INT, MASTER, mtype, MPI_COMM_WORLD, &status);
         MPI_Recv(array, size, MPI_INT, MASTER, mtype, MPI_COMM_WORLD, &status);

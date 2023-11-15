@@ -44,6 +44,14 @@ void print_elapsed(clock_t start, clock_t stop)
   printf("Elapsed time: %.3fs\n", elapsed);
 }
 
+void print_average(clock_t start, clock_t stop, int threads)
+{
+  double elapsed = (((double) (stop - start)) / CLOCKS_PER_SEC) / threads;
+  printf("Average time: %.3fs\n", elapsed);
+}
+
+
+
 
 //Helper function to create array of random values
 void generate_array(std::vector<int>& array, int size, int input){
@@ -103,7 +111,8 @@ int main(int argc, char** argv){
     std::vector<int> array;
 
     generate_array(array, arraySize, input);
-    std::cout << arraySize << std::endl;
+    std::cout << arraySize << "Threads: " << threads << "Input type: " << input << std::endl;
+
     // std::cout << "UNSorted Array: ";
     // for (int i = 0; i < array.size(); ++i) {
     //     std::cout << array[i] << " ";
@@ -132,6 +141,7 @@ int main(int argc, char** argv){
     stop = clock();
 
     print_elapsed(start, stop);
+    print_average(start, stop, threads);
 
     cudaEventRecord(sort_step_end);
     cudaEventSynchronize(sort_step_end);
@@ -154,9 +164,9 @@ int main(int argc, char** argv){
     } else {
         std::cout << "Array is not sorted." << std::endl;
         // std::cout << "Sorted Array: ";
-        for (int i = 0; i < array.size(); ++i) {
-            std::cout << array[i] << " ";
-        }
+        // for (int i = 0; i < array.size(); ++i) {
+        //     std::cout << array[i] << " ";
+        // }
         std::cout << std::endl;
     }
 
