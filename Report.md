@@ -302,8 +302,7 @@ Odd Even Sort:
 	In the lower portion of the array sizes, even as the thread counts increased, the performance increases were pretty much non-existent, 
 	providing minimal time decreases.  
  	it is not until array size 2^20 until performance increases can be visualized. Hoever, the performance gains level off fairly quickly once
-  	512 threads is reached. There was also a bug that went unsolved that didn't allow 2048+ threads to properly sort, but due to the plateauing of
-   	the values, I don't think these thread counts would have made any improvement. 
+  	512 threads is reached.
 
     	For specific values, no matter the thread count, every run time for 2^18 was under 1 second, and there were no improvements between thread counts.
      	For 2^18, every run was under 3 seconds, again with no improvements or variability between array types.
@@ -327,6 +326,8 @@ Odd Even Sort:
 
    	For array size 2^20, again the same performnce trends hold true, except the random arrays for the lower thread counts take much longer compared to the 
     	sorted arrays, for example the sorted array for 8 threads took 73 seconds, where the random array took 253 seconds.
+
+     	The increased time as threads get too high are due to Grace's architecture and limit of threads.
 
 	Overall, the general performance for OMP was worse compared to CUDA, however the efficiency for the threads was much greater for OMP, and visualizing
  	the data was much easier and provided greater insights.
