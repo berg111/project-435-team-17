@@ -333,10 +333,59 @@ Odd Even Sort:
      
 
 MergeSort
-```
-As the input size increases, so does the overall runtime of the program. This is an intuitive result that isn’t all that surprising. What is interesting is the relationship between the number of processes and ‘main’ runtime for a fixed input size. For a fixed input size, as the number of processes increases, so does the runtime of the ‘main’ function. This is not what we had hoped to see because it demonstrates that our program does not scale well with the number of processes. After seeing the results, I believe that this is caused by the fact that in order for MergeSort to work, we must merge many sorted arrays. The number of processes is proportional to the number of mergers that must be done. In this particular program, as we increase the number of processes, we are able to split the original array into a larger number of  smaller arrays. As a result, we must spend more time merging arrays. Another interesting observation that can be made by looking at the output graphs is the rate at which the runtime increases as the number of processes increases. Not only does the runtime get worse as the number of processes increases, but the rate of increase seems to be higher for larger input sizes. This can be seen in the following plots.
 
-```
-  	
+As the input size increases, so does the overall runtime of the program. This is an intuitive result that isn’t all that surprising. 
+What is interesting is the relationship between the number of processes and ‘main’ runtime for a fixed input size. For a fixed input
+size, as the number of processes increases, so does the runtime of the ‘main’ function. This is not what we had hoped to see because it
+demonstrates that our program does not scale well with the number of processes. After seeing the results, I believe that this is caused
+by the fact that in order for MergeSort to work, we must merge many sorted arrays. The number of processes is proportional to the
+number of mergers that must be done. In this particular program, as we increase the number of processes, we are able to split the
+original array into a larger number of  smaller arrays. As a result, we must spend more time merging arrays. Another interesting
+observation that can be made by looking at the output graphs is the rate at which the runtime increases as the number of processes
+increases. Not only does the runtime get worse as the number of processes increases, but the rate of increase seems to be higher
+for larger input sizes. This can be seen in the following plots.
+
+PLOTS HERE
+
+From the plots we can see that the curves are steeper for larger problem sizes. I believe this supports the idea that the increased 
+amount of merging is drastically slowing down the program.
+
+For different input types, the runtime of ‘main’ didn’t seem to be affected. The plots definitely vary between the input types, 
+however the time spent within the program is approximately the same. Here are the plots used:
+
+PLOTS HERE
+
+For the smaller number of processes, the curves seem to be very similar (except for the ‘reverse’ case). The peaks of the graphs 
+all occur around the same 60-80 second mark near the larger number of processes. I believe that if multiple runs were performed, 
+we would see an average case for all input types that is more similar. For three of the plots, the runs with 32 processes seem 
+to run for around 30 seconds. However, for the ‘reverse’ case this is not true. This could be due to the fact that more swaps 
+occur during the sorting phase of the program. This would increase the amount of time spent sorting each subarray.
+
+As mentioned previously, increasing the number of processes and keeping the problem size fixed did not scale well. For this 
+particular program, strong scaling does not perform well. I believe this is due to the increased number of array merges that must 
+happen with an increase in processes. For weak scaling, we can look at how well the program performs when the problem size 
+increases with the number of processes.
+
+PLOTS HERE
+
+From the graph we can see a runtime that is linear with respect to the input size. For each input size, we used a number of 
+processors that was directly proportional to the size of the input. The input size was divided by 32,768 to get the number of 
+processors. We can determine that the program does not scale well with weak scaling. We can come to this conclusion because 
+the runtime is linear (just like the relationship between the number of processors and the input size).
+
+For CUDA: Here are the resulting plots for the ‘comp’ and ‘main’ region with weak scaling.
+
+PLOTS HERE
+
+We can see that the ‘main’ portion of the program saw a decrease in the average time per rank when moving from 64 to 128 
+threads. However, the ‘total GPU time’ increased uniformly as the number of threads increased. If the lines in the plots 
+had been flat, we could conclude that the program has good weak scaling. In this case, we can conclude the opposite because 
+the lines appear to be increasing exponentially. This shows that the program is not handling the larger problem sizes well 
+even when the number of threads is increased to account for the difference. One potential issue with this test is that the 
+relationship between the number of threads and problem size was not linear. For this part of the experiment, the problem 
+size was equal to the number of threads squared. If instead we used a constant factor to relate the number of threads and 
+the size of the input, the plots may have been flatter and suggested better weak scaling performance.
+
+
 	
   
