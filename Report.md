@@ -332,7 +332,7 @@ Odd Even Sort:
  	the data was much easier and provided greater insights.
      
 
-MergeSort
+#### MergeSort
 
 As the input size increases, so does the overall runtime of the program. This is an intuitive result that isn’t all that surprising. 
 What is interesting is the relationship between the number of processes and ‘main’ runtime for a fixed input size. For a fixed input
