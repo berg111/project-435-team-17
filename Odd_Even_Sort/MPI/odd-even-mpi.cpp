@@ -38,24 +38,24 @@ void generate_array(int array[], int size, int input) {
 }
 
 
-void oddEvenSort(int localArr[], int localSize) {
+void oddEvenSort(int array[], int size) {
     int phase, i, temp;
 
-    for (phase = 0; phase < localSize; phase++) {
+    for (phase = 0; phase < size; phase++) {
         if (phase % 2 == 0) {
-            for (i = 1; i < localSize; i += 2) {
-                if (localArr[i] < localArr[i - 1]) {
-                    temp = localArr[i];
-                    localArr[i] = localArr[i - 1];
-                    localArr[i - 1] = temp;
+            for (i = 1; i < size; i += 2) {
+                if (array[i] < array[i - 1]) {
+                    temp = array[i];
+                    array[i] = array[i - 1];
+                    array[i - 1] = temp;
                 }
             }
         } else {
-            for (i = 1; i < localSize - 1; i += 2) {
-                if (localArr[i] > localArr[i + 1]) {
-                    temp = localArr[i];
-                    localArr[i] = localArr[i + 1];
-                    localArr[i + 1] = temp;
+            for (i = 1; i < size - 1; i += 2) {
+                if (array[i] > array[i + 1]) {
+                    temp = array[i];
+                    array[i] = array[i + 1];
+                    array[i + 1] = temp;
                 }
             }
         }
@@ -63,6 +63,7 @@ void oddEvenSort(int localArr[], int localSize) {
 }
 
 int main(int argc, char** argv) {
+    CALI_CXX_MARK_FUNCTION;
     int numtasks, taskid, numworkers, source, dest, mtype;
     int size = atoi(argv[1]);
     int arrayINput = atoi(argv[2]);
@@ -113,7 +114,7 @@ int main(int argc, char** argv) {
             MPI_Send(array, size, MPI_INT, dest, mtype, MPI_COMM_WORLD);
         }
 
-        
+        CALI_MARK_BEGIN("comp");
         oddEvenSort(array, size);
 
        
@@ -122,6 +123,8 @@ int main(int argc, char** argv) {
             source = i;
             MPI_Recv(array, size, MPI_INT, source, mtype, MPI_COMM_WORLD, &status);
         }
+
+        CALI_MARK_END("comp");
 
         
         printf("Sorted Array: ");

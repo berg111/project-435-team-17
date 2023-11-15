@@ -38,14 +38,38 @@ __global__ void oddEvenSortStep(int* array, int size, int phase){
     }
 }
 
+void print_elapsed(clock_t start, clock_t stop)
+{
+  double elapsed = ((double) (stop - start)) / CLOCKS_PER_SEC;
+  printf("Elapsed time: %.3fs\n", elapsed);
+}
+
 
 //Helper function to create array of random values
-void generate_array(std::vector<int>& array, int size){
+void generate_array(std::vector<int>& array, int size, int input){
     
     array.resize(size);
 
-	for(int i = 0; i < size; i++){
-		array[i] = rand() % 100000;
+	switch(input){
+        case 1:
+            for (int i = 0; i < size; i++) {
+                array[i] = rand() % 10000;
+            }
+            break;
+        case 2:
+            for (int i = 0; i < size; i++) {
+                array[i] = i;
+            }
+            break;
+        case 3:
+            int temp[size];
+            for (int i = 0; i < size; i++) {
+                temp[i] = i;
+            }
+            for(int i = 0; i < size; ++i){
+                array[i] = temp[size - 1 - i];
+            }
+            break;
     }
 }
 
@@ -64,10 +88,11 @@ int main(int argc, char** argv){
 
     CALI_CXX_MARK_FUNCTION;
 
-    cudaEvent_t h_t_d_start, h_t_d_end, sort_step_start, sort_step_end, d_t_h_start, d_t_h_end;
+    cudaEvent_t  sort_step_start, sort_step_end;
 
     int threads = atoi(argv[1]);
     int arraySize = atoi(argv[2]);
+    int input = atoi(argv[3]);
 
     cali::ConfigManager mgr;
     mgr.start();
@@ -75,11 +100,9 @@ int main(int argc, char** argv){
     dim3 blocks((arraySize + threads - 1) / threads, 1, 1);
     dim3 threadsPerBlock(threads, 1, 1);
 
-    clock_t start, stop;
-
     std::vector<int> array;
 
-    generate_array(array, arraySize);
+    generate_array(array, arraySize, input);
     std::cout << arraySize << std::endl;
     // std::cout << "UNSorted Array: ";
     // for (int i = 0; i < array.size(); ++i) {
@@ -97,10 +120,18 @@ int main(int argc, char** argv){
     cudaEventCreate(&sort_step_end);
     cudaEventRecord(sort_step_start);
 
+    clock_t start, stop;
+
+    start = clock();
+
     for(int i = 0; i < array.size(); ++i){
         oddEvenSortStep<<<blocks, threadsPerBlock>>>(gpu_array, arraySize, i );
         cudaDeviceSynchronize();
     }
+
+    stop = clock();
+
+    print_elapsed(start, stop);
 
     cudaEventRecord(sort_step_end);
     cudaEventSynchronize(sort_step_end);
@@ -112,7 +143,7 @@ int main(int argc, char** argv){
 
     cudaFree(gpu_array);
 
-    printf("Time elapsed: %f ", timeB);
+    // printf("Time elapsed: %f ", timeB);
 
     if (isSorted(array)) {
         // std::cout << "Sorted Array: ";
