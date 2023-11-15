@@ -345,7 +345,10 @@ observation that can be made by looking at the output graphs is the rate at whic
 increases. Not only does the runtime get worse as the number of processes increases, but the rate of increase seems to be higher
 for larger input sizes. This can be seen in the following plots.
 
-PLOTS HERE
+![mpi main 65536 random](./MergeSort/mpi/report_images/main-a65536-random.png)
+![mpi main 1048576 random](./MergeSort/mpi/report_images/main-a1048576-random.png)
+![mpi main 4194304 random](./MergeSort/mpi/report_images/main-a4194304-random.png)
+
 
 From the plots we can see that the curves are steeper for larger problem sizes. I believe this supports the idea that the increased 
 amount of merging is drastically slowing down the program.
@@ -353,7 +356,10 @@ amount of merging is drastically slowing down the program.
 For different input types, the runtime of ‘main’ didn’t seem to be affected. The plots definitely vary between the input types, 
 however the time spent within the program is approximately the same. Here are the plots used:
 
-PLOTS HERE
+![mpi main 4194304 random](./MergeSort/mpi/report_images/main-a4194304-random.png)
+![mpi main 4194304 perturbed](./MergeSort/mpi/report_images/main-a4194304-perturbed.png)
+![mpi main 4194304 reverse](./MergeSort/mpi/report_images/main-a4194304-reverse.png)
+![mpi main 4194304 sorted](./MergeSort/mpi/report_images/main-a4194304-sorted.png)
 
 For the smaller number of processes, the curves seem to be very similar (except for the ‘reverse’ case). The peaks of the graphs 
 all occur around the same 60-80 second mark near the larger number of processes. I believe that if multiple runs were performed, 
@@ -366,7 +372,7 @@ particular program, strong scaling does not perform well. I believe this is due 
 happen with an increase in processes. For weak scaling, we can look at how well the program performs when the problem size 
 increases with the number of processes.
 
-PLOTS HERE
+![mpi main weak scaling random](./MergeSort/mpi/report_images/mpi-weak-scaling.png)
 
 From the graph we can see a runtime that is linear with respect to the input size. For each input size, we used a number of 
 processors that was directly proportional to the size of the input. The input size was divided by 32,768 to get the number of 
@@ -375,7 +381,8 @@ the runtime is linear (just like the relationship between the number of processo
 
 For CUDA: Here are the resulting plots for the ‘comp’ and ‘main’ region with weak scaling.
 
-PLOTS HERE
+![cuda weak scaling comp region](./MergeSort/cuda/report_images/comp-weak-scaling.png)
+![cuda weak scaling main region](./MergeSort/cuda/report_images/main-weak-scaling.png)
 
 We can see that the ‘main’ portion of the program saw a decrease in the average time per rank when moving from 64 to 128 
 threads. However, the ‘total GPU time’ increased uniformly as the number of threads increased. If the lines in the plots 
