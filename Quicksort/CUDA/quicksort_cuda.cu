@@ -12,6 +12,7 @@
 
 
 #define BLOCK_SIZE 256
+float timeA, timeB, timeC, bandwidth = 0.0;
 
 // Function to swap two elements
 __device__ void swap(int *a, int *b) {
@@ -70,7 +71,7 @@ void generate_array(int* array, int size){
     // array.resize(size);
 
 	for(int i = 0; i < size; i++){
-		array[i] = rand() % 100000;
+		array[i] = i;
     }
 }
 
@@ -88,20 +89,22 @@ int main(int argc, char** argv){
 
     CALI_CXX_MARK_FUNCTION;
 
+    cudaEvent_t h_t_d_start, h_t_d_end, sort_step_start, sort_step_end, d_t_h_start, d_t_h_end;
+
     int threads = atoi(argv[1]);
     int array_size = atoi(argv[2]);
 
     cali::ConfigManager mgr;
     mgr.start();
 
-    clock_t start, stop;
+    // clock_t start, stop;
 
     int array[array_size] = {0};
 
     generate_array(array, array_size);
-    for (int i = 0; i < array_size; i++) {
-        std::cout << array[i] << ", ";
-    }
+    // for (int i = 0; i < array_size; i++) {
+    //     std::cout << array[i] << ", ";
+    // }
     std::cout << std::endl;
     std::cout << array_size << std::endl;
 
@@ -119,13 +122,25 @@ int main(int argc, char** argv){
         cudaFree(gpu_array);
         return 1;
     }
-    start = clock();
+    // start = clock();
 
-    quicksort<<<1, 1>>>(gpu_array, 0, array_size - 1);
-    // cudaDeviceSynchronize();
-    stop = clock();
+    CALI_MARK_BEGIN("comp");
+    cudaEventCreate(&sort_step_start);
+    cudaEventCreate(&sort_step_end);
+    cudaEventRecord(sort_step_start);
 
-    double elapsed = (double)(stop - start) / CLOCKS_PER_SEC;
+    quicksort<<<1, threads>>>(gpu_array, 0, array_size - 1);
+    cudaDeviceSynchronize();
+
+
+    cudaEventRecord(sort_step_end);
+    cudaEventSynchronize(sort_step_end);
+    cudaEventElapsedTime(&timeB, sort_step_start, sort_step_end);
+
+    CALI_MARK_END("comp");
+    // stop = clock();
+
+    // double elapsed = (double)(stop - start) / CLOCKS_PER_SEC;
 
 
 
@@ -137,14 +152,16 @@ int main(int argc, char** argv){
         return 1;
     }
 
+    printf("Time elapsed: %f ", timeB / 1000);
+
     if (isSorted(array, array_size)) {
         std::cout << "Array is sorted." << std::endl;
     } else {
         std::cout << "Array is not sorted." << std::endl;
     }
-    for (int i = 0; i < array_size; i++) {
-        std::cout << array[i] << ", ";
-    }
+    // for (int i = 0; i < array_size; i++) {
+    //     std::cout << array[i] << ", ";
+    // }
 
     cudaFree(gpu_array);
 
@@ -156,7 +173,7 @@ int main(int argc, char** argv){
     adiak::clustername();
     adiak::value("num_threads", threads);
     adiak::value("num_vals", array_size);
-    adiak::value("Sort_time", elapsed);
+    // adiak::value("Sort_time", elapsed);
 
     mgr.stop();
     mgr.flush();

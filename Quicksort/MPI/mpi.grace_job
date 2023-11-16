@@ -17,11 +17,12 @@
 ##First Executable Line
 #
 array_size=$1
+array_input=$2
 processes=$2
 
 module load intel/2020b       # load Intel software stack
 module load CMake/3.12.1
 
-CALI_CONFIG="spot(output=p${processes}-a${array_size}.cali, \
+CALI_CONFIG="spot(output=p${processes}-a${array_size}-i${array_input}.cali, \
     time.variance)" \
-mpirun -np $processes ./odd-even $array_size
+mpirun -np 2 ./quicksort_mpi $array_size $array_input
