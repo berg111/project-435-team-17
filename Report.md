@@ -421,7 +421,7 @@ It was expected that as during the lower thread counts on the smaller arrays, th
 Since CUDA functions are inlined, there is no way for them to be called recursively inside of themselves. Because of this, the implementation is an attempted work around to try to run the quicksort algorithm on CUDA. 
 For our implementation, it was noticeable that for the smallest array size there was virtually no difference in the runtime based on the number of threads that the program was run on. As the array size continued to grow, there was an obvious growth in the amount of time the quicksort algorithm took to finish. Along with this, there was no noticeable difference in the time the algorithm took based on the variation in the number of threads.
 
-![CUDA base processes runtime](./Quicksort/image1.png)
+![CUDA base processes runtime](./Quicksort/Picture1.png)
 
 For the randomly sorted array we can see that the runtimes, as the array size increased, was increasing at an exponential rate, as beyond the 2^22 array size the algorithm would max out the elloted run time. Once increasing the runtime, we would be able to see some results, however it would increase at an exponential rate. 
 
@@ -430,7 +430,7 @@ It is evident that in our workaround attempt, there is only one call to the quic
 For testing the performance of our Quicksort algorithm implemented in MPI, we tested it on the same array size over 2, 4, 8, 16, 32, 64, 128, 256, 512, and 1024 processes. This was tested against arrays sorted in order, sorted randomly, and sorted in reverse.
 By our expectations, the MPI implementation was expected to run the longest on the longest array size with the least amount of processes. By our evaluations, this was mostly true, as our implementation revealed that as we increased the array sizes, our implementation was taking longer as expected. However, adding on processes was not having much of an effect on the performance. 
 
-![MPI random sort runtime](./Quicksort/image2.png)
+![MPI random sort runtime](./Quicksort/Picture2.png)
 
 For the plot above, we can see that a randomly sorted graph would take longer to sort with an increase in the array size. At a certain array size, 2^22 to be exact, the algorithm would error out or simply not sort the algorithm and claim it was finished. Because of this we assumed there was not enough memory allocated to the program when running on a higher array size. However after finding out that the implementation was sending the full data set to each process, it was evident that the processes were not equally sharing the data for the sorting algorithm and were allocating all the work to a single process, as this is an implementation error that we were coming across. 
   
