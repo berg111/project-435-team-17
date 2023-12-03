@@ -304,16 +304,26 @@ providing minimal time decreases.
 it is not until array size 2^20 until performance increases can be visualized. Hoever, the performance gains level off fairly quickly once
 512 threads is reached.
 
-For specific values, no matter the thread count, every run time for 2^18 was under 1 second, and there were no improvements between thread counts.
+For specific values, no matter the thread count, every run time for 2^16 was under 1 second, and there were no improvements between thread counts.
 
 ![cuda main 65536](./Odd_Even_Sort/CUDA_2^16.png)
 
 For 2^18, every run was under 3 seconds, again with no improvements or variability between array types.
+
+![cuda main 2_18](./Odd_Even_Sort/CUDA_2^18.png)
+
 For 2^20, things began to change, there was a steep drop from 20 seconds to 14 seconds, and then to 10 seconds before leveling off. No changes between 
 array types.
+
+![cuda main 2_20](./Odd_Even_Sort/CUDA_2^20.png)
+
 For 2^22, There was a drop from 250 seconds to 125, and then to 80. Minimal variablity, but sorted array can be seen to run quicker.For 2^24, There is a drop from 3500 seconds to 1700, and then the array types split off here. 
 The random array levels off at about 1600 seconds,the sorted array levels off at about 1200 seconds. And the reverse array levels off at 1800 seconds. And actually at 1024 threads, there is a slight 
  performance decrease.
+
+ ![cuda main 2_22](./Odd_Even_Sort/CUDA_2^22.png)
+
+ ![cuda main 2_24](./Odd_Even_Sort/CUDA_2^24.png)
 
 
 For Odd Even Sort - OMP, the following array sizes were used: 2^16, 2^18, 2^20, higher sizes were not used due to time constraints and performance drops
@@ -323,11 +333,17 @@ The OMP implementation provided some more clear observations than CUDA. The time
 For array size 2^16, times decreased from threads 2 to 16, but began to increase at 64+ threads. There are clear differences in the arrays, the sorted
 arrays provide the lowest times and the random times provide the highest, and reverse is in the middle.
 
+ ![omp main 2_16](./Odd_Even_Sort/OMP_2^16.png)
+
 For array 2^18, the performance trends are the same as the array prior, however, as the threads increased, the performance drop off was not as severe as 
 the smaller array
 
+![omp main 2_18](./Odd_Even_Sort/OMP_2^18.png)
+
 For array size 2^20, again the same performnce trends hold true, except the random arrays for the lower thread counts take much longer compared to the 
 sorted arrays, for example the sorted array for 8 threads took 73 seconds, where the random array took 253 seconds.
+
+![omp main 2_20](./Odd_Even_Sort/OMP_2^20.png)
 
 The increased time as threads get too high are due to Grace's architecture and limit of threads.
 
@@ -397,5 +413,49 @@ size was equal to the number of threads squared. If instead we used a constant f
 the size of the input, the plots may have been flatter and suggested better weak scaling performance.
 
 
-	
+**Bucket Sort**
+
+Two different implementations of Bucket Sort were used for this project: a CUDA implementation and an MPI implementation. Starting with the CUDA implementation, 4 different array sizes were used: 2^16, 2^18, 2^20, and 2^22 values each. Each of these arrays were input into the sorting algorithm randomized, pre-sorted, reverse sorted, and 1% perturbed. For each of these sizes and organizations, different numbers of thread counts were used on the NVIDIA A100 GPU including 64, 128, 256, 512, and 1024 threads. Unfortunately, further testing of this implementation of Bucket Sort on the Grace hardware was not possible as we ran into a memory allocation limit. Traditional implementations of Bucket Sort utilize vectors to serve as “buckets” for array values to be sorted into; however, this traditional approach is not possible with CUDA. CUDA does not support a dynamic vector data structure, meaning that the size of each bucket must be known when allocating memory which goes against the nature of a memory efficient Bucket Sort algorithm. Our solution to this was to limit the number of buckets to the max thread count (1024) and create a (b * n) array that allows for all possible combinations of buckets. At the max array size, this resulted in a buckets object being created with 1024 * 2^22 * 4 = ~17 GB where 1024 is the number of buckets, 2^22 is the array size, and 4 is the size of the data type we were sorting (floats). If we increased the array size to 2^24, then we would need ~68 GB of memory. Since the A100 GPU only has 40GB of onboard memory, we would either need to use multiple GPUs (which would utilize MPI and CUDA at the same time, defeating the purpose of comparing the two architectures) or we would need different hardware. 
+
+Due to the large overhead of creating and sorting the array into buckets (which was not efficiently parallelizable), the performance of this algorithm gave some interesting numbers. To begin, the ‘Comp Small’ caliper region was used to measure the kernel call to the GPU while the ‘Comp Large’ caliper region was used to measure sorting the array into buckets (preprocessing) and stitching the sorted buckets back together. In the graphs below, you can see the overhead for preprocessing and stitching dominated over the time it took to sort the individual buckets. 
+
+![cuda comp small region](./BucketSort/CUDA/Plots/Random_Comp_Small_Plot.png)
+![cuda comp large region](./BucketSort/CUDA/Plots/Random_Comp_Large_Plot.png)
+
+Due to this dominance, this CUDA implementation of Bucket sort saw marginal performance increases as the number of threads was increased. It is also interesting to note that this is consistent across the different array organizations. Below are ‘Random’ and ‘Sorted’ plots for reference.
+
+![cuda random comp small region](./BucketSort/CUDA/Plots/Random_Comp_Small_Plot.png)
+![cuda sorted comp small region](./BucketSort/CUDA/Plots/Sorted_Comp_Small_Plot.png)
+
+The next implementation of Bucket Sort utilized C++ MPI. This version was also limited by memory for the same design reasons as CUDA. 4 different array sizes were used: 2^14, 2^16, 2^22, and 2^20 values each. Each of these arrays were input into the sorting algorithm randomized, pre-sorted, reverse sorted, and 1% perturbed. For each of these sizes and organizations, different numbers of processors were used on multiple Grace nodes including 2, 4, 8, 16, 32, 64, 128, 256, and 512 processors. Unfortunately, further testing of this implementation was not possible as any size larger than 2^20 would crash the algorithm, despite increasing the memory allocation per node on Grace. This is likely because of the use of MPI_Scatter and MPI_Gather. Since only the master task would allocate the initial bucket’s array, each task would have to allocate enough memory for each of the buckets they receive. This effectively results in the ‘buckets’ object being allocated twice which needs lots of memory at large array size. 
+Although this version of the algorithm utilized MPI_Scatter and MPI_Gather to make communication more efficient, it is interesting to note that as the number of processors increased, the amount of communication time also increased exponentially. Similar to the CUDA implementation, this algorithm had a dominating region, but it was the ‘Comm’ region rather than the ‘Comp Large’ region. It seems that the computation on each task was MUCH faster on MPI, but the communication was also much slower resulting in degraded performance as the number of processors increased. Below are plots of the ‘Comm’ and ‘Comp Small’ for the MPI implementation. 
+
+![mpi comm region](./BucketSort/MPI/Plots/Random_Comm_Plot.png)
+![mpi comp small region](./BucketSort/MPI/Plots/Random_Comp_Small_Plot.png)
+
+Comparing the overall runtimes of both algorithms, it is easy to see that the communication overheads dominated their runtimes resulting in faster computation as the number of processors/threads increased, but worse total runtimes as the number of processors/threads increased. Despite MPI sorting each bucket faster, it was bar far the slower algorithm. Below are plots of CUDA and MPI ‘Main’ region times. 
+<INSERT MAIN REGIONS FOR CUDA AND MPI>
+![cuda main region](./BucketSort/CUDA/Plots/Random_Main_Plot.png)
+![mpi main region](./BucketSort/MPI/Plots/Random_Main_Plot.png)
+
+
+**Quicksort**
+
+For testing the performance of our Quicksort algorithm implemented in CUDA, it was tested on a 2^16, 2^18, 2^20, 2^22, 2^24, 2^26, and 2^28 array sizes with them being sorted in order, sorted randomly, and sorted in reverse.
+It was expected that as during the lower thread counts on the smaller arrays, there would not be much difference in the time, yet as the array size grew and the algorithm was run on more threads, we would theoretically see a large reduction in the time taken to complete the sorting process.
+Since CUDA functions are inlined, there is no way for them to be called recursively inside of themselves. Because of this, the implementation is an attempted work around to try to run the quicksort algorithm on CUDA. 
+For our implementation, it was noticeable that for the smallest array size there was virtually no difference in the runtime based on the number of threads that the program was run on. As the array size continued to grow, there was an obvious growth in the amount of time the quicksort algorithm took to finish. Along with this, there was no noticeable difference in the time the algorithm took based on the variation in the number of threads.
+
+![CUDA base processes runtime](./Quicksort/Picture1.png)
+
+For the randomly sorted array we can see that the runtimes, as the array size increased, was increasing at an exponential rate, as beyond the 2^22 array size the algorithm would max out the elloted run time. Once increasing the runtime, we would be able to see some results, however it would increase at an exponential rate. 
+
+It is evident that in our workaround attempt, there is only one call to the quicksort algorithm that does not correctly allocate equal work to separate threads in the GPU. Therefore the work was being done on one thread alone and as a result was constantly increasing in time as the array size generated, yet staying virtually the same as the thread count was increased.
+
+For testing the performance of our Quicksort algorithm implemented in MPI, we tested it on the same array size over 2, 4, 8, 16, 32, 64, 128, 256, 512, and 1024 processes. This was tested against arrays sorted in order, sorted randomly, and sorted in reverse.
+By our expectations, the MPI implementation was expected to run the longest on the longest array size with the least amount of processes. By our evaluations, this was mostly true, as our implementation revealed that as we increased the array sizes, our implementation was taking longer as expected. However, adding on processes was not having much of an effect on the performance. 
+
+![MPI random sort runtime](./Quicksort/Picture2.png)
+
+For the plot above, we can see that a randomly sorted graph would take longer to sort with an increase in the array size. At a certain array size, 2^22 to be exact, the algorithm would error out or simply not sort the algorithm and claim it was finished. Because of this we assumed there was not enough memory allocated to the program when running on a higher array size. However after finding out that the implementation was sending the full data set to each process, it was evident that the processes were not equally sharing the data for the sorting algorithm and were allocating all the work to a single process, as this is an implementation error that we were coming across. 
   
