@@ -1,0 +1,7 @@
+65536655366553665536
+Total number of Elements in the array : 65536
+Total number of Elements given as input : 65536
+Sorted: True
+
+
+Quicksort 65536 ints on 4 procs: 0.398531 secs

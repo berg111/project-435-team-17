@@ -165,15 +165,32 @@ int main(int argc, char** argv){
 
     cudaFree(gpu_array);
 
-    adiak::init(NULL);
-    adiak::user();
-    adiak::launchdate();
-    adiak::libraries();
-    adiak::cmdline();
-    adiak::clustername();
-    adiak::value("num_threads", threads);
-    adiak::value("num_vals", array_size);
-    // adiak::value("Sort_time", elapsed);
+    // adiak::init(NULL);
+    // adiak::user();
+    // adiak::launchdate();
+    // adiak::libraries();
+    // adiak::cmdline();
+    // adiak::clustername();
+    // adiak::value("num_threads", threads);
+    // adiak::value("num_vals", array_size);
+    // // adiak::value("Sort_time", elapsed);
+
+            adiak::init(NULL);
+        adiak::launchdate();    // launch date of the job
+        adiak::libraries();     // Libraries used
+        adiak::cmdline();       // Command line used to launch the job
+        adiak::clustername();   // Name of the cluster
+        adiak::value("Algorithm", "QuickSort"); // The name of the algorithm you are using (e.g., "MergeSort", "BitonicSort")
+        adiak::value("ProgrammingModel", "CUDA"); // e.g., "MPI", "CUDA", "MPIwithCUDA"
+        adiak::value("Datatype", "float"); // The datatype of input elements (e.g., double, int, float)
+        adiak::value("SizeOfDatatype", sizeof(float)); // sizeof(datatype) of input elements in bytes (e.g., 1, 2, 4)
+        adiak::value("InputSize", array_size); // The number of elements in input dataset (1000)
+        adiak::value("InputType", "Random"); // For sorting, this would be "Sorted", "ReverseSorted", "Random", "1%perturbed"
+        adiak::value("num_threads", threads); // The number of processors (MPI ranks)
+        // adiak::value("num_threads", num_threads); // The number of CUDA or OpenMP threads
+        // adiak::value("num_blocks", num_blocks); // The number of CUDA blocks 
+        adiak::value("group_num", 17); // The number of your group (integer, e.g., 1, 10)
+        adiak::value("implementation_source", "Online"); // Where you got the source code of your algorithm; choices: ("Online", "AI", "Handwritten").
 
     mgr.stop();
     mgr.flush();

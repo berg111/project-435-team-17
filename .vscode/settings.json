@@ -65,6 +65,7 @@
         "deque": "cpp",
         "ranges": "cpp",
         "span": "cpp",
-        "stack": "cpp"
+        "stack": "cpp",
+        "numeric": "cpp"
     }
 }

@@ -1,0 +1,7 @@
+
+Total number of Elements in the array : 4194304
+Total number of Elements given as input : 4194304
+Sorted: True
+
+
+Quicksort 4194304 ints on 128 procs: 1.590498 secs

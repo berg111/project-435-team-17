@@ -1,0 +1,4 @@
+
+slurmstepd: error: *** STEP 9405868.0 ON c223 CANCELLED AT 2023-12-06T18:30:27 DUE TO TIME LIMIT ***
+slurmstepd: error: *** JOB 9405868 ON c223 CANCELLED AT 2023-12-06T18:30:27 DUE TO TIME LIMIT ***
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.

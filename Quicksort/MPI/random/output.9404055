@@ -1,0 +1,12 @@
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 0 PID 250659 RUNNING AT c197
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 1 PID 250660 RUNNING AT c197
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
