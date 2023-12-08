@@ -300,9 +300,18 @@ For Odd Even Sort - CUDA, the following array sizes were used: 2^16, 2^18, 2^20,
 and the array types: Random, Sorted, Reverse Sorted, and 1 % perturbed and thread counts: 64, 128, 256, 512, 1024
 
 
+
 For Odd Even Sort - MPI, the following array sizes were used: 2^16, 2^18, 2^20, 2^22, 2^24, 2^26
 and the array types: Random, Sorted, Reverse Sorted, and 1 % perturbed and thread counts: 2, 4, 8, 16, 32, 64, 128, 256, 512
-     
+
+In the lower end of the Input sizes, this algorithm does not scale well in MPI. As the processes increase, so does the time taken, regardless of the input type
+It can be noted that in the comm time, that there is a spike in the mid range of processes, and this is due to the number of nodes used in the jobfile, where only
+1 was being utilized until about 64 processes. This spike could be due to the nature of the communication method, which in this algorithm I utilized
+broadcast, scatter, and gather communications. On weak scaling, it scales relatively well on the lower end of processes, where the processes are handling roughly
+the same load, until about 512 processes where it begins to increase. 
+
+Performance gains become to be noticeable once we reach higher input sizes of about 2^24, where the computation time begins to decrease as the processes increase.
+However, the same communication overhead still holds true in this input as well.
 
 #### MergeSort
 
