@@ -301,11 +301,11 @@ and the array types: Random, Sorted, Reverse Sorted, and 1 % perturbed and threa
 
 The performance on the CUDA implemntation scaled very well, and shows a solid trend in decreasing time as threads increase. The communication overhead does take some time on lower thread counts, but quickly drops off. The speedup time also shows great performance and increases until about 512 threads and tapers off. Overall the CUDA implementation seemed to perform much more efficiently than the MPI implementation did.
 
-![pic](./Odd_Even_Sort/Cuda-Speedup.png)
-![pic](./Odd_Even_Sort/Cuda-Comm.png)
-![pic](./Odd_Even_Sort/Cuda-Comp.png)
-![pic](./Odd_Even_Sort/Cuda-Main.png)
-![pic](./Odd_Even_Sort/Cuda-Weak.png)
+![pic](./Odd_Even_Sort/CUDA-Speedup.png)
+![pic](./Odd_Even_Sort/CUDA-Comm.png)
+![pic](./Odd_Even_Sort/CUDA-Comp.png)
+![pic](./Odd_Even_Sort/CUDA-Main.png)
+![pic](./Odd_Even_Sort/CUDA-Weak.png)
 For Odd Even Sort - MPI, the following array sizes were used: 2^16, 2^18, 2^20, 2^22, 2^24, 2^26
 and the array types: Random, Sorted, Reverse Sorted, and 1 % perturbed and thread counts: 2, 4, 8, 16, 32, 64, 128, 256, 512
 
@@ -320,6 +320,7 @@ the same load, until about 512 processes where it begins to increase. The speedu
 ![pic](./Odd_Even_Sort/MPI-comp.png)
 ![pic](./Odd_Even_Sort/MPI-main.png)
 ![pic](./Odd_Even_Sort/MPI-weak.png)
+
 Performance gains become to be noticeable once we reach higher input sizes of about 2^24, where the computation time begins to decrease as the processes increase.
 However, the same communication overhead still holds true in this input as well. The speedup of this input size scaled better than the lower input but is not great, and requires the processes to be at about 32 to start seeing improvements, that taper off pretty quick.
 ![pic](./Odd_Even_Sort/MPI-Speedup-2.png)
