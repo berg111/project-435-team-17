@@ -347,7 +347,10 @@ for larger input sizes. This can be seen in the following plots.
 
 
 From the plots we can see that the curves are steeper for larger problem sizes. I believe this supports the idea that the increased 
-amount of merging is drastically slowing down the program.
+amount of merging is drastically slowing down the program. One thing to note is that the problem sizes shown here may not 
+be giving the implementation an opportunity to shine. As we increase the problem size and number of processes, we give 
+the downward trend of the 'comp' region an opportunity to more heavily influence the overall runtime of 'main'. The plateau seen 
+in the 'comm' region would also help to improve the performance at higher input sizes with more processes.
 
 For different input types, the runtime of ‘main’ didn’t seem to be affected. The plots definitely vary between the input types, 
 however the time spent within the program is approximately the same. Here are the plots used:
