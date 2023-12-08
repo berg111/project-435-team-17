@@ -392,6 +392,17 @@ relationship between the number of threads and problem size was not linear. For 
 size was equal to the number of threads squared. If instead we used a constant factor to relate the number of threads and 
 the size of the input, the plots may have been flatter and suggested better weak scaling performance.
 
+![mpi and cuda speedup](./MergeSort/mpi/report_images/speedup.png)
+
+We can see that the speedup for CUDA is less uniform than the speedup for MPI. Both implementations have poor 
+parallel performance. Neither reach a speedup that indicates peformance better than the sequential implementation. 
+There is a relationship between input size and speedup for the CUDA implementation. It seems from these plots that 
+if we were to increase the size of the problem beyond 16777216, we may see the speedup go beyond 1 (indicating that 
+it is performing better than the sequential version). For MPI, the speed immediately drops off as the number of 
+processes increases. There is no notable difference between the input sizes and types. This suggests that the 
+implementation is performing badly. There does not seem to be any indication that there exists a combination of 
+processes and input size where the speedup goes beyond 1.
+
 
 **Bucket Sort**
 
