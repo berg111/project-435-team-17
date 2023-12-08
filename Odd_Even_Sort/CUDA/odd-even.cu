@@ -140,6 +140,9 @@ int main(int argc, char** argv){
     else if(input == 3){
         inputType = "Reverse Sorted";
     }
+    else if(input == 4){
+        inputType = "1%perturbed";
+    }
     cali::ConfigManager mgr;
     mgr.start();
 

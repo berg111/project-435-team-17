@@ -15,6 +15,8 @@ using namespace std;
 
 
 void generate_array(int *array, int size, int input) {
+    int aaa;
+    int temp[size];
     switch(input){
         case 1:
             for (int i = 0; i < size; i++) {
@@ -27,7 +29,7 @@ void generate_array(int *array, int size, int input) {
             }
             break;
         case 3:
-            int temp[size];
+            
             for (int i = 0; i < size; i++) {
                 temp[i] = i;
             }
@@ -35,6 +37,18 @@ void generate_array(int *array, int size, int input) {
                 array[i] = temp[size - 1 - i];
             }
             break;
+        case 4:
+            for (int i = 0; i < size; i++) {
+                array[i] = i;
+            }
+            int num_perturbations = size / 100;
+            for (int i = 0; i < num_perturbations; i++) {
+                int rand_index1 = rand() % size;
+                int rand_index2 = rand() % size;
+                aaa = array[rand_index1];
+                array[rand_index1] = array[rand_index2];
+                array[rand_index2] = aaa;
+            }
     }
 
 }
@@ -97,8 +111,21 @@ int main(int argc, char *argv[]){
 	int *temp;
 	int ierr,i;
 	int root_process;
+    int input = atoi(argv[2]);
+    std::string inputType;
+    if(input == 1){
+        inputType = "Random";
+    }
+    else if(input == 2){
+        inputType = "Sorted";
+    }
+    else if(input == 3){
+        inputType = "Reverse Sorted";
+    }
+    else if(input == 4){
+        inputType = "1%perturbed";
+    }
 	MPI_Status status;
-	std::string inputType;
 	ierr = MPI_Init(&argc, &argv);
     double rank_time = MPI_Wtime();
     root_process = 0;
@@ -111,19 +138,11 @@ int main(int argc, char *argv[]){
 
       if(rank == root_process) {
         n = atoi(argv[1]);
-        int input = atoi(argv[2]);
+        
          int avgn = n / nump;
          localn=avgn;
-         std::string inputType;
-    if(input == 1){
-        inputType = "Random";
-    }
-    else if(input == 2){
-        inputType = "Sorted";
-    }
-    else if(input == 3){
-        inputType = "Reverse Sorted";
-    }
+         
+    
 
     	data=(int*)malloc(sizeof(int)*n);
 
