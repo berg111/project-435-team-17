@@ -297,58 +297,11 @@ Comparisons will be done between different implementations and performance for v
 Odd Even Sort:
 
 For Odd Even Sort - CUDA, the following array sizes were used: 2^16, 2^18, 2^20, 2^22, 2^24, 2^26
-and the array types: Random, Sorted, Reverse Sorted
-In the lower portion of the array sizes, even as the thread counts increased, the performance increases were pretty much non-existent, 
-providing minimal time decreases.  
-
-it is not until array size 2^20 until performance increases can be visualized. Hoever, the performance gains level off fairly quickly once
-512 threads is reached.
-
-For specific values, no matter the thread count, every run time for 2^16 was under 1 second, and there were no improvements between thread counts.
-
-![cuda main 65536](./Odd_Even_Sort/CUDA_2^16.png)
-
-For 2^18, every run was under 3 seconds, again with no improvements or variability between array types.
-
-![cuda main 2_18](./Odd_Even_Sort/CUDA_2^18.png)
-
-For 2^20, things began to change, there was a steep drop from 20 seconds to 14 seconds, and then to 10 seconds before leveling off. No changes between 
-array types.
-
-![cuda main 2_20](./Odd_Even_Sort/CUDA_2^20.png)
-
-For 2^22, There was a drop from 250 seconds to 125, and then to 80. Minimal variablity, but sorted array can be seen to run quicker.For 2^24, There is a drop from 3500 seconds to 1700, and then the array types split off here. 
-The random array levels off at about 1600 seconds,the sorted array levels off at about 1200 seconds. And the reverse array levels off at 1800 seconds. And actually at 1024 threads, there is a slight 
- performance decrease.
-
- ![cuda main 2_22](./Odd_Even_Sort/CUDA_2^22.png)
-
- ![cuda main 2_24](./Odd_Even_Sort/CUDA_2^24.png)
+and the array types: Random, Sorted, Reverse Sorted, and 1 % perturbed and thread counts: 64, 128, 256, 512, 1024
 
 
-For Odd Even Sort - OMP, the following array sizes were used: 2^16, 2^18, 2^20, higher sizes were not used due to time constraints and performance drops
-
-The OMP implementation provided some more clear observations than CUDA. The time differences and peerformance changes are much more clear. 
-
-For array size 2^16, times decreased from threads 2 to 16, but began to increase at 64+ threads. There are clear differences in the arrays, the sorted
-arrays provide the lowest times and the random times provide the highest, and reverse is in the middle.
-
- ![omp main 2_16](./Odd_Even_Sort/OMP_2^16.png)
-
-For array 2^18, the performance trends are the same as the array prior, however, as the threads increased, the performance drop off was not as severe as 
-the smaller array
-
-![omp main 2_18](./Odd_Even_Sort/OMP_2^18.png)
-
-For array size 2^20, again the same performnce trends hold true, except the random arrays for the lower thread counts take much longer compared to the 
-sorted arrays, for example the sorted array for 8 threads took 73 seconds, where the random array took 253 seconds.
-
-![omp main 2_20](./Odd_Even_Sort/OMP_2^20.png)
-
-The increased time as threads get too high are due to Grace's architecture and limit of threads.
-
-Overall, the general performance for OMP was worse compared to CUDA, however the efficiency for the threads was much greater for OMP, and visualizing
- the data was much easier and provided greater insights.
+For Odd Even Sort - MPI, the following array sizes were used: 2^16, 2^18, 2^20, 2^22, 2^24, 2^26
+and the array types: Random, Sorted, Reverse Sorted, and 1 % perturbed and thread counts: 2, 4, 8, 16, 32, 64, 128, 256, 512
      
 
 #### MergeSort
