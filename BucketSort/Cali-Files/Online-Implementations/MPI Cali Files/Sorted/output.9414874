@@ -1,0 +1,2054 @@
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event == CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: == CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+papi: Unknown event == CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: CYCLE_ACTIVITY:STALLS_L2_PENDING== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: == CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+papi: Unknown event == CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+CYCLE_ACTIVITY:STALLS_LDM_PENDING== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: == CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+papi: Unable to process all requested counters== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: == CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+spot== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+: papi: Failed to initialize event sets, dropping papi service== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: == CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: == CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event == CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE== CALIPER: == CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: == CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: == CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: == CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: == CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: == CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+papi: Unknown event == CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+CYCLE_ACTIVITY:CYCLES_NO_EXECUTE== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event == CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: == CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+papi: Unknown event == CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+CYCLE_ACTIVITY:STALLS_L1D_PENDING== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING== CALIPER: == CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+papi: Unknown event == CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+CYCLE_ACTIVITY:STALLS_L2_PENDING== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: == CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: == CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+papi: Unknown event == CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTEpapi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+CYCLE_ACTIVITY:STALLS_LDM_PENDING== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: == CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+papi: Unable to process all requested counters== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+
+== CALIPER: == CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event == CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+spotCYCLE_ACTIVITY:CYCLES_NO_EXECUTE== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event == CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+
+== CALIPER: == CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+papi: Unknown event == CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+CYCLE_ACTIVITY:STALLS_L1D_PENDING== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: == CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+papi: Unknown event == CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+CYCLE_ACTIVITY:STALLS_L2_PENDING
+
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+
+papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+papi: Unknown event == CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+CYCLE_ACTIVITY:CYCLES_NO_EXECUTE== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+papi: Unknown event == CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+CYCLE_ACTIVITY:CYCLES_NO_EXECUTE== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event == CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event == CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: == CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: == CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: == CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event == CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: == CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+papi: Unknown event == CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+CYCLE_ACTIVITY:STALLS_L1D_PENDING== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+
+papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event == CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: == CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: == CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+papi: Unknown event == CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+CYCLE_ACTIVITY:CYCLES_NO_EXECUTECYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: == CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+papi: Unknown event == CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: == CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+CYCLE_ACTIVITY:STALLS_L1D_PENDING== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: == CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+papi: Unknown event == CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+CYCLE_ACTIVITY:STALLS_L2_PENDING== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: == CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+papi: Unknown event == CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: CYCLE_ACTIVITY:STALLS_LDM_PENDING== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: == CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+papi: Unable to process all requested counters== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+
+papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: == CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: == CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+spot== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+: papi: Failed to initialize event sets, dropping papi service== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+papi: Unknown event == CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+CYCLE_ACTIVITY:STALLS_L1D_PENDING== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: == CALIPER: == CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+papi: Unknown event papi: Unknown event == CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+CYCLE_ACTIVITY:STALLS_L2_PENDINGCYCLE_ACTIVITY:STALLS_L2_PENDING== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+
+
+== CALIPER: == CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event == CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+
+== CALIPER: == CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event == CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+papi: Unable to process all requested countersCYCLE_ACTIVITY:STALLS_L1D_PENDING== CALIPER: papi: Unable to process all requested counters
+
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: == CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+spotpapi: Unknown event == CALIPER: == CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+: papi: Failed to initialize event sets, dropping papi serviceCYCLE_ACTIVITY:STALLS_L2_PENDINGpapi: Unknown event == CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+
+
+CYCLE_ACTIVITY:CYCLES_NO_EXECUTE== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: 
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+papi: Unknown event == CALIPER: 
+CYCLE_ACTIVITY:STALLS_LDM_PENDINGpapi: Unknown event == CALIPER: 
+CYCLE_ACTIVITY:STALLS_L1D_PENDINGspot== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+
+: papi: Failed to initialize event sets, dropping papi service== CALIPER: 
+papi: Unknown event == CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+
+SORTING CORRECT
+
+2.1- N: 65536 P: 256  Execution Time: 0.040354
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: == CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: == CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: == CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+topdown: == CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+CYCLE_ACTIVITY:CYCLES_NO_EXECUTE== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: == CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER:  counter attribute not found!== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+topdown: == CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+topdown: 
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: == CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+CYCLE_ACTIVITY:CYCLES_NO_EXECUTE== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+CYCLE_ACTIVITY:CYCLES_NO_EXECUTE== CALIPER: == CALIPER: topdown: == CALIPER: == CALIPER:  counter attribute not found!topdown:  counter attribute not found!spottopdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTEtopdown: topdown: 
+CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+: topdown: Could not find counter attributes!CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!CYCLE_ACTIVITY:CYCLES_NO_EXECUTECYCLE_ACTIVITY:CYCLES_NO_EXECUTE== CALIPER:  counter attribute not found!== CALIPER: 
+ counter attribute not found!
+ counter attribute not found! counter attribute not found!spot
+spot
+== CALIPER: 
+
+== CALIPER: spot: topdown: Could not find counter attributes!
+: topdown: Could not find counter attributes!== CALIPER: : topdown: Could not find counter attributes!== CALIPER: spot== CALIPER: 
+spot
+spot: topdown: Could not find counter attributes!spot: topdown: Could not find counter attributes!: topdown: Could not find counter attributes!
+: topdown: Could not find counter attributes!
+
+
+JOBID        NAME                 USER                     PARTITION              NODES  CPUS  STATE        TIME         TIME_LEFT    START_TIME         REASON                   NODELIST
+9414874      JobName              hameron18                short                  8      256   RUNNING      0:06         29:54        2023-12-07T13:21:1 None                     c[741-742,744-746,748-750]

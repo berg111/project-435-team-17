@@ -1,0 +1,39 @@
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:CYCLES_NO_EXECUTE
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L1D_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_L2_PENDING
+== CALIPER: papi: Unknown event CYCLE_ACTIVITY:STALLS_LDM_PENDING
+== CALIPER: papi: Unable to process all requested counters
+== CALIPER: spot: papi: Failed to initialize event sets, dropping papi service
+num_perturbations per bucket = 41943
+
+SORTING CORRECT
+
+2.1- N: 16777216 P: 4  Execution Time: 0.629354
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+== CALIPER: topdown: CYCLE_ACTIVITY:CYCLES_NO_EXECUTE counter attribute not found!
+== CALIPER: spot: topdown: Could not find counter attributes!
+JOBID        NAME                 USER                     PARTITION              NODES  CPUS  STATE        TIME         TIME_LEFT    START_TIME         REASON                   NODELIST
+9406598      JobName              hameron18                medium                 1      32    RUNNING      0:05         29:55        2023-12-06T18:35:5 None                     c068
