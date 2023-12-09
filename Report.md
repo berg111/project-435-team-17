@@ -1,20 +1,34 @@
-# CSCE 435 Group project
+# CSCE 435 Final Project: Group 17
 
-## 1. Group members:
+## 1. Group Members:
 1. Jake Bergin
 2. Jace Thomas
 3. Cameron Hoholik-Carlson
 4. Ethan McKinney
 
----
-
-## Team Communication
+### Team Communication Methods
 Team communication will take place through texts and Slack.
 
-## 2. _due 10/25_ Project topic
-Sorting.
+---
 
-## 2. _due 10/25_ Brief project description (what algorithms will you be comparing and on what architectures)
+## 2. Project Topic: Comparing Parallel Sorting Algorithms
+
+### 2a. Brief Project Description
+- Over the course of this report, our team will analyze the performance results of 4 different parallel sorting algorithms on two different architectures:
+	1) Merge Sort
+		- MPI
+  		- CUDA 
+	3) Odd Even Sort
+		- MPI
+  		- CUDA
+ 	4) Bucket Sort
+		- MPI
+  		- CUDA
+ 	5) Quick Sort 
+		- MPI
+  		- CUDA
+
+### 2b. Pseudocode for Parallel Algorithms
 
 - Merge Sort (MPI + CUDA)
 
@@ -73,6 +87,7 @@ Sorting.
 	MPI_Gather(arr_copy, range, MPI_INT, arr, range, MPI_INT, 0, MPI_COMM_WORLD);
   ```
 
+
 - Odd-Even Transposition Sort (openMP + CUDA)
 
   Odd-Even Sort is a compare and exchange algorithm, that compares odd and even pairs, and after n phases all of the elements will be sorted, and is availabe in parallelism.
@@ -129,6 +144,7 @@ Sorting.
   }
 
   ```
+
   
 - Bucket Sort (MPI + CUDA)
 
@@ -193,69 +209,69 @@ Sorting.
     	MPI_Reduce()
 
     	// Calculate times
-    end procedure
-```
-
-begin procedure bucketSortCUDA()
+  end procedure
+  ```
+  CUDA Pseudocode (source: ~):
+  ```
+  begin procedure bucketSortCUDA()
 	BLOCKS : number of blocks used for program
- 	THREADS : number of threads used for program
- 	
+	THREADS : number of threads used for program
+	
 	// Initialize Array
- 	A : list of sortable items
-  	n := length(A)
+	A : list of sortable items
+	n := length(A)
 
 	// Initialize Data
- 	initializeData(A)
+	initializeData(A)
 
-  	// Initialize Buckets
-   	Buckets : 2D list of sortable items
+	// Initialize Buckets
+	Buckets : 2D list of sortable items
 
-     	// n = m
-      	m := length(Buckets)
-    	n := length(Buckets[])
+	// n = m
+	m := length(Buckets)
+	n := length(Buckets[])
 
-      	// Fill buckets with null values
-       	for i := 0 to n-1 inclusive do
+	// Fill buckets with null values
+	for i := 0 to n-1 inclusive do
 		for j := 0 to m-1 inclusive do
-  			buckets[i][j] = -1.0;
-     		end for
-       	end for
+			buckets[i][j] = -1.0;
+		end for
+	end for
 
- 	// Fill buckets with array values
-  	for i := 0 to n-1 inclusive do
+	// Fill buckets with array values
+	for i := 0 to n-1 inclusive do
 		for j := 0 to m-1 inclusive do
-  			if buckets[n * A[i]] == -1 then
-     				buckets[n * A[i]] = A[i]
-	 			break;
-     			end if
-     		end for
-       	end for
+			if buckets[n * A[i]] == -1 then
+				buckets[n * A[i]] = A[i]
+				break;
+			end if
+		end for
+	end for
 
- 	// Sort each bucket with insertion sort
-  	insertionSort<<<BLOCKS, THREADS>>>(buckets, n)
+	// Sort each bucket with insertion sort
+	insertionSort<<<BLOCKS, THREADS>>>(buckets, n)
 
-   	// Sync with threads
-    	cudaDeviceSynchronize()
+	// Sync with threads
+	cudaDeviceSynchronize()
 
-      	// Stitch buckets back together
-       	index : count starting at 0
-       	for i := 0 to n-1 inclusive do
+	// Stitch buckets back together
+	index : count starting at 0
+	for i := 0 to n-1 inclusive do
 		for j := 0 to m-1 inclusive do
-  			if buckets[i][j] == -1 then
-	 			break;
-     			end if
+			if buckets[i][j] == -1 then
+				break;
+			end if
 
-   			A[index] = buckets[i][j]
-      			index++
-     		end for
-       	end for
+			A[index] = buckets[i][j]
+			index++
+		end for
+	end for
 
- 	// Check for correctness
-  	correctnessCheck(A, n)
-  			
-
-end procedure
-```
+	// Check for correctness
+	correctnessCheck(A, n)
+			
+  end procedure
+  ```
 
 
 Quick Sort (MPI & CUDA)
@@ -284,15 +300,29 @@ Quick Sort (MPI & CUDA)
   		Quicksort(array, partition + 1, right)
   ```
 
-### 2c. Evaluation plan - what and how will you measure and compare
-- Varying array sizes of integers (100, 1000, 10000, 100000, 500000). (Floats for bucket sort impl).
+### 2c. Evaluation Plan
+The following list outlines what we will measure and compare for each algorithm as well has how we will accomplish this:
+- Varying array sizes of integers (2^16 - 2^28). (Floats for bucket sort impl).
+	- NOTE: There may be small variations in input sizes per algorithm depending on the memory limitations of each implementation 
 - Strong scaling (same problem size, increase number of processors/nodes)
 - Weak scaling (increase problem size, increase number of processors)
 - Number of threads in a block on the GPU
 
 Comparisons will be done between different implementations and performance for varying parameters will be examined for each.
 
-### 4. 
+## 3. Implementation
+### 3a. Caliper Instrumentation and Calltrees
+The following are the calltrees implemented during the instrumentation of each parallel algorithm:
+- Merge Sort:
+
+- Odd Even Sort:
+
+- Bucket Sort:
+
+- Quick Sort:
+
+
+## 4. Performance Analysis
 
 Odd Even Sort:
 
