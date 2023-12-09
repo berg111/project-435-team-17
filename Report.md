@@ -323,41 +323,6 @@ The following are the calltrees implemented during the instrumentation of each p
 
 
 ## 4. Performance Analysis
-
-Odd Even Sort:
-
-For Odd Even Sort - CUDA, the following array sizes were used: 2^16, 2^18, 2^20, 2^22, 2^24, 2^26
-and the array types: Random, Sorted, Reverse Sorted, and 1 % perturbed and thread counts: 64, 128, 256, 512, 1024
-
-The performance on the CUDA implemntation scaled very well, and shows a solid trend in decreasing time as threads increase. The communication overhead does take some time on lower thread counts, but quickly drops off. The speedup time also shows great performance and increases until about 512 threads and tapers off. Overall the CUDA implementation seemed to perform much more efficiently than the MPI implementation did.
-
-![pic](./Odd_Even_Sort/CUDA-Speedup.png)
-![pic](./Odd_Even_Sort/CUDA-Comm.png)
-![pic](./Odd_Even_Sort/CUDA-Comp.png)
-![pic](./Odd_Even_Sort/CUDA-Main.png)
-![pic](./Odd_Even_Sort/CUDA-Weak.png)
-For Odd Even Sort - MPI, the following array sizes were used: 2^16, 2^18, 2^20, 2^22, 2^24, 2^26
-and the array types: Random, Sorted, Reverse Sorted, and 1 % perturbed and thread counts: 2, 4, 8, 16, 32, 64, 128, 256, 512
-
-In the lower end of the Input sizes, this algorithm does not scale well in MPI. As the processes increase, so does the time taken, regardless of the input type
-It can be noted that in the comm time, that there is a spike in the mid range of processes, and this is due to the number of nodes used in the jobfile, where only
-1 was being utilized until about 64 processes. This spike could be due to the nature of the communication method, which in this algorithm I utilized
-broadcast, scatter, and gather communications. On weak scaling, it scales relatively well on the lower end of processes, where the processes are handling roughly
-the same load, until about 512 processes where it begins to increase. The speedup of the lower input also has an inverse trend, showing a poor performance trend.
-
-![pic](./Odd_Even_Sort/MPI-speedup.png)
-![pic](./Odd_Even_Sort/MPI-comm.png)
-![pic](./Odd_Even_Sort/MPI-comp.png)
-![pic](./Odd_Even_Sort/MPI-main.png)
-![pic](./Odd_Even_Sort/MPI-weak.png)
-
-Performance gains become to be noticeable once we reach higher input sizes of about 2^24, where the computation time begins to decrease as the processes increase.
-However, the same communication overhead still holds true in this input as well. The speedup of this input size scaled better than the lower input but is not great, and requires the processes to be at about 32 to start seeing improvements, that taper off pretty quick.
-![pic](./Odd_Even_Sort/MPI-Speedup-2.png)
-![pic](./Odd_Even_Sort/MPI-comm-2.png)
-![pic](./Odd_Even_Sort/MPI-comp-2.png)
-![pic](./Odd_Even_Sort/MPI-Main-2.png)
-![pic](./Odd_Even_Sort/MPI-weak.png)
 #### MergeSort
 
 As the input size increases, so does the overall runtime of the program. This is an intuitive result that isn’t all that surprising. 
@@ -434,9 +399,48 @@ implementation is performing badly. There does not seem to be any indication tha
 processes and input size where the speedup goes beyond 1.
 
 
-**Bucket Sort**
+#### Odd Even Sort:
 
-Two different implementations of Bucket Sort were used for this project: a CUDA implementation and an MPI implementation. Starting with the CUDA implementation, 4 different array sizes were used: 2^16, 2^18, 2^20, and 2^22 values each. Each of these arrays were input into the sorting algorithm randomized, pre-sorted, reverse sorted, and 1% perturbed. For each of these sizes and organizations, different numbers of thread counts were used on the NVIDIA A100 GPU including 64, 128, 256, 512, and 1024 threads. Unfortunately, further testing of this implementation of Bucket Sort on the Grace hardware was not possible as we ran into a memory allocation limit. Traditional implementations of Bucket Sort utilize vectors to serve as “buckets” for array values to be sorted into; however, this traditional approach is not possible with CUDA. CUDA does not support a dynamic vector data structure, meaning that the size of each bucket must be known when allocating memory which goes against the nature of a memory efficient Bucket Sort algorithm. Our solution to this was to limit the number of buckets to the max thread count (1024) and create a (b * n) array that allows for all possible combinations of buckets. At the max array size, this resulted in a buckets object being created with 1024 * 2^22 * 4 = ~17 GB where 1024 is the number of buckets, 2^22 is the array size, and 4 is the size of the data type we were sorting (floats). If we increased the array size to 2^24, then we would need ~68 GB of memory. Since the A100 GPU only has 40GB of onboard memory, we would either need to use multiple GPUs (which would utilize MPI and CUDA at the same time, defeating the purpose of comparing the two architectures) or we would need different hardware. 
+For Odd Even Sort - CUDA, the following array sizes were used: 2^16, 2^18, 2^20, 2^22, 2^24, 2^26
+and the array types: Random, Sorted, Reverse Sorted, and 1 % perturbed and thread counts: 64, 128, 256, 512, 1024
+
+The performance on the CUDA implemntation scaled very well, and shows a solid trend in decreasing time as threads increase. The communication overhead does take some time on lower thread counts, but quickly drops off. The speedup time also shows great performance and increases until about 512 threads and tapers off. Overall the CUDA implementation seemed to perform much more efficiently than the MPI implementation did.
+
+![pic](./Odd_Even_Sort/CUDA-Speedup.png)
+![pic](./Odd_Even_Sort/CUDA-Comm.png)
+![pic](./Odd_Even_Sort/CUDA-Comp.png)
+![pic](./Odd_Even_Sort/CUDA-Main.png)
+![pic](./Odd_Even_Sort/CUDA-Weak.png)
+
+For Odd Even Sort - MPI, the following array sizes were used: 2^16, 2^18, 2^20, 2^22, 2^24, 2^26
+and the array types: Random, Sorted, Reverse Sorted, and 1 % perturbed and thread counts: 2, 4, 8, 16, 32, 64, 128, 256, 512
+
+In the lower end of the Input sizes, this algorithm does not scale well in MPI. As the processes increase, so does the time taken, regardless of the input type
+It can be noted that in the comm time, that there is a spike in the mid range of processes, and this is due to the number of nodes used in the jobfile, where only
+1 was being utilized until about 64 processes. This spike could be due to the nature of the communication method, which in this algorithm I utilized
+broadcast, scatter, and gather communications. On weak scaling, it scales relatively well on the lower end of processes, where the processes are handling roughly
+the same load, until about 512 processes where it begins to increase. The speedup of the lower input also has an inverse trend, showing a poor performance trend.
+
+![pic](./Odd_Even_Sort/MPI-speedup.png)
+![pic](./Odd_Even_Sort/MPI-comm.png)
+![pic](./Odd_Even_Sort/MPI-comp.png)
+![pic](./Odd_Even_Sort/MPI-main.png)
+![pic](./Odd_Even_Sort/MPI-weak.png)
+
+Performance gains become to be noticeable once we reach higher input sizes of about 2^24, where the computation time begins to decrease as the processes increase.
+However, the same communication overhead still holds true in this input as well. The speedup of this input size scaled better than the lower input but is not great, and requires the processes to be at about 32 to start seeing improvements, that taper off pretty quick.
+
+![pic](./Odd_Even_Sort/MPI-Speedup-2.png)
+![pic](./Odd_Even_Sort/MPI-comm-2.png)
+![pic](./Odd_Even_Sort/MPI-comp-2.png)
+![pic](./Odd_Even_Sort/MPI-Main-2.png)
+![pic](./Odd_Even_Sort/MPI-weak.png)
+
+#### Bucket Sort
+
+Two architectures were used to implement bucket sort for this project: CUDA and MPI. Two versions of each were instrumented and used for this analysis. The first set of implementations were handwritten, and the second set of implementations were found online and edited for the purposes of this project.
+
+Starting with the handwritten implementations, 4 different array sizes were used for CUDA: 2^16, 2^18, 2^20, and 2^22 values each. Each of these arrays were input into the sorting algorithm randomized, pre-sorted, reverse sorted, and 1% perturbed. For each of these sizes and organizations, different numbers of thread counts were used on the NVIDIA A100 GPU including 64, 128, 256, 512, and 1024 threads. Unfortunately, further testing of this implementation of Bucket Sort on the Grace hardware was not possible as we ran into a memory allocation limit. Traditional implementations of Bucket Sort utilize vectors to serve as “buckets” for array values to be sorted into; however, this traditional approach is not possible with CUDA. CUDA does not support a dynamic vector data structure, meaning that the size of each bucket must be known when allocating memory which goes against the nature of a memory efficient Bucket Sort algorithm. Our solution to this was to limit the number of buckets to the max thread count (1024) and create a (b * n) array that allows for all possible combinations of buckets. At the max array size, this resulted in a buckets object being created with 1024 * 2^22 * 4 = ~17 GB where 1024 is the number of buckets, 2^22 is the array size, and 4 is the size of the data type we were sorting (floats). If we increased the array size to 2^24, then we would need ~68 GB of memory. Since the A100 GPU only has 40GB of onboard memory, we would either need to use multiple GPUs (which would utilize MPI and CUDA at the same time, defeating the purpose of comparing the two architectures) or we would need different hardware. 
 
 Due to the large overhead of creating and sorting the array into buckets (which was not efficiently parallelizable), the performance of this algorithm gave some interesting numbers. To begin, the ‘Comp Small’ caliper region was used to measure the kernel call to the GPU while the ‘Comp Large’ caliper region was used to measure sorting the array into buckets (preprocessing) and stitching the sorted buckets back together. In the graphs below, you can see the overhead for preprocessing and stitching dominated over the time it took to sort the individual buckets. 
 
@@ -448,19 +452,34 @@ Due to this dominance, this CUDA implementation of Bucket sort saw marginal perf
 ![cuda random comp small region](./BucketSort/CUDA/Plots/Random_Comp_Small_Plot.png)
 ![cuda sorted comp small region](./BucketSort/CUDA/Plots/Sorted_Comp_Small_Plot.png)
 
-The next implementation of Bucket Sort utilized C++ MPI. This version was also limited by memory for the same design reasons as CUDA. 4 different array sizes were used: 2^14, 2^16, 2^22, and 2^20 values each. Each of these arrays were input into the sorting algorithm randomized, pre-sorted, reverse sorted, and 1% perturbed. For each of these sizes and organizations, different numbers of processors were used on multiple Grace nodes including 2, 4, 8, 16, 32, 64, 128, 256, and 512 processors. Unfortunately, further testing of this implementation was not possible as any size larger than 2^20 would crash the algorithm, despite increasing the memory allocation per node on Grace. This is likely because of the use of MPI_Scatter and MPI_Gather. Since only the master task would allocate the initial bucket’s array, each task would have to allocate enough memory for each of the buckets they receive. This effectively results in the ‘buckets’ object being allocated twice which needs lots of memory at large array size. 
+The next handwritten implementation of Bucket Sort utilized C++ MPI. This version was also limited by memory for the same design reasons as CUDA. 4 different array sizes were used: 2^14, 2^16, 2^22, and 2^20 values each. Each of these arrays were input into the sorting algorithm randomized, pre-sorted, reverse sorted, and 1% perturbed. For each of these sizes and organizations, different numbers of processors were used on multiple Grace nodes including 2, 4, 8, 16, 32, 64, 128, 256, and 512 processors. Unfortunately, further testing of this implementation was not possible as any size larger than 2^20 would crash the algorithm, despite increasing the memory allocation per node on Grace. This is likely because of the use of MPI_Scatter and MPI_Gather. Since only the master task would allocate the initial bucket’s array, each task would have to allocate enough memory for each of the buckets they receive. This effectively results in the ‘buckets’ object being allocated twice which needs lots of memory at large array size. 
 Although this version of the algorithm utilized MPI_Scatter and MPI_Gather to make communication more efficient, it is interesting to note that as the number of processors increased, the amount of communication time also increased exponentially. Similar to the CUDA implementation, this algorithm had a dominating region, but it was the ‘Comm’ region rather than the ‘Comp Large’ region. It seems that the computation on each task was MUCH faster on MPI, but the communication was also much slower resulting in degraded performance as the number of processors increased. Below are plots of the ‘Comm’ and ‘Comp Small’ for the MPI implementation. 
 
 ![mpi comm region](./BucketSort/MPI/Plots/Random_Comm_Plot.png)
 ![mpi comp small region](./BucketSort/MPI/Plots/Random_Comp_Small_Plot.png)
 
-Comparing the overall runtimes of both algorithms, it is easy to see that the communication overheads dominated their runtimes resulting in faster computation as the number of processors/threads increased, but worse total runtimes as the number of processors/threads increased. Despite MPI sorting each bucket faster, it was bar far the slower algorithm. Below are plots of CUDA and MPI ‘Main’ region times. 
-<INSERT MAIN REGIONS FOR CUDA AND MPI>
+Comparing the overall runtimes of both handwritten algorithms, it is easy to see that the communication overheads dominated their runtimes resulting in faster computation as the number of processors/threads increased, but worse total runtimes as the number of processors/threads increased. Despite MPI sorting each bucket faster, it was bar far the slower algorithm. Below are plots of CUDA and MPI ‘Main’ region times. 
+
 ![cuda main region](./BucketSort/CUDA/Plots/Random_Main_Plot.png)
 ![mpi main region](./BucketSort/MPI/Plots/Random_Main_Plot.png)
 
+Since the handwritten bucket sort algorithms were so inefficient and did not yield any performance increase, a second set of implementations were instrumented and run on the Grace cluster. These new implementations were significantly more memory efficient, which fixed the input size limitations of the handwritten versions. 
 
-**Quicksort**
+Starting with the online CUDA implementation, input sizes ranged from 2^16 to 2^22 and thread counts ranged from 64 to 1024. This input range was used because of time limitations with this implementation. 2^24 input values and up took astronomically high times to compute (over 5 hours for 2^24) for the lower thread counts, so it was not reasonable to run those sizes on the Grace cluster. It is worthy of note that this implementation COULD run for sizes of 2^24 to 2^28, so there was not a memory limitation like the handwritten version. The highest input size (2^24) was run with randomized, sorted, reverse sorted, and 1% perturbed inputs while the rest of the input sizes were run with only randomized inputs. As shown in the graphs below, the performance for this implementation increased as the number of threads increased for all input sizes. This performance can also be seen in the speed up graph, as each input size increases in speedup as the number of threads increases.
+   
+ 
+When comparing different input types rather than input sizes, the same performance trends can be seen across almost all types. The graphs below show that performance increases for each input type across the total main time and the computation regions. The smallest performance increase comes from the 1% perturbed arrays, while the other input types have roughly the same performance. This performance trend can also be seen in the speed up graph below. ‘Random’, ‘Reverse Sorted’, and ‘Sorted’ input types each have similar speed ups, while the ‘1% perturbed’ trend has a much smaller speedup.
+   
+ 
+
+Moving on to the online MPI implementation, input sizes ranged from 2^16 to 2^28 and processor counts ranged from 2 to 1024. Each of these inputs were given to the sorting algorithm randomized, pre-sorted, reverse sorted, and 1% perturbed. As shown in the graphs for ‘Random’ inputs below, the performance generally increased as the number of processors increased. For lower input sizes, the performance increased initially, but eventually decreased as the communication overhead started to dominate. However, the performance eventually continuously increased as higher input sizes were used. 
+  
+  
+As the speed up graphs show, this algorithm does scale well for higher input sizes. The ‘Random’ input type had the best performance increases, while the other input types eventually tapered off around 64 processes and eventually lost performance due to communication overhead. 
+Weak scaling also shows that this algorithm scales well for both architectures. As shown in the graphs below, the weak scaling trends are roughly flat, which is the desired behavior. This flat trend means that as the number of processes/threads increase with the size of the input, each process/thread still has roughly the same amount of work to do. 
+
+
+#### Quicksort
 
 For testing the performance of our Quicksort algorithm implemented in CUDA, it was tested on a 2^16, 2^18, 2^20, 2^22, 2^24, 2^26, and 2^28 array sizes with them being sorted in order, sorted randomly, and sorted in reverse.
 It was expected that as during the lower thread counts on the smaller arrays, there would not be much difference in the time, yet as the array size grew and the algorithm was run on more threads, we would theoretically see a large reduction in the time taken to complete the sorting process.
