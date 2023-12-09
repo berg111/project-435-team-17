@@ -478,3 +478,5 @@ Per our expectations, as the array size increased, the time to sort would also i
 As a note, this implementation involved a standard quicksort algorithm yet at the end of each quicksort step, once the array was split on the partition, the two array sides would then be placed in chunks and wait for a process to pick them up and continue the operation until the bottom level of the array, then pushing all the sorted chunks back together on the way back up the tree. This is a different implementation than that of Merge Sort, as Merge Sort generally sorts the arrays on the way back up the tree, meaning the array is split down the middle over and over until we reach the bottom level of the tree and sort as we merge the arrays back together. Quick Sort involves sorting the array on they way down and reconnecting the ends of each array piece to form the final sorted array.
 
 ![MPI comp size 1048576](./Quicksort/MPI/comp.png)
+![MPI comm size 1048576](./Quicksort/MPI/comm.png)
+![MPI main size 1048576](./Quicksort/MPI/main.png)
