@@ -480,3 +480,16 @@ As a note, this implementation involved a standard quicksort algorithm yet at th
 ![MPI comp size 1048576](./Quicksort/MPI/comp.png)
 ![MPI comm size 1048576](./Quicksort/MPI/comm.png)
 ![MPI main size 1048576](./Quicksort/MPI/main.png)
+
+From the "comp" graph we can see that the computation time across all array types (i.e. sorted, unsorted, reversed, 1%perturbed) were all extremely similar to each other. The graph shows that the algorithm scaled very well with respect to the increase in the number of processes. For the 2^20 graph that we are seeing there is not much more benefit after 2^5 processes which is where this array size flattens out. 
+
+For our "comm" graph we can see that there was a slight communication overhead when it came to the 1%perturbed array. The flux in the later part of the graph may show that I was running the 1%perturbed array with a high number of processes but the incorrect number of nodes, which would explain a slight flux in the communication. However in the middle processes which is where we see the graph flatten out in our computation, we can see all array sort types performed very similarly.
+
+For the "main" graph we can see that it is extremely similar to the "comp" graph explained above in that all array types perform the exact same and the algorithm scales particularly well.
+
+![MPI weak scaling random](./Quicksort/MPI/weak.png)
+![MPI speed up size 1048576](./Quicksort/MPI/speed.png)
+
+We see in the weak scaling that it appears to trend upward linearly, however looking closer we can identify that all weak scaling values are under .003 seconds which is very good. And next to the the speed up graph looks like there was an astronomical improvement in the run times for this implementation. The 2 process 2^20 array size time was around 386 seconds, and 2^5 processes at the same array size time was around 2 seconds. So we are able to show that there was a substantial improvement in the runtimes, however it is noted that the speedup may have been calculated incorrectly in the Jupyter notebook.
+
+Overall I believe it is evident that the Quicksort implementation, although an edited version, since Quicksort is sequential in itself, scaled extremely well as the number of processes increased yet overall was not the fastest algorithm that could have been used.
