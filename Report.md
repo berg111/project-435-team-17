@@ -272,6 +272,9 @@ Team communication will take place through texts and Slack.
 			
   end procedure
   ```
+  Online MPI Implementation Source: https://github.com/Beachj/Parallelized-Bucket-Sort/blob/master/bucket_sort_v2.1.c
+
+  Online CUDA Implementation Source: https://github.com/node3/Parallel-Sorting/blob/master/cudasort.cu 
 
 
 - Quick Sort (MPI & CUDA)
