@@ -527,11 +527,17 @@ Overall, I believe it is evident that the Quicksort implementation, although an 
 #### Comparison
 When comparing each of the above algorithms, there are some interesting performance results that are worthy of note. Starting with the MPI at 2^22 input size, quick sort is by far the least efficient computationally when using low numbers of processors. The graphs below show that quick sort is on a different order of magnitude initially, but eventually merges with the other algorithms. When taking quick sort out of the comparison, it becomes clear that merge sort and bucket sort are the most efficient for this architecture. Odd Even sort performs okay at low processor counts at this input size, but eventually the performance decreases at higher processor counts. 
 
-
+![mpi comp 4294304](./BucketSort/Report-Plots/MPI-Comparison-Comp.png)
+![mpi comp 1 4294304](./BucketSort/Report-Plots/MPI-Comparison-Comp-1.png)
 
 When looking at the communication for each algorithm, it becomes clear that merge sort is the least communication efficient out of all the algorithms. Similar to quick sort’s computational trend at this input size, merge sort’s trend is on a different magnitude than the other algorithms. If merge sort is removed from the communication comparison, it becomes clear that bucket sort and quick sort are the most efficient communication wise. Odd even sort’s communication seems to increase as the number of processes increase, which resulted in degraded performance at this input size. When combining the computational observations and the communication observations, the trends in the ‘main’ time make sense. Quick sort seems to be the least efficient at this input size, followed by merge sort. These two algorithms are on a different scale than odd even or bucket sort. Conversely, odd even sort and bucket sort are the most efficient algorithms at this input size, even though that odd even has decreases in performance as the number of processors increases. It is also worthy of note that bucket sort and quick sort are the only two algorithms with performance increases at this input size. The graphs below show these trends.
    
- 
+![mpi comm 4294304](./BucketSort/Report-Plots/MPI-Comparison-Comm.png)
+![mpi comm 1 4294304](./BucketSort/Report-Plots/MPI-Comparison-Comm-1.png)
+![mpi main 4294304](./BucketSort/Report-Plots/MPI-Comparison-Main.png)
+![mpi speedup 4294304](./BucketSort/Report-Plots/MPI-Comparison-Speedups.png)
  
 Moving on to CUDA, our algorithms start to become more efficient. When looking at the speed up graphs for the algorithms that could be implemented, each algorithm had a performance increase at some point for this input size. The least efficient algorithm was merge sort. It had a speed up of more than 1 at some input sizes, but speed up eventually decreased. The algorithm with the second highest speed up was odd even sort. The odd even speed up graph for 2^22 values shows that performance increased with the number of processors until around 256 and 512 processors. At this point, the performance stagnates and flattens off. The most efficient CUDA algorithm out of our algorithms was bucket sort. This algorithm saw the most increase and had an obvious exponential increase in performance. The graphs below show the CUDA trends discussed above:
+
+![CUDA speedup](./BucketSort/Report-Plots/CUDA-Comparison-Speedups.png)
 
