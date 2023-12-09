@@ -274,7 +274,7 @@ Team communication will take place through texts and Slack.
   ```
 
 
-Quick Sort (MPI & CUDA)
+- Quick Sort (MPI & CUDA)
 
   Quick Sort is a sorting algorithm that that operates in a "divide and conquer" method.
   It takes in the array of data and chooses a starting element, then sorts the array into two sides, elements that are smaller than the starting element and elements that are larger than the starting element.
@@ -466,17 +466,29 @@ Comparing the overall runtimes of both handwritten algorithms, it is easy to see
 Since the handwritten bucket sort algorithms were so inefficient and did not yield any performance increase, a second set of implementations were instrumented and run on the Grace cluster. These new implementations were significantly more memory efficient, which fixed the input size limitations of the handwritten versions. 
 
 Starting with the online CUDA implementation, input sizes ranged from 2^16 to 2^22 and thread counts ranged from 64 to 1024. This input range was used because of time limitations with this implementation. 2^24 input values and up took astronomically high times to compute (over 5 hours for 2^24) for the lower thread counts, so it was not reasonable to run those sizes on the Grace cluster. It is worthy of note that this implementation COULD run for sizes of 2^24 to 2^28, so there was not a memory limitation like the handwritten version. The highest input size (2^24) was run with randomized, sorted, reverse sorted, and 1% perturbed inputs while the rest of the input sizes were run with only randomized inputs. As shown in the graphs below, the performance for this implementation increased as the number of threads increased for all input sizes. This performance can also be seen in the speed up graph, as each input size increases in speedup as the number of threads increases.
-   
+
+![cuda main 65536](./BucketSort/Report-Plots/CUDA-Main-65536-1.png)
+![cuda main 4194304](./BucketSort/Report-Plots/CUDA-Main-4194304-1.png)
+![cuda speedup random](./BucketSort/Report-Plots/CUDA-Random-Speedup-1.png)
  
 When comparing different input types rather than input sizes, the same performance trends can be seen across almost all types. The graphs below show that performance increases for each input type across the total main time and the computation regions. The smallest performance increase comes from the 1% perturbed arrays, while the other input types have roughly the same performance. This performance trend can also be seen in the speed up graph below. ‘Random’, ‘Reverse Sorted’, and ‘Sorted’ input types each have similar speed ups, while the ‘1% perturbed’ trend has a much smaller speedup.
    
- 
+![cuda comp inputs](./BucketSort/Report-Plots/CUDA-Comp-Inputs-1.png)
+![cuda main inputs](./BucketSort/Report-Plots/CUDA-Main-Inputs-1.png)
+![cuda inputs speedup](./BucketSort/Report-Plots/CUDA-Inputs-Speedup-1.png)
 
 Moving on to the online MPI implementation, input sizes ranged from 2^16 to 2^28 and processor counts ranged from 2 to 1024. Each of these inputs were given to the sorting algorithm randomized, pre-sorted, reverse sorted, and 1% perturbed. As shown in the graphs for ‘Random’ inputs below, the performance generally increased as the number of processors increased. For lower input sizes, the performance increased initially, but eventually decreased as the communication overhead started to dominate. However, the performance eventually continuously increased as higher input sizes were used. 
-  
+
+![mpi comp large random](./BucketSort/Report-Plots/MPI-Comp-Large-Random-1.png)
+![mpi main random](./BucketSort/Report-Plots/MPI-Main-Random-1.png)
+![mpi speedup 65536](./BucketSort/Report-Plots/MPI-Speedup-65536-1.png)
+![mpi speedup 268435456](./BucketSort/Report-Plots/MPI-Speedup-268435456-1.png)
   
 As the speed up graphs show, this algorithm does scale well for higher input sizes. The ‘Random’ input type had the best performance increases, while the other input types eventually tapered off around 64 processes and eventually lost performance due to communication overhead. 
 Weak scaling also shows that this algorithm scales well for both architectures. As shown in the graphs below, the weak scaling trends are roughly flat, which is the desired behavior. This flat trend means that as the number of processes/threads increase with the size of the input, each process/thread still has roughly the same amount of work to do. 
+
+![mpi weak scaling](./BucketSort/Report-Plots/MPI-Weak-Scaling-1.png)
+![cuda weak scaling](./BucketSort/Report-Plots/CUDA-Weak-Scaling-1.png)
 
 
 #### Quicksort
